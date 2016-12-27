@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Declarando Variáveis no C ou C++"
 date: "2016-08-11 07:40:49 -0300"
 tags: [declaração, inicialização, variáveis, C, C++, Blocos, Global, Local, Estática, Constante]

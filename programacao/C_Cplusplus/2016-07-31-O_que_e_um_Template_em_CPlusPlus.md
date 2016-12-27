@@ -21,13 +21,13 @@ Templates um recurso amplamente utilizado em C++, sendo um dos grandes diferenci
 
 <!--more-->
 
-Como muitos sabém o C++ teve sua primeira versão desenvolvida em 1985 por [Bjarne Stroustru]({% post_url 2016-08-01-Bjarne_Stroustru %}), e durante 25 anos ele a desenvolveu junto a ISO.
+Como muitos sabém o C++ teve sua primeira versão desenvolvida em 1985 por [Bjarne Stroustru]({% post_url perfil/2016-08-01-Bjarne_Stroustru %}), e durante 25 anos ele a desenvolveu junto a ISO.
 
 Bem, eu nasci na programação faz algum tempo, porém sempre passei a certa distância do C e C++ então nas linguagens que programava, como Clipper, Dataflex, e posteriormente o Java, não tive contato algum com algo que pudesse explicar bem o que era o template, sempre ouvi dizer que era um problema, que tornava o código pessado, e isso se deve ao fato que para muitos templates são dificeis de se implementar e entender, os compiladores são muito vagos em suas mensagens de erros, e houve uma época que o código gerado era muito redundante. E sinceramente hoje vejo que foi apenas uma fase do C++, onde os compiladores não conseguiam gerar um código muito otimizado, sem contar o preconceito de alguns com o recurso.
 
 Para quem programa em Java, poderia dizer que Templates é similar a Generics, e na verdade o Generics do java foi inspirado neste conceito, e sua função é como o nome sugere criar código genérico.
 
-Dentro do universo de Templates não temos o conceito de herança, mas sim refinamentos, já que lidamos com conceitos de algortimos, conceitos de funções, como já foi comentado no artigo ["Usando STL C++ LIB com o Arduino e Arquiteturas AVR"]({% post_url 2016-07-30-Usando_STL_CPlusPlus_Lib_com_o_Arduino_e_Arquiteturas_AVR %}), o refinamento de um conceito trata da melhoria de seu algoritmo para que o algortimo anterior possa continuar com suas funcionalidades e atender novos requisitos, sem que insira incompátibilidade e possíveis bugs.
+Dentro do universo de Templates não temos o conceito de herança, mas sim refinamentos, já que lidamos com conceitos de algortimos, conceitos de funções, como já foi comentado no artigo ["Usando STL C++ LIB com o Arduino e Arquiteturas AVR"]({% post_url cursoarduino/programacao/nivel4/2016-07-30-Usando_STL_CPlusPlus_Lib_com_o_Arduino_e_Arquiteturas_AVR %}), o refinamento de um conceito trata da melhoria de seu algoritmo para que o algortimo anterior possa continuar com suas funcionalidades e atender novos requisitos, sem que insira incompátibilidade e possíveis bugs.
 
 Os fatos envolvidos na construção de um template determinando requisitos para seu uso, como por exemplo que haja um certo número de parametros e estes parametros herdem de classes ou interfaces especificas.
 
@@ -63,7 +63,7 @@ Portanto, fica claro que `InputIterator` é o nome para um local onde haverá su
 
 Quem usa **Generics** em java, pode ficar tentando a perguntar como usar templates com curinga `?`, já de imediato digo que não é necessário, todo template é um curinga como no Generics do java, e se eu quiser limitar a um determinado grupo de classes pertencentes a uma determinada hierarquia? bem neste caso é bem mais complexo e varia bastante o código necessário entre o C11 e C14, portanto não vou entrar nesta questão aqui, realmente isso daria um novo post, quem sábe no futuro?
 
-E qual o problema relativo a queixa de códigos ficarem maiores com o uso de Templates do C++, isso é verdade? Veremos isso na publicação "[O mito que impede o uso de templates em sistemas embarcados]({% post_url 2016-07-31-O_Mito_que_Impede_o_Uso_de_Templates_Em_Sistemas_Embarcados %}).
+E qual o problema relativo a queixa de códigos ficarem maiores com o uso de Templates do C++, isso é verdade? Veremos isso na publicação "[O mito que impede o uso de templates em sistemas embarcados]({% post_url cursoarduino/programacao/nivel4/2016-07-31-O_Mito_que_Impede_o_Uso_de_Templates_Em_Sistemas_Embarcados %}).
 
 ------
 
