@@ -27,7 +27,7 @@ Bem, eu nasci na programação faz algum tempo, porém sempre passei a certa dis
 
 Para quem programa em Java, poderia dizer que Templates é similar a Generics, e na verdade o Generics do java foi inspirado neste conceito, e sua função é como o nome sugere criar código genérico.
 
-Dentro do universo de Templates não temos o conceito de herança, mas sim refinamentos, já que lidamos com conceitos de algortimos, conceitos de funções, como já foi comentado no artigo ["Usando STL C++ LIB com o Arduino e Arquiteturas AVR"]({% post_url cursoarduino/programacao/nivel4/2016-07-30-Usando_STL_CPlusPlus_Lib_com_o_Arduino_e_Arquiteturas_AVR %}), o refinamento de um conceito trata da melhoria de seu algoritmo para que o algortimo anterior possa continuar com suas funcionalidades e atender novos requisitos, sem que insira incompátibilidade e possíveis bugs.
+Dentro do universo de Templates não temos o conceito de herança, mas sim refinamentos, já que lidamos com conceitos de algortimos, conceitos de funções, como já foi comentado no artigo ["Usando STL C++ LIB com o Arduino e Arquiteturas AVR"]({% post_url programando/nivel4/2016-07-30-Usando_STL_CPlusPlus_Lib_com_o_Arduino_e_Arquiteturas_AVR %}), o refinamento de um conceito trata da melhoria de seu algoritmo para que o algortimo anterior possa continuar com suas funcionalidades e atender novos requisitos, sem que insira incompátibilidade e possíveis bugs.
 
 Os fatos envolvidos na construção de um template determinando requisitos para seu uso, como por exemplo que haja um certo número de parametros e estes parametros herdem de classes ou interfaces especificas.
 
@@ -63,7 +63,7 @@ Portanto, fica claro que `InputIterator` é o nome para um local onde haverá su
 
 Quem usa **Generics** em java, pode ficar tentando a perguntar como usar templates com curinga `?`, já de imediato digo que não é necessário, todo template é um curinga como no Generics do java, e se eu quiser limitar a um determinado grupo de classes pertencentes a uma determinada hierarquia? bem neste caso é bem mais complexo e varia bastante o código necessário entre o C11 e C14, portanto não vou entrar nesta questão aqui, realmente isso daria um novo post, quem sábe no futuro?
 
-E qual o problema relativo a queixa de códigos ficarem maiores com o uso de Templates do C++, isso é verdade? Veremos isso na publicação "[O mito que impede o uso de templates em sistemas embarcados]({% post_url cursoarduino/programacao/nivel4/2016-07-31-O_Mito_que_Impede_o_Uso_de_Templates_Em_Sistemas_Embarcados %}).
+E qual o problema relativo a queixa de códigos ficarem maiores com o uso de Templates do C++, isso é verdade? Veremos isso na publicação "[O mito que impede o uso de templates em sistemas embarcados]({% post_url programando/nivel4/2016-07-31-O_Mito_que_Impede_o_Uso_de_Templates_Em_Sistemas_Embarcados %}).
 
 ------
 
