@@ -1,7 +1,7 @@
 ---
 title: Nosso Sistema de Ensino
 excerpt: "Uma reflexão e proposta de percepção para um novo modelo de ensino."
-categories: [Pensamentos]
+categories: [pensamentos]
 tags: [Estudo, Escola, Didatica, Aprendizado, Mentor, Aluno, Ensino, Pedagogia, Video]
 layout: article
 share: true

@@ -1,7 +1,7 @@
 ---
 title: "Hacker Space ou Hacker Community" 
 tags: [Virtual, Comunidade, HackerSpace, Hacker, Space, FabLab, Minas Gerais, ForHacker, HackerSpace Minas, Fortaleza, Ceará, Belo Horizonte]
-category: [Pensamentos]
+category: [pensamentos]
 layout: article
 share: true
 toc: true

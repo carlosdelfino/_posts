@@ -2,7 +2,7 @@
 title: Os limites de sua imaginacao e o Ego em dizer eu tambem fiz
 excerpt: Sinto falta de algo novo, precisamos acabar com o valor em ser como todo o mundo, na engenharia, nas ciências, o inovar é fundamental para o sucesso de nossa sociedade e para o nosso futuro tecnológico.
 layout: article
-category: [Pensamentos]
+category: [pensamentos]
 tags: [Pensamento, reflexão, limite, imaginacao, ego, criatividade, engenharia, ciências, inovação, sociedade, futuro, tecnologia]
 share: true
 comments: true

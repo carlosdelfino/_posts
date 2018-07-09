@@ -1,7 +1,7 @@
 ---
 title: "Para que comentários no Site." 
 tags: [Opinião, pensamento, reflexão, amadurecimento, compartilhamento, aprendizado, Ideia, posição, politica, comentário, site, fala, democracia, entendimento, desentendimento, desserviço, empatia, senso comum, bom senso, vampiros sociais, engenharia social, massa, manipulação, cultura invertida, desumanidade, hatters, troll]
-category: [Pensamentos]
+category: [pensamentos]
 layout: article
 share: true
 toc: true

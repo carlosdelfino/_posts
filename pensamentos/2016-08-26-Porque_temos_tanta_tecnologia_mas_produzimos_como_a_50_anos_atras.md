@@ -1,6 +1,6 @@
 ---
 title: Por que temos tanta tecnologia mas produzimos como a 50 anos atrás?
-categories: [Pensamentos]
+categories: [pensamentos]
 tags: [Tecnologia, Pensamento, produção, pesquisa, ciência, maturidade, tecnologia, tecnologia de ponta]
 layout: article
 share: true
