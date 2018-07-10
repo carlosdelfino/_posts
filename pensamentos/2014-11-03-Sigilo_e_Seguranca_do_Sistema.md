@@ -1,7 +1,7 @@
 ---
 title: Como manter a segurança de seus sitema
 excerpt: Quando você não é capaz de manter a segurança de seu sistema e o sigilo da informação gerada por ele, restrinja ao máximo todo o acesso que tiver a ele, nunca deixe que ninguém veja seu código, muito menos entenda seu banco de dados e se possível minimize ao máximo o acesso a toda informação sobre ele.
-category: Pensamentos
+category: pensamentos
 tags: [Segurança, Linux, Firewall, Sistema, Software, Sigilo, Urnas, Brasil, Eleições, Voto, Secreto, Micro Soft, Bill Gates]
 layout: article
 share: true

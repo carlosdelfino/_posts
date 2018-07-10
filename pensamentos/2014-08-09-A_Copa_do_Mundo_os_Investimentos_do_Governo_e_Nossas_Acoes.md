@@ -1,7 +1,7 @@
 ---
 title: A Copa do Mundo, Os Investimentos Do Governo, e Nossas Ações!
 excerpt: Estreio este menu onde irei postar meus pensamentos com esta reflexão incompleta que fiz sobre o investimento da copa e as ações do povo e também algumas palavras que fiz.  Este texto não é o primeiro, mas é um muitos importantes pensamentos que tenho, e não serão publicados na ordem original.
-category: Pensamentos
+category: pensamentos
 tags: [Pensamento, Reflexão, Copa, Investimento, Governo, Dinheiro]
 layout: article
 share: true
