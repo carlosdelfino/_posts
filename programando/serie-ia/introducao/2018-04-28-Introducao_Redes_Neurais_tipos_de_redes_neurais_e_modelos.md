@@ -1,7 +1,8 @@
 ---
 title: Introdução as Redes Neurais, Tipos de Redes Neurias e Modelos 
 tags: [RNN, MI, LSTM, GRU, Redes Neurais, Inteligência Artificial, Inteligência, Artificial, RNN, NN, LTSM, Formulas, Rampa Simetrica, Simetrica, Ativação Lógistica, Hiperbólica, Tangente, Tangente Hiperbólica, Função Logistica]
-categories: [redesneurais, introducao]
+categories: [Series, Redes Neurais, Introducao]
+portal: [carlosdelfino, arduinominas]
 layout: article
 share: true
 toc: true
