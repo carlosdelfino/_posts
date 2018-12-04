@@ -46,3 +46,13 @@ No quarto dia ou já estaremos usando o braço robótico ou ainda revendo a prog
 E assim o curso vai desenvolvendo.
 
 Em média o curso gira em torno de 30 horas para quem já tem um conhecimento básico, para quem vai começar do zero pode chegar a 50 horas.
+
+## Custo do KIT
+
+No momento não estamos vendendo o KIT Arduino e não estamos vendendo o KIT Basicão da Eletrônica, porém o KIT do Braço Róbotico para quem já tem ARduino está saindo a partir de:
+
+* R$ 200,00 + Transporte para o Braço Pequeno
+* R$ 400,00 + Transporte para o Braço Grande
+
+* R$ 350,00 + Transporte paara o Joystick com Braço Pequneo
+* R$ 550,00 + Transporte para o JOYSTICK com Braço Grande
