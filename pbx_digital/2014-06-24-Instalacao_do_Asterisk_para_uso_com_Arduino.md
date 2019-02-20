@@ -1,6 +1,6 @@
 ---
-title: Instalação do Asterisk para uso com Arduino
-excerpt: Como instalar o Asterisk e configura-lo para usar com Arduino
+title: Instalação do Asterisk para uso com Arduino 
+category: pbx_digital
 keywords: Asterisk, Arduino, PBX, PABX, PBX Virtual, PBX Digital
 layout: article
 share: true
@@ -17,10 +17,11 @@ image:
   teaser: pbx_digital/asterisk-255x180.png
   feature: pbx_digital/asterisk-640x359.png
   credit: Asterisk
-  creditlink: http://www.asterisk.org/
-category: PBX_Digital
+  creditlink: http://www.asterisk.org/ 
 ---
 Antes de começarmos é importante lembrar que Asterisk foi desenvolvido para o SO Linux, porém há ports para outros SOs como FreeBSD, MACOSX e até para Windows, mas o mais interessante e o fato de haver ports para que possa ser usado com RaspberryPI e até para Beagle Bone.
+
+<!--more-->
 
 Para instalar o Asterisk é preciso seguir alguns passos, dentre eles você deve primeiro fazer o Download dos seguintes pacotes, para isso crie uma pasta por exemplo chamada “/usr/src/asterisk”, ou outro local que achar mais indicado em sua instalação Linux. (sim iremos nos basear no Linux, já que o Asterisk roda bem melhor nesta SO), observe neste tutorial estarei usando o Ubuntu em sua última versão.
 
