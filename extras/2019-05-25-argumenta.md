@@ -1,7 +1,7 @@
 ---
 
 title: "Argumenta"
-tags: [pensamento, comportamento, Argumentum, Argumenta]
+tags: [pensamento, comportamento, Argumentum, Argumenta, Ad Crumenam, Ad Lazarum, Ad Hominem, Ad Ignorantiam, Ad Nauseam, Reductio ad Hitlerum, Ad Misericordiam, Ad Populum, Ad Verecundiam, Afirmação do Consequente, Anfibologia, Circulo in Demonstrando, Composição, Credencialismo]
 categories: [pensamentos]
 layout: article
 share: true
@@ -37,13 +37,15 @@ Poderia com certos argumentos demonstrar que se domina o discurso, que se faz us
 
 ### Ad Crumenam
 
-_Ad Crumenam_ é uma forma de argumentação que usa da posição social para impor uma proposição, por exemplo a pessoa ser rica ou proprietária de uma empresa e assim ter maior poder aquisitivo que o interlocutor e assim se usar disso para que seu argumento tenha maior valor e se sobreponha do outro.
+_Ad Crumenam_ é uma falacia durante a argumentação que usa da posição social para impor uma proposição, por exemplo a pessoa ser rica ou proprietária de uma empresa e assim ter maior poder aquisitivo que o interlocutor e assim usar disso para que seu argumento tenha maior valor e se sobreponha do outro.
 
 ### Ad Lazarum
 
+Jà _Ad Lazarum_ se utiliza do sofrimento e posição social inferiorizada para estabelecer que o interlocutor então tem experiência de vida, já que viveu tal situação com sofrência.
+
 ### Argumentum Ad Hominem
 
-É quando se argumenta atacando a pessoa na tentativa de desqualifica-la, ao invés de combater a ideia em sí. Tal pratica tem sido utilizada em grandes proporções no final desta segunda decada do século 21, e particularmente acredito que se tornou tão comum devido as práticas de alguns pastores evangêlicos neo-pentecostais em denegrir aqueles que se opõem a suas filosofias religiosas.
+Quando se argumenta atacando a pessoa na tentativa de desqualifica-la, ao invés de combater a ideia em sí. Tal pratica tem sido utilizada em grandes proporções no final desta segunda decada do século 21, e particularmente acredito que se tornou tão comum devido as práticas de alguns pastores evangélicos neo-pentecostais em denegrir aqueles que se opõem a suas filosofias religiosas.
 
 ### Argumentum Ad Ignorantiam
 
@@ -53,12 +55,11 @@ O Argumento da ignorância é bastante comum, é quando se acredita que seu argu
 
 É uma forma de pensar que se estabelece pela repetição, até que se torne verdade pela insistência.
 
-
 ### Reductio ad Hitlerum
 
 Tal termo que define esta forma de argumentação, cunhado pelo filósofo Leo Strauss em 1951, é a corrupção do latim onde também se apresenta com o nome _Argumentum Ad Hitlerum_, assim em um discussão quando alguém quer desqualificar as argumentações do interlocutor, em especial quando já se está cansado da longa discussão e assim começa-se a comprar, quando assim for possível, as falas com falas de Hitler.
 
-Uma forma bem comum de Reductio ad Hitlerum é dizer que o fato de alguém ser nacionalista é ser seguidor de Hitler, por ele ter sido também, mas isso além de ser um argumento por _composição_, ou seja tirando parte do todo, é um tipo de _Argumentum Ad Hominiem_.
+Uma forma bem comum de _Reductio ad Hitlerum_ é dizer que o fato de alguém ser nacionalista é ser seguidor de Hitler, por ele ter sido também, mas isso além de ser um argumento por _composição_, ou seja tirando parte do todo, é um tipo de _Argumentum Ad Hominiem_.
 
 _Lei de Godwin_, segundo a qual "quanto mais dura uma discussão na Usenet, maior a probabilidade de que apareça uma comparação com os nazistas ou com Hitler."
 
@@ -68,7 +69,7 @@ Quando se apela para a misericordia do interlocutor, em especial em casos de jul
 
 ### Argumentum Ad Populum 
 
-A Argumentação pela maioria, é quando se baseia no fato que é apoiado pelo o maior número de pessoas, mesmo que se prove ciêntificamente o contrário, se a maioria pensa que uma certa forma de pensar é a correta, esta se torna a verdade.
+A Argumentação pela maioria, é quando se baseia no fato que é apoiado pelo o maior número de pessoas, mesmo que se prove cientificamente o contrário, se a maioria pensa que uma certa forma de pensar é a correta, esta se torna a verdade.
 
 ### Argumentum Ad Verecundiam
 
@@ -80,7 +81,6 @@ Regras básicas que devem ser respeitadas para um _argumento de autoridade_ ser 
 2. Os especialistas da matéria em causa não podem discordar significativamente entre si quanto à afirmação em causa.
 3. Só podemos aceitar a conclusão de um argumento de autoridade se não existirem outros argumentos mais fortes ou de força igual a favor da conclusão contrária.
 4. Os especialistas da matéria em causa, no seu todo, não podem ter fortes interesses pessoais na afirmação de que se trata
-
 
 ### Afirmação do Consequente
 
