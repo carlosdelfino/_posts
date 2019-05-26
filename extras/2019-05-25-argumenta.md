@@ -1,5 +1,4 @@
 ---
-
 title: "Argumenta"
 tags: [pensamento, comportamento, Argumentum, Argumenta, Ad Crumenam, Ad Lazarum, Ad Hominem, Ad Ignorantiam, Ad Nauseam, Reductio ad Hitlerum, Ad Misericordiam, Ad Populum, Ad Verecundiam, Afirmação do Consequente, Anfibologia, Circulo in Demonstrando, Composição, Credencialismo]
 categories: [pensamentos]
@@ -15,7 +14,7 @@ ads:
  show: true
 image:
    teaser: extra/argumenta/falacia.jpg
-   feature: extra/images/argumenta/argumentum.jpg
+   feature: extra/argumenta/argumentum.jpg
 math: false
 ---
 
