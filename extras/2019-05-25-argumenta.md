@@ -18,21 +18,56 @@ image:
 math: false
 ---
 
-_Argumnentum_ ou _Argumenta_? o primeiro em latim, significa *Argumento*, o segundo é o plural ou seja *Argumentos*. O objetivo aqui é listar os tipos de argumentos existentes, seu melhor uso ou se devem ser evitados, e claro como são chamados em Latim, Inglês e Português.
+_Argumnentum_ ou _Argumenta_? o primeiro em latim, significa *Argumento*, o segundo é o plural ou seja *Argumentos*. O objetivo aqui é listar os tipos de argumentos existentes, seu melhor uso ou se devem ser evitados.
 
 <!--more-->
 
 Em inglês ou Latim a palavra é a mesma para o mesmo significado em português, ou seja "Argumentum" que em português é "Argumento", já no plural do latim é "Argumenta" em português usa a nossa gramática e temos "Argumentos", a palavra "Argumenta" em português é a conjugação do verbo "Argumentar" na terceira pessoa do presente "Ele Argumenta".
 
-Numa era que se iniciou nos meados da segunda década do século XXI, onde a ciência vem sendo bombardeada por crendices antigas, como a _astrologia_, fortalecida por filósofos autoproclamados, e até mesmo pelas religiões, sejam milenares ou recém criadas apenas para atender os anseios daqueles que não se encaixam em religião alguma anteriormente existente.
+Numa era que se iniciou nos meados da segunda década do século XXI, onde a ciência vem sendo bombardeada por crendices antiquadas, como a _astrologia_, fortalecida por filósofos autoproclamados, e até mesmo pelas religiões, sejam milenares ou recém criadas apenas para atender os anseios daqueles que não se encaixam em religião alguma anteriormente existente. Claro que a filosofia clássica por sí só não se enquadra nestas antiguidades, a Religião tem seu lugar e quando bem aplicada é uma base da sabedoria humana tanto quanto a relação entre os homens e a natureza, como a relação do homem com Deus e deve ser sempre respeitada, mas com cautela pois pode estar sendo usado por pessoas inescrupulosas.
 
 Desde ataques pessoais, até ataques ao próprio argumento por falácias, movidos pelo ego, aqueles que querem apena vencer e não somar conhecimentos, tem usado das formas mais baixas e medíocres de argumentação. Pois o que importa hoje é ter razão. E O mais interessante e que muitos defendem seus ataques disfarçados de argumentos por falas de filósofos renomados, sem considerar o contexto histórico de seus argumentos. Uma forma de pensar fortalecida pelos sermões promovidos pelo movimento neo-pentecostal que se auto-justificam em textos desmembrados, já vemos ai o que se chama de *_Argumentação por Composição_*.
 
 Também listarei aqui alguns formas de argumentação definidas pelo que é modernamente chamado de *"Latim Macarrônico"*. Apesar de achar o tom de tal argumento do pior mal gosto possível, é assim ainda usado por muitos para vencer um debate pelo deboche, e nos piores casos o total desrespeito ao seu interlocutor caracterizando assim um *Argumento Ad Hominem* dos piores.
 
-A lista abaixo não tem uma ordem especifica, estou adicionando conform meus estudos e leituras, as fontes que justificam e explicam a definição dos típos de argumentos estão listadas no final do artigo.
+A lista abaixo não tem uma ordem especifica, estou adicionando conform meus estudos e leituras, as fontes que justificam e explicam a definição dos tipos de argumentos estão listadas no final do artigo.
 
 Poderia com certos argumentos demonstrar que se domina o discurso, que se faz uso da Dialética e aplica a retórica adequadamente? ou seria apenas mais uma pessoa que pouco se importa com o que está se fala, mas apenas se deleita com a possibilidade de vencer. A Dialética tem como base o dialogo entre ideias divergentes buscando assim chegar a novas ideias, como disse o objetivo é desenvolver o oposto chegando a um consenso e não se destruindo o que chamariam de oponente.
+
+### Argumentum ad antiquitatem
+
+_Argumentum ad antiquitatem_ ou _Apelo à Tradição_, é uma falácia que consiste em dar autoridade a algo como verdadeiro ou bom porque é antigo ou "sempre foi assim"
+
+### Argumentum_ad_novitatem
+
+É o oposto do _Argumentum ad Antiquitatem_
+
+### Argumentum ad Temperatiam
+
+_Argumentum ad temperantiam_ consiste em afirmar que o meio-termo entre duas propostas é a melhor solução. Este argumento é normalmente evocado quando duas ideias opostas são defendidas por grupos de tamanho semelhante. A falha do argumento vem de pressupor que os extremos são necessariamente errados e que o meio-termo é verdadeiro.
+
+O Consenso pode vir o lado positivo desta falacia, que leva aos opostos chegarem a um ponto comum por sua proposta.
+
+### Argumentum ad metum
+
+_Argumentum ad Metum_ ou seja argumentação pelo medo ou pelo uso do medo. Quando o interlocutor ameaça ou de alguma informa impõem pedo por reações ou intonações, ou mesmo com o uso de outras forças locais. Prática muito comum por religiosos em geral para consolidar seus argumentos de suas fés.
+
+### Argumentum ad baculum
+
+Quando se argumenta na base no medo ou na autoridade, portanto pode ser similar ao _Argumentum ad Metum_ ou _Argumentum ad Crumenam_.
+
+Tal argumentação pode se estabelecer também por meios não falaciosos como o uso de regras e leis, impondo assim condições.
+
+Também amplamente usado por religiosos, como por exemplo dizer que ao pegar se vai para o inferno é uma lei religiosa incontestável. Portanto, basta colocar qualquer ato ou pensamento como pecado diante da religião base do interlocutor.
+
+### Argumentum ad lapidem 
+
+Falácia lógica que desqualifica uma afirmação acusando-a de ser absurda sem, no entanto, dar uma explicação, é um falácia do tipo _Ad Hominem_.
+
+### Argumentum ex silentio
+
+É um tipo de argumentação que se baseia na ausência de fatos que comprovem uma determinada ocorrência, assim se coloca em dúvida que uma certa afirmação seja verdadeira se silenciando diante da sua exposição. Quanto se trata de fatos históricos pode ser válida para colocar em xeque o fato, porém eu particularmente vejo como perigoso o uso de tal técnica, que não pode ser chamada de falácia, já que o silêncio pode também ser considerado como concordância com quem se fala.
+
 
 ### Ad Crumenam
 
@@ -98,6 +133,16 @@ Ocorre quando se acolhe, como premissa, a conclusão desejada, formando um ciclo
 Supor que a parte de um todo o faz valido para o que se deseja defender, prática também muito comumente usada em pregações evangélicas, quando se pega partes de textos para se formar uma nova argumentação de defesa de uma proposição.
 
 ### Credencialismo
+
+## Complexo do pombo enxadrista
+
+Tal complexo surgiu em maior evidência nos debates politicos em especial com extremistas que poderiamos dizer "chutam o balde" quando se discute um tema que se torna muito político, assim o debate se termina com uma das partes passando as agreções, aplicando por exemplo _Argumenta ad Hominem_ e similares.
+
+## “Les extrêmes se touchent
+
+Também conhecido como Teoria da Ferradura, é definida simplesmente pelo fato de grupos e opiniões extremas, por mais opostas que se pareçam tem similares que as colocam muito mais próximos um do outro que se possa imaginar.
+
+O primeiro uso do termo na ciência política parece ter sido usado por Jean-Pierre Faye, em seu livro de 2002, _Le Siècle des idéologies_. Outros atribuem a teoria a Seymour Martin Lipset, Daniel Bell ou a “escola pluralista”. A teoria as vezes têm sido denominada como “Les extrêmes se touchent” (“Os extremos se tocam”).
 
 ## Falácias categorizadas
 
@@ -185,11 +230,6 @@ Abaixo listo por categórias as falacias identificadas pela filosofia, esta list
 * Definição circular
 * Definição contraditória
 
-### Noções de lógica proposicional
-
-* Operadores proposicionais
-* Proposição
-* Tabela de verdade
 
 ## Fontes
 
@@ -198,3 +238,4 @@ Abaixo listo por categórias as falacias identificadas pela filosofia, esta list
 * http://sofos.wikidot.com/reductio-ad-hitlerum
 * https://observador.pt/opiniao/reductio-ad-hitlerum/
 * Stephen Downes. Guia das Falácias Lógicas do Stephen, Universidade de Alberta, Canadá. endereço: http://www.onegoodmove.org/fallacy/welcome.htm.
+* https://pt.wikipedia.org/wiki/Teoria_da_ferradura
