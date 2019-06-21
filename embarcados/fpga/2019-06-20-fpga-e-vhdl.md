@@ -11,8 +11,8 @@ feature:
  category: true
  index: true
 image:
- feature: emabarcos/fpga/de0-nano.jpg
- teaser: emabarcos/fpga/de0-nano.jpg
+ feature: embarcados/fpga/de0-nano/de0-nano.jpg
+ teaser: embarcados/fpga/de0-nano/de0-nano.jpg
 ads: 
  show: true
 tagcloud: true
