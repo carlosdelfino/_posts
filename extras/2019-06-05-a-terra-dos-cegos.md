@@ -26,7 +26,7 @@ Assim começa o conto que foi baseado numa postagem que recebi de um colega em u
 
 ![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-1-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"}
 The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939
-{: .image-center .wrap}
+{: .wrap .image-center}
 
 O Conto foi obitido no site [Português Deficiência Visual](http://www.deficienciavisual.pt/r-TerradosCegos-HGWells.htm)
 
@@ -92,8 +92,7 @@ O tecido dos seus casacos, reparou Nunez, era modelado curiosamente, cada um com
 
 ![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-2-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"} 
 The Country of the Blind - H. G. Wells xilogravura de Clifford Webb para a versão de 1939 
-{: .image-center .wrap}
-
+{: .wrap .image-center}
 
 "Venha cá" , disse o terceiro cego, seguindo o movimento de Nunez e agarrando-o.
 
@@ -307,8 +306,7 @@ Foi procurá-la um dia quando ela estava sentada ao luar, fiando.
 
 ![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-3-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"}
 The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939
-{: .image-center .wrap}
-
+{: .wrap .image-center}
 
 A lua convertia-a num objecto de prata e de mistério. Ele sentou-se aos pés dela e disse-lhe que a amava, e disse-lhe quão linda a achava. Tinha a voz de um amante, falava com uma terna reverência que se aproximava da adoração, e ela nunca tinha sido antes tocada com adoração. Ela não lhe deu nenhuma resposta definida, mas ficou claro que as suas palavras lhe agradavam.
 
@@ -442,7 +440,7 @@ FIM
 
 ![Herbert George Wells ](/images/perfil/Herbert-George-Wells.jpg)
 Herbert George Wells
-{: .image-center .wrap}
+{: .wrap .image-center}
 
 Herbert George Wells nasceu em Bromley, na Inglaterra. Em 1895, publicou A Máquina de Tempo, sobre um homem que viajava para o futuro. O livro foi um enorme sucesso; em seguida publicou A Ilha de Dr. Moreau (1895), O Homem Invisível (1897), e talvez o seu mais popular romance - A Guerra dos Mundos (1898). A partir daí, ganhou reputação como um pioneiro da ficção científica.
 
