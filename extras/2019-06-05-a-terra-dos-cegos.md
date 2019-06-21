@@ -1,6 +1,6 @@
 ---
 title: A Terra dos Cegos - H. G. Wells - 1904
-tags: [Contos, Em Terra de Cegos quem tem um olho é rei, rei, cegos, H. G. Wells, 1904]
+tags: [Contos, terra, cego, cegos, terras, olho, cegos, H. G. Wells, 1904]
 categories: [pensamentos]
 layout: article
 share: true
@@ -24,10 +24,11 @@ A mais de trezentas milhas do Chimborazo, e a cem das neves do Cotopaxi, no terr
 
 Assim começa o conto que foi baseado numa postagem que recebi de um colega em um grupo de política onde fazia uso do conto para tentar exemplificar como seria discutir com um grupo de direita que apoia Bolsonaro, procure informações ssobre o conto, que nunca ouvi falar, com isso percebi que até parece de certa forma injusto tal comparação, segue logo abaixo o texto utilizado para tal comparação e a seguir o conto criado por H. G. Wells em 1904, o texto do conto está em Português de Portugal.
 
-| ![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-1-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"} |
-| The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939|
+![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-1-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"}
+The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939
+{: .image-center .wrap}
 
-O Conto foi obitido no site [Português Deficiencia Visual](http://www.deficienciavisual.pt/r-TerradosCegos-HGWells.htm)
+O Conto foi obitido no site [Português Deficiência Visual](http://www.deficienciavisual.pt/r-TerradosCegos-HGWells.htm)
 
 > Existe um conto chamado "Terra de Cegos", do autor H.G. Wells. Nele um homem com a visão normal chega a uma terra de cegos, e, diferente do ditado, ele não "reina" por lá, mas é tomado por todos como um homem que sofre alucinações. Após um tempo ele acaba se adaptando aquela sociedade e se resignando, até que as pessoas concluem que para ele ficar perfeitamente integrado é preciso livrá-lo daquelas alucinações, arrancando-lhes os olhos.
 > 
@@ -89,8 +90,10 @@ E muito cortesmente cumprimentou-os. Falou-lhes utilizando os olhos.
 
 O tecido dos seus casacos, reparou Nunez, era modelado curiosamente, cada um com um tipo diferente de costura. De repente, fizeram um movimento simultâneo na sua direcção, cada um com uma mão estendida e assustaram-no.  Diante do avanço desses dedos abertos, ele recuou.
 
-| ![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-2-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"} |
-| The Country of the Blind - H. G. Wells xilogravura de Clifford Webb para a versão de 1939 |
+![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-2-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"} 
+The Country of the Blind - H. G. Wells xilogravura de Clifford Webb para a versão de 1939 
+{: .image-center .wrap}
+
 
 "Venha cá" , disse o terceiro cego, seguindo o movimento de Nunez e agarrando-o.
 
@@ -302,8 +305,9 @@ Tentou falar-lhe.
 
 Foi procurá-la um dia quando ela estava sentada ao luar, fiando.
 
-| ![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-3-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"}  |
-| The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939 |
+![The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939](/images/extra/em-terra-de-cego/Country_Blind-3-xilog-Clifford_Webb-ed1939.jpg){:class="img-responsive"}
+The Country of the Blind - H. G. Wells - xilogravura de Clifford Webb para a versão de 1939
+{: .image-center .wrap}
 
 
 A lua convertia-a num objecto de prata e de mistério. Ele sentou-se aos pés dela e disse-lhe que a amava, e disse-lhe quão linda a achava. Tinha a voz de um amante, falava com uma terna reverência que se aproximava da adoração, e ela nunca tinha sido antes tocada com adoração. Ela não lhe deu nenhuma resposta definida, mas ficou claro que as suas palavras lhe agradavam.
@@ -437,7 +441,9 @@ FIM
 ## Autor
 
 ![Herbert George Wells ](/images/perfil/Herbert-George-Wells.jpg)
- 
+Herbert George Wells
+{: .image-center .wrap}
+
 Herbert George Wells nasceu em Bromley, na Inglaterra. Em 1895, publicou A Máquina de Tempo, sobre um homem que viajava para o futuro. O livro foi um enorme sucesso; em seguida publicou A Ilha de Dr. Moreau (1895), O Homem Invisível (1897), e talvez o seu mais popular romance - A Guerra dos Mundos (1898). A partir daí, ganhou reputação como um pioneiro da ficção científica.
 
 O conto 'A Terra de Cegos' foi publicado pela 1.ª vez na [Revista Strand](http://en.wikipedia.org/wiki/Strand_Magazine) em 1904, saindo em livro, em 1911, incluido na colectânea "The Country of the Blind, and Other Stories". Quase 30 anos depois, Wells resolveu reescrever a história, dando-lhe um diferente desfecho. A nova história foi publicada pela The Golden Cockerel Press com o mesmo título - The Country of the Blind - em 1939.
