@@ -1,5 +1,5 @@
 ---
-title: Editando um velho Commit.
+title: Editando um velho Commit
 categories: [Series, Series Trabalhando com o Git]
 tags: [Series, GIT, Programação, Gestão, Controle de Versao, Commit]
 layout: article
@@ -17,12 +17,11 @@ image:
   teaser: frameworks/react_redux.png
 ---
 
-Quandas vezes após longos dias de trabalho, você descobriu que aquele commit realizado semana que passou está com um erro bem simples no código ou mesmo no texto descritivo do trabaho realizado? ai vc precisa voltar nele para fazer uma correção e evitar de gerar um novo commit para expor este erro e corrigi-lo sem problemas futuros?
+Quantas vezes após longos dias de trabalho, você descobriu que aquele commit realizado semana que passou está com um erro bem simples no código ou mesmo no texto descritivo do trabalho realizado? ai vc precisa voltar nele para fazer uma correção e evitar de gerar um novo commit para expor este erro e corrigi-lo sem problemas futuros?
 
 <!--more-->
 
-
-Bem hoje a solução é simples, mas quem usa o GIT a muito tempo, sabe que ouve épocas que não hávia solução, uma vez enviado o trabalho realizado para o repositório não havia como resupera-lo para edição, a não ser criar um novo commit.
+Bem hoje a solução é simples, mas quem usa o GIT a muito tempo, sabe que ouve épocas que não hávia solução, uma vez enviado o trabalho realizado para o repositório não havia como recupera-lo para edição, a não ser criar um novo commit.
 
 E de certa forma isso é a ação correta, deve se evitar o máximo que possível a edição dos commits.
 
@@ -30,7 +29,7 @@ Mas erros acontecem e o amadurecimento do GIT agora nos permite não só sobrees
 
 Para isso basta usar o recurso de Rebase do GIT, assim identifique a quantos commits atrás está seu trabalho e vamos lá edita-los. Você pode também fazer referência direta a ele, mas vamos ver primeiro como editar uma sequência de commit que está lá atrás e corri-los.
 
-Supondo que nos 20 ultimos commits descobrimos que precisamos corrigir 5 deles, então fazemos o rebase dos últimos 20. veja o comando usa a chava `-i` para dizer ao git que é um processo interativo.
+Supondo que nos 20 últimos commits descobrimos que precisamos corrigir 5 deles, então fazemos o rebase dos últimos 20. veja o comando usa a chava `-i` para dizer ao git que é um processo interativo.
 
 ```shell
 meu-proj $ git rebase -i @~20
@@ -57,7 +56,7 @@ pick 370e3f7f migrando configurações para uso de novos plugins do jekyll
 pick fe26762f iremovido temporiamente
 '''
 
-Dos commits acima irei corrigir: o primeiro o terceiro, o quarto, nono e o decimo primeiro. Editando o arquivo ele fica assim: 
+Dos commits acima irei corrigir: o primeiro o terceiro, o quarto, nono e o decimo primeiro. Editando o arquivo ele fica assim:
 
 '''git
 edit b6676144 mais informações sobre velocidade do motor
@@ -80,7 +79,7 @@ pick fe26762f iremovido temporiamente
 
 Agora basta salvar e sair do seu editor.
 
-Para cada commit que será editado, ele irá apresetnar uma mensagem similar a que vemos abaixo:
+Para cada commit que será editado, ele irá apresentar uma mensagem similar a que vemos abaixo:
 
 '''shell
 Stopped at b6676144...  mais informações sobre velocidade do motor
@@ -95,13 +94,13 @@ Once you are satisfied with your changes, run
 
 Veja, no meu caso o código ```b6676144 representa o primeiro commit, é o hash do commit.
 
-O Git lhe instrui o que fazer, você pode editar tanto o código que está no seu diretório de trablaho quando adicionar novos aquivos a este commit, então ao finalizar vc addiona as alterações normalmente, e executa o commit adicionando a chamve de comando `--amend`, assim o Git irá reaproveitar o commit existente.
+O Git lhe instrui o que fazer, você pode editar tanto o código que está no seu diretório de trabalho quando adicionar novos aquivos a este commit, então ao finalizar você adiciona as alterações normalmente, e executa o commit adicionando a chave de comando `--amend`, assim o Git irá reaproveitar o commit existente.
 
-Ao finalizar a correção, vc usa o coamndo `git rebase --continue` para que ele continue a processar seu rebase até que finalize as orientadas dadas no aquivo de rebase que editamos no inicio do processo.
+Ao finalizar a correção, vc usa o comando `git rebase --continue` para que ele continue a processar seu rebase até que finalize as orientadas dadas no aquivo de rebase que editamos no inicio do processo.
 
-Caso não queira mais editar o commit basta continuar, se por qualquer motivo desejar destir do processo de `rebase`, basta usar o comando `git rebase --abort`.
+Caso não queira mais editar o commit basta continuar, se por qualquer motivo desejar desistir do processo de `rebase`, basta usar o comando `git rebase --abort`.
 
-Ao final do processo você receberá a mensagem: 
+Ao final do processo você receberá a mensagem:
 
 ```shell
 Successfully rebased and updated refs/heads/master.
@@ -119,7 +118,7 @@ Veja que é preciso colocar o sinal `^` no final do hash, para indicar que o reb
 
 Observe também que a ordem do arquivo está do commit mais atual para o mais antigo.
 
-## Enviando para o servidor de respositórios suas atualziações
+## Enviando para o servidor de respositórios suas atualizações
 
 Como você interviu em commits que podem já ter sido enviados para o servidor, você precisa sobreescrever o servidor, mas antes atualize seu repositório localmente com alguma mudança que possa ter sido realizada por seus amigos e colegas de trabalho no servidor, e então so ai force suas correções sobre o servidor com o comando:
 
@@ -127,6 +126,6 @@ Como você interviu em commits que podem já ter sido enviados para o servidor, 
 git push --force
 ```
 
-Isso irá apagar o servidor e sobrecreve-lo com seu novo repositório local.
+Isso irá apagar o servidor e sobreescreve-lo com seu novo repositório local.
 
 Boa sorte.
