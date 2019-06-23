@@ -3,7 +3,7 @@ layout: article
 title: "O Novo Código de Conduta do Linux"
 date: "2018-09-27 05:00:00 -0300"
 tags: [Código de Conduta, Linux, Código de Conflitos, Bulling]
-categories: [extra, linux]
+categories: [pensamentos, codigo de conduta]
 share: true
 toc: true
 comments: true
