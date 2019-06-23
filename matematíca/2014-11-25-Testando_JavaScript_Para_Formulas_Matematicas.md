@@ -1,11 +1,11 @@
 ---
-redirect_from: "/basicaodaeletronica/Testando_JavaScript_Para_Formulas_Matematicas/"
+redirect_from: 
+ - /extras/Testando_JavaScript_Para_Formulas_Matematicas/
+ - /basicaodaeletronica/Testando_JavaScript_Para_Formulas_Matematicas/
 title: Testando JavaScript para uso com formulas Matemáticas
-excerpt: Sempre que estamos apresentando material técnico de eletrônica e até mesmo programaçào, precisamos de fórmulas para apresentar funcionamento de circuitos ou alguns tipos de algoritmos.
-categories: [extras]
-tags: [Latex, matemática, fórmulas]
+categories: [Matemática]
 layout: article
-tags: [jumpers, conexões, eletrônica básica, estilete, protoboard, breadboard, circuitos, protótipos, Matemática, Fórmulas]
+tags: [Latex, matemática, fórmulas, MathJax, JavaScript]
 comment: true
 share: true
 feature:
@@ -20,6 +20,9 @@ image:
    teaser: /extra/ensino_de_matematica_com_contexto_e_aplicacoes-400x267.jpg
    feature: /extra/formulas_matematicas-1200x778.jpg
 ---
+Sempre que estamos apresentando material técnico de eletrônica e até mesmo programação, precisamos de fórmulas para apresentar funcionamento de circuitos ou alguns tipos de algoritmos.
+
+<!--more-->
 
 Abaixo um exemplo de como usar o MathJax para rederizar formulas matemáticas tipo <pre>(1/x^{2})</pre>, e o resultado:
 
