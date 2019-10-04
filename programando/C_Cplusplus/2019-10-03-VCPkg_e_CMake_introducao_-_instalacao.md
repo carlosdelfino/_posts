@@ -1,6 +1,6 @@
 ---
 title: Introdução ao VCPkg e CMake - Instalação
-tags: [C, C++, Compilação, Biblioteca, CMake, CLang, VCPkg, Linux, Windows, MacOS, Instalação]
+tags: [Instalação, C, C++, Compilação, Biblioteca, CMake, CLang, VCPkg, Linux, Windows, MacOS, Instalação]
 categories: [programacao, ccplusplus]
 layout: article
 share: true
@@ -35,15 +35,30 @@ A instalação do VCPkg é bem simples, e bem ao estilo "programador", já que u
 
 Primeiro certifique-se que o Visual Studio em sua ultima versão esteja bem instalado conforme instruções da Microsoft, Você pode usar a partir da versão 2015 Update 3.
 
-O pacote **"Ferramentas de Build do C++"** e o Pacote de Idiomas "Inglês" deve estar instalado, observei que ao fazer a atualização do Visual Estúdio depois de instalado, o VCPkg pode vir a se queixar da ausência do pacote de Idiomas, isso não causa problemas, eu não identifiquei como remover tal mensagem de alerta. Ao selecionar as Ferramentas de Build o C++ certifique-se que o SDK do Windows, o CMAke e CLang estejam selecionados e sejam instalados corretamente.
+O Pacote de Idiomas "Inglês" deve estar instalado, observei que ao fazer a atualização do Visual Estúdio depois de instalado o **"Ferramentas de Build do C++"**, o VCPkg pode vir a se queixar da ausência do pacote de Idiomas, certifique-se que ambos estão completos, portanto tome cuidado para não confundir.
 
-Por hora não irei entrar em detalhes quanto a preparação do ambiente e a instalação das ferramentas C e C++ já que não há nada de especial para uso com o VCPkg, seja no Windows, Linux ou MacOS, mas futuramente escreverei algo usando o Linux.
+Certifique-se que os seguintes pacotes foram instalados nas suas versões atuais:
 
-Você precisa também que o Git e o CMake estejam instalados, o CMake deve ser a partir da versão 3.12.4.
+* MSVC bibliotecas com mitigação de espectro do VS 2019 C++ x64/x86
+* MSVC ferramentas de build do VS 2019 C++ x64/x86
+* SDK do Windows 10
+* MFC do C++ para ferramentas de build e relacionados (x86 e x64)
+* ATL do C++ para ferramentas de build e relacionados (x86 e x64)
+* Recursos principais do C++
+* Runtime do Windows Universal
+* Ferramentas do CMake do C++ para Windows
+* C++ Clang-cl para ferramentas de Build (x64/x86)
+* Compilador do C++ Clang para Windows
+
+Por hora não irei entrar em detalhes avançados quanto a preparação do ambiente, incluindo parametrização, e a instalação das ferramentas C e C++ já que não há nada de especial para uso com o VCPkg, seja no Windows, Linux ou MacOS, mas futuramente escreverei algo usando o Linux e outros detalhes especiais quanto a pacotes que exigem cuidados especiais.
+
+Você precisa também que o Git, CMake e Clang estejam instalados, o CMake deve ser a partir da versão 3.12.4.
 
 Vamos então a instalação do VCPkg, é preciso que você faça o clone do repositório disponível no GitHub, usarei meu Fork, mesmo não tendo contribuição alguma apenas para manutenção da URLs usadas.
 
 Os comandos abaixo serão apresentados como sendo Windows, as variações para Linux e MacOS são simples, no caso de um arquivo `.bat` use a extensão `.sh` para tais. É importante observar que estou usando o PowerShell no Windows.
+
+Atenção evite paths (estruturas de diretórios) longas, o ideal é instalar em diretório na raiz do sistema. casa seja necessário usar paths longos veja como usar o [comando Subst](https://docs.microsoft.com/pt-br/windows-server/administration/windows-commands/subst) para direcionar para um drive virtual.
 
 ``` PowerShell
 > git clone https://github.com/Microsoft/vcpkg.git
@@ -52,7 +67,7 @@ Os comandos abaixo serão apresentados como sendo Windows, as variações para L
 > .\bootstrap-vcpkg.bat
 ```
 
-O processo de compilação e preparação do VCPkg pode levar um tempo, certifique-se que tudo correu bem sem nenhuma mensagem de erro. O resultado será uma tela similar a baixo:
+O processo de compilação e preparação do VCPkg pode levar um tempo, certifique-se que tudo correu bem sem nenhuma mensagem de erro. O resultado será similar ao explicado abaixo:
 
 ![Inicio da execução do VCPkg Bootstrap](/images/programacao/ccplusplus/vcpkg/vcpkg-bootstrap-1.png)
 
@@ -81,7 +96,15 @@ O primeiro torna disponível a todos os usuários do MSBuild C++ as bibliotecas 
 
 Já o segundo adiciona ao PowerShell a habilidade de autocompletar para o VCPkg.
 
-## Instalando um pacote
+### Múltiplas Instalações e Personalizações
+
+Você pode manter várias instalações do VCPkg, elas são chamadas instâncias, para isso basta clonar o repositório em diretórios diferentes conforme os projetos que você estiver trabalhando, evitando assim sobrecarregar sua lista de pacotes instalados. Cada instância não interfere na outras já que o VCPkg não interfere no path nem no registro ou variáveis.
+
+Você pode usar a chave de comando `--vcpkg-root` apontando o diretório de referência do vcpkg para armazenar downloads e bibliotecas. Neste nível de uso do VCPkg é melhor fazer um novo clone para cada projeto e não coloque o vcpkg no path para evitar erros de referência.
+
+Além disso você também pode personalizar o VCPkg para suas necessidades, mas não irei tratar sobre tais possibilidades por hora, deixarei isso para um artigo futuro.
+
+## Instalando pacotes
 
 Para finalizar esta primeira parte de nosso pequeno tutorial, vamos instalar um pacote, usaremos como exemplo o OpenCV que nos grandes possibilidades de uso, somente na próxima publicação desta série é que iremos ver como usar o OpenCV com o VCPkg, neste momento veremos apenas como instala-lo.
 
@@ -102,10 +125,10 @@ Dos pacotes listados iremos selecionar os seguintes pacotes:
 * opencv4[jpeg]
 * opencv4[qt]
 
-Assim temos uma coleção interessante de pacotes a serem instalados, para instala-los use o comando:
+Assim temos uma coleção interessante de pacotes a serem instalados, em fim use o comando:
 
 ``` PowerShell
-.\vcpkg install opencv4 opencv4[contrib] opencv4[ffmpeg] opencv4[png] opencv4[jpeg] opencv4[qt]
+.\vcpkg install opencv4 opencv4[contrib, ffmpeg, png, jpeg, qt]
 ```
 
 Veja que ao começar a instalação, o vcpkg primeiro identifica as dependências necessárias e então lista todos os pacotes que serão instalados:
@@ -119,13 +142,23 @@ Durante o inicio do download, por ser a primeira vez que utilizamos o VCPkg e se
 
 ![Downloads dos Pacotes de apoios](/images/programacao/ccplusplus/vcpkg/vcpkg-install-opencv4-downloads-1.png)
 
-E em seguida são feitos os downloads de cada pacote e a compilação para o seu ambiente de desenvolvimento, veja que ao iniciar o ambiente de compilação, pode haver uma mensagem de aviso se queixando da falta do pacote de idiomas como citei logo no inicio, isso não irá causar problemas. Não tenha pressa esta instalação irá demorar algumas horas, isso mesmo algumas horas, mas valerá a pena. (Vou aproveitar para preparar o próximo tutorial.)
+E em seguida são feitos os downloads de cada pacote e a compilação para o seu ambiente de desenvolvimento, veja que  pode haver uma mensagem de aviso se queixando da falta do pacote de idiomas, como citei logo no inicio, isso não irá causar problemas. Não tenha pressa, esta instalação irá demorar algumas horas, isso mesmo algumas horas, mas valerá a pena. (Vou aproveitar para preparar o próximo tutorial.)
+
+O motivo da demora é devido a compilação de um pacote bastante complexo, por isso o escolhi, diante de sua  complexidade percebi-se fácilmente a utilidade do VCPkg.
+
+O VCPkg prepara todo o pacote aplicando paths e ajustados as dependências na ordem necessária para que se tenha sucesso na compilação reduzindo imensamente o trabalho do desenvolvedor, permitindo que foque no código exclusivamente. Abaixo veja durante o processo a aplicação de paths:
+
+![Paths sendo aplicados](/images/programacao/ccplusplus/vcpkg/vcpkg-install-opencv4-paths-1.png)
+
+Outro fato interessante a ser observado éq ue fizemos a instalação de diversos pacotes deliberadamente, o que aumenta progressívamente o tempo já que envolve maior complexidade de dependências. Isso também torna mais complexo o entendimento das configurações que o próprio vcpkg propõem ao térmmino, como pode ser visto parcialmente na imagem abaixo.
+
+![Lista de configurações que devem ser adicionadas ao seu projeto para uso das bibliotecas preparadas](/images/programacao/ccplusplus/vcpkg/vcpkg-install-opencv4-config-1.png)
 
 Agora vamos novamente listar os pacotes que foram instalados e teremos a seguinte saída:
 
 ![Listando pacotes instalados no VCPkg](/images/programacao/ccplusplus/vcpkg/vcpkg-list-2.png)
 
-## Arquitetura
+## Arquiteturas
 
 Quando instalamos um pacote o VCPkg instala o pacote padrão disponível que para Windows 32 bits, isso é visto no momento que o pacote é preparado, veja na lista acima que os pacotes tiveram seu nome pos-fixados com `:x86-Windows`.
 
@@ -135,7 +168,17 @@ Para baixar e preparar pacotes para outras arquiteturas como Windows 64 bits, ba
 > .\vcpkg install opencv4:x64-windows
 ```
 
-Ao listar os pacotes instalados, verá os pacotes listados cada um para a arquitetura indentificada.
+Ao listar os pacotes instalados, verá os pacotes listados cada um para a arquitetura identificada.
+
+Você pode também usar a chave de comando --triplet para informar uma arquitetura padrão para todos os pacotes que serão instalados, assim para uma lista de pacotes a ser instalado basta adicionar a chave indicando a arquitetura padrão dos que não pos-fixados.
+
+```PowerShell
+> .\vcpkg install opencv4 sqlite3 zlib:x86-windows --triplet x64-windows
+```
+
+O comando acima irá instalar todos os pacotes como sendo para a arquitetura x64-windows, menos o pacote zlib que foi pós fixado para que seja instalado a versão x86-windows.
+
+Num artigo especifico veremos detalhes sobre como criar configurações especificas para arquiteturas, tais configurações são chamadas de "Tripleto" e estão na pasta de nome `triplet` do VCPkg
 
 ## Atualizando
 
@@ -145,6 +188,21 @@ Para atualiza-lo basta voltar a pasta do repositório e atualizado com o comando
 
 Em seguida você deve atualizar os pacotes, executando o comando `.\vcpkg update` mantendo-se na pasta do repositório.
 
+## Upgrade de pacotes
+
+Os pacotes instalados podem ser atualizados com o comando `upgrade --no-dry-run`, que permite alguns parametros bem úteis descrito abaixo:
+
+* --no-dry-run *se não for informado apenas lista os pacotes a serem atualizados.*
+* --keep-going *Continua a atualização dos pacotes, mesmo se um falhar.*
+* --triplet <t> *Informa o tripleto a ser usado (Arquitetura) para os pacotes que não foram informados pos-fixados*
+* --vcpkg-root <path> *Especifica o diretório de instalação do vcpkg a ser usado em vez do diretório atual ou do diretório da ferramenta*
+
+## Remoção de pacotes e do VCPkg
+
+A remoção de qualquer pacote de biblioteca pode ser feito através do comando `remove`, assim basta digitar `./vcpkg remove sqlite3` para remover o pacote de nome *sqlite3*
+
+
 ## Referências
 
 * [Documentação do VCPkg](https://vcpkg.readthedocs.io/en/latest/)
+* [Solução para problemas de compilação do QT5-base](https://github.com/microsoft/vcpkg/issues/6833)
