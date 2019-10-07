@@ -170,7 +170,7 @@ Observe que o build final é feito dentro do diretório que foi populado pelo co
 
 Agora vamos o que conseguimos, para isso veja se foi criado um diretório chamado `Debug` dentro do diretório de cache do build, no caso seria `o:\build\Debug`, lá você verá que o cmake compilou e gerou tanto o seu executável como as dlls necessárias para o perfeito funcionamento do aplicativo no windows. Inclusive os arquivos com assinaturas para depuração.
 
-No futuro iremos ver mais detalhes para compilarmos a aplicação para distribuição final.
+No futuro veremos mais detalhes para compilarmos a aplicação para distribuição final.
 
 Vamos então executar a aplicação, para isso basta chamar o executável criado na pasta `Debug`, que deve ser `main.exe` conforme nossa parametrização no arquivo `CMakeList.txt`.
 
