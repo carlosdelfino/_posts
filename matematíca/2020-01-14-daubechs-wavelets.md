@@ -1,6 +1,6 @@
 ---
 title: Daubechs Wavelet
-tags: [Wavelet, Haar, Daubechies ]
+tags: [Wavelet, Haar, Daubechies, Biorthogonal]
 categories: [Matematica, Wavelets]
 layout: article
 share: true
@@ -16,12 +16,13 @@ image:
    teaser: matematica/wavelets/wavelets.jpg
    feature: matematica/wavelets/wavelets.jpg
 math: true
+images:
+  dir: /images/matematica/wavelets/
 ---
 
 Ingrid Daubechies, criou o que é chamado de _*"Wavelets Ortogonais Compactadamente Suportados"*_ tornando assim a analise discreta viável.
 
 <!--more-->
-
 
 Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.
 {: .notice-warning}
