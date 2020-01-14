@@ -1,6 +1,6 @@
 ---
 title: Introdução aos Wavelets
-tags: [Wavelet, Haar, Daubechies, Biorthogonal]
+tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer]
 categories: [Matematica, Wavelets]
 layout: article
 share: true
@@ -83,8 +83,57 @@ Os Wavelets de Daubechies são nomeados usando duas letras e um número que defi
 Este típo de wavelet é importante para reconstruções de sinais e imagens, ela apresenta a propriedade de phases lineares. São usados dois wavelets, um para decomposição (o lado esquerdo) e o outro para reconstrução (o lado direito), ao invés de usar simplesmente um.
 
 <figure class="image">
-  <img src="{{site.url}}/{page.images.dir}}/ch01_intro62-Biorthogonal.gif" alt="Biorthogonal Wavelets" >
-  <figcaption>[Biorthogonal Wavelets]({{site.url}}/{%post_url 2020-01-14-biorthogonal-wavelets %})</figcaption>
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_intro62-Biorthogonal.gif" alt="Biorthogonal Wavelets" >
+  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-biorthogonal-wavelets %}">Biorthogonal Wavelets</a></figcaption>
+</figure>
+
+## Coiflets Wavelets
+
+Construído por I. Daubechies por solicitação de R. Coifman. Esta função wavelet tem `2N` momentos igual a 0 e a função de escalonamento tem `2N-1` momentos iguais a 0. As duas funções tem um suporte de comprimento `6N-1`.
+
+<figure class="image">
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_intro2-Coiflets.gif" alt="Coiflets Wavelets" >
+  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-coiflets-wavelets %}">Coiflets Wavelets</a></figcaption>
+</figure>
+
+## Symlets
+
+Os Symlets são wavelets aproximadamente simétricos propostos por I. Daubechies como modificação da familia **db**. As propriedades dos wavelets são similares entre as famílias.
+
+<figure class="image">
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_introa-Symlets.gif" alt="Symlets Wavelets" >
+  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-symlets-wavelets %}">Symlets Wavelets</a></figcaption>
+</figure>
+
+
+## Morlet
+
+<figure class="image">
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_intro3-morlet.gif" alt="Morlet Wavelets" >
+  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-morlet-wavelets %}">Morlet Wavelets</a></figcaption>
+</figure>
+
+## Mexican Hat
+
+This wavelet has no scaling function and is derived from a function that is proportional to the second derivative function of the Gaussian probability density function. It is also knows as the Ricker wavelet.
+
+<figure class="image">
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_intro5-Mexican Hat.gif" alt="Mexican Hat Wavelets" >
+  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-mexican_hat-wavelets %}">Mexican Hat Wavelets</a></figcaption>
+</figure>
+
+
+You can obtain a survey of the main properties of this family by typing waveinfo('mexh') from the MATLAB command line. See Mexican Hat Wavelet: mexh in the Wavelet Toolbox User's Guide for more information.
+
+## Meyer Wavelets
+
+The Meyer wavelet and scaling function are defined in the frequency domain.
+
+You can obtain a survey of the main properties of this family by typing waveinfo('meyer') from the MATLAB command line. See Meyer Wavelet: meyr in the Wavelet Toolbox User's Guide for more detail.
+
+<figure class="image">
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_intro15-Meyer.gif" alt="Meyer Wavelets" >
+  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-meyer-wavelets %}">Meyer Wavelets</a></figcaption>
 </figure>
 
 ## Outros Wavelets Reais

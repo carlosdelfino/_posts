@@ -1,6 +1,6 @@
 ---
 title: Biorthogonal Wavelet
-tags: [Wavelet, Haar, Daubechies, Biorthogonal]
+tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer]
 categories: [Matematica, Wavelets]
 layout: article
 share: true
@@ -20,7 +20,8 @@ images:
   dir: /images/matematica/wavelets/
 ---
 
-Este típo de wavelet é importante para reconstruções de sinais e imagens, ela apresenta a propriedade de phases lineares. 
+Este típo de wavelet é importante para reconstruções de sinais e imagens, ela apresenta a propriedade de phases lineares.
+
 <!--more-->
 
 São usados dois wavelets, um para decomposição (o lado esquerdo) e o outro para reconstrução (o lado direito), ao invés de usar simplesmente um.
