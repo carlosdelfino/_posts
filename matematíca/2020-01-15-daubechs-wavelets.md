@@ -32,8 +32,8 @@ Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.
 O aprendizado sobre Wavelets devem começar pelo Haar Wavelet, que é um modelo simples, descontinuo e similar a uma função "step", veja na imagem abaixo obtido no site do MathLab, como muitas utilizadas neste artigo.
 
 <figure class="image">
-   <a href="{{site.url}}/{%post_url 2020-01-14-daubechs-wavelets %}"> <img src="{{site.url}}/{{page.images.dir}}/ch01_intro36-daubechs.gif" alt="Daubechs Wavelets" ></a>
-   <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-daubechs-wavelets %}" alt="Daubechies Wavelets">Daubechies Wavelets</a></figcaption>
+   <a href="{{site.url}}/{%post_url 2020-01-15-daubechs-wavelets %}"> <img src="{{site.url}}/{{page.images.dir}}/ch01_intro36-daubechs.gif" alt="Daubechs Wavelets" ></a>
+   <figcaption><a href="{{site.url}}/{%post_url 2020-01-15-daubechs-wavelets %}" alt="Daubechies Wavelets">Daubechies Wavelets</a></figcaption>
 </figure>
 
 O Wavelet Haar é também citado como sendo o primeiro modelo do [Wavelet Daubechies (db1)](@daubechies-wavelets).

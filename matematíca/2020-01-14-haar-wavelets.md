@@ -1,5 +1,5 @@
 ---
-title: Biorthogonal Wavelet
+title: Haar Wavelet
 tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer]
 categories: [Matematica, Wavelets]
 layout: article
@@ -19,18 +19,20 @@ math: true
 images:
   dir: /images/matematica/wavelets/
 ---
-
-Este típo de wavelet é importante para reconstruções de sinais e imagens, ela apresenta a propriedade de phases lineares.
+Haar Wavelets, o Wavelet base!
 
 <!--more-->
-
-São usados dois wavelets, um para decomposição (o lado esquerdo) e o outro para reconstrução (o lado direito), ao invés de usar simplesmente um.
-
 
 Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.
 {: .notice-warning}
 
+## Haar Wavelets
+
+O aprendizado sobre Wavelets devem começar pelo Haar Wavelet, que é um modelo simples, descontinuo e similar a uma função "step", veja na imagem abaixo obtido no site do MathLab, como muitas utilizadas neste artigo.
+
 <figure class="image">
-  <img src="{{site.url}}/{page.images.url}}/ch01_intro62-Biorthogonal.gif" alt="Biorthogonal Wavelets" >
-  <figcaption>[Biorthogonal Wavelets]({{site.url}}/{%post_url 2020-01-14-biorthogonal-wavelets %})</figcaption>
+  <img src="{{site.url}}/{{page.images.dir}}/ch01_intro34-haar.gif" alt="Haar Wavelets" ></a>
+  <figcaption>Haar Wavelets</figcaption>
 </figure>
+
+O Wavelet Haar é também citado como sendo o primeiro modelo do [Wavelet Daubechies (db1)](@daubechies-wavelets).

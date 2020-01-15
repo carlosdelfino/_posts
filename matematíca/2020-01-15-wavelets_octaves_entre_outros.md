@@ -1,6 +1,6 @@
 ---
-title: Introdução aos Wavelets
-tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer]
+title: Wavelets no Octave, entre outros
+tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer, octave]
 categories: [Matematica, Wavelets]
 layout: article
 share: true
@@ -20,18 +20,11 @@ images:
   dir: /images/matematica/wavelets/
 ---
 
-Wavelets são formas de onda efetivamente limitadas num curto espaço de tempo, que tem uma média de valores entre zero e não zero.
+O Octave é uma excelente ferramenta para estudos da Matemática, e não fica atrás quanto aos Wavelets.
 
 <!--more-->
 
-Wavelets tendem a ser irregulares, não mantem uma recorrência como sinais senoidais ou composições de sinais senoidais, como proposto pelas Analises de Furrier. Porém, pode ser que algum sinal seja composto pela repetição de wavelets, o que pode gerar um pouco de confusão, mas vamos tentar entender um pouco isso abaixo.
-
-Bem, se você está procurando a Banda Wavelets, não iremos falar dela aqui, você pode obter [mais informações clicando aqui](http:/bit.ly/wavelets). Não poderia deixar de cita-la.
-
-No link [http://localhost:4000/wavelets/](http://localhost:4000/wavelets/) você vai encontrar todas as anotações que eu tenho feito sobre o tema.
-
-Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.
-{: .notice-warning}
+Veremos a abaixo como usar o Octave para estudar Wavelets, e também veremos outras ferramentas que foram sugeridas nos livros e papers que eu li.
 
 ## Preparando o Ambiente
 
@@ -57,10 +50,12 @@ Bem, instale ambos os programas, depois dentro do VSCode instale o plugin, não 
 
 Finalmente, precisamos instalar alguns _toolbox_ no Octave para trabalhar com Wavelets. Iremos inicialmente instalar o [**LTFAT - Larger Timer/Frequency Analise Tools**](https://octave.sourceforge.io/ltfat/index.html), um toolbox que pode ser usado tanto para pesquisas acadêmicas como profissionais.
 
-[Para mais detalhes sobre ferramentas clique aqui.]({{site.url}}/{% post_url 2020-01-15-wavelets_octaves_entre_outros %})
+## Listando os Wavelets disponíveis
+
+O Octave vem com diversos Wavelets já preprogramados que podem ser usados fácilmente, a função que representa as definições dos Wavelets são chamadas de **filterbank** e segue a seguinte nomenclatura: cada função é prefixada com `wfilt_`, seguido pelo nome abreviado e uma sequência numérica separada por `:`. Sendo assm para as Delbechs Wavelets o nome fica sendo `db10`, e a função se chama `wfilt_db`, sendo o primeiro argumento o número seguinte `wfilt_db(10)`
+
+Several formats of the basic filterbank definition w are recognized. One of them is a text string formed by a concatenation of a function name with the wfilt_ prefix followed by a list of numerical arguments delimited by :. For example 'db10' will result in a call to wfilt_db(10) or 'spline4:4' in call to wfilt_spline(4,4) etc. All filter defining functions can be listed by running dir([ltfatbasepath,filesep,'wavelets',filesep,'wfilt_*']); Please see help of the respective functions and follow references therein.
 
 ## Referências
 
-* [O que são Wavelets - (Inglês)](https://www.mathworks.com/help/wavelet/gs/what-is-a-wavelet.html)
-* [Introdução a família de Wavelets = Mathworks - (Inglês)](https://www.mathworks.com/help/wavelet/gs/introduction-to-the-wavelet-families.html)
-* [Video Aulas - Introdução a Wavelets - Mathworks - (Inglês)](https://www.youtube.com/playlist?list=PLn8PRpmsu08ojy02wi4QLVzELM545Xw3p)
+Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
