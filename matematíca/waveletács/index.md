@@ -2,13 +2,13 @@
 permalink: /wavelets/
 redirect_from: /matematica/wavelets/
 title: Wavelets
-tags: [matematica, wavelets]
+tags: wavelets
 layout: categorylist
 categories: [matematica, wavelets]
 share: true
 comments: true
 ads:
-  show: true
+  show: false
 image:
    teaser: matematica/wavelets/wavelets.jpg
    feature: matematica/wavelets/wavelets.jpg
@@ -18,5 +18,6 @@ Buscar informação em sinais analógicos é como procurar uma agulha num palhei
 
 <!--more-->
 
+[Para mais publicações que possam estar relacionadas com Wavelets, procure a Tag de mesmo nome clicando aqui]({{site.url}}tags/wavelets)
 
 Em Caso de dúvidas gentileza enviar e-mail para <a href="mailto:consultoria@carlosdelfino.eti.br">consultora@carlosdelfino.eti.br</a>.
