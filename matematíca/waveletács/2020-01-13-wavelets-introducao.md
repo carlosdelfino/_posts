@@ -28,14 +28,24 @@ Wavelets tendem a ser irregulares, não mantem uma recorrência como sinais seno
 
 Bem, se você está procurando a Banda Wavelets, não iremos falar dela aqui, você pode obter [mais informações clicando aqui](http:/bit.ly/wavelets). Não poderia deixar de cita-la.
 
-No link [http://localhost:4000/wavelets/](http://localhost:4000/wavelets/) você vai encontrar todas as anotações que eu tenho feito sobre o tema.
+Na categória [wavelets]({{site.url}}/wavelets/) você vai encontrar todas as anotações que eu tenho feito sobre o tema.
 
 Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.
 {: .notice-warning}
 
+## Motivação
+
+Meus estudos com Wavelets se deram em 2017 com a busca de um algoritmo para detecção e analise de sinais de ECG (Eletrocardiograma), eu precisava além de identificar a pulsação do coaração, identificar suas condições médicas através dos sinais obtidos, eu já tinha o sinal coletado com o BD101, um chip da SkyNet para coleta de ECG, porém precisava de mais detalhes, e com os dados puros (RAW) do ECG poderia fazer a analise, inicialmente pensei em usar Transformatas de Fourrier, mas me pareceu muito pesado e inadequado para o uso, apesar de muitos indica-la como sendo o caminho.
+
+Sim era o caminho, delas cheguei aos Wavelets, pequenas amostragens vetoriais e ortogonais que representam um formato de onda que desejo obter na amostragem, através do wavelets poderia procurar a "agulha no palheiro", ou seja aqueles pulsos que demonstram que algo está errado no coração, saber a taxa de pulsação do coração não seria suficiente, eu precisava saber de sua variabilidade e também a deformação de tais pulsos, além de a presença de outros pulsos que poderiam sugerir outras anormalidades.
+
+O Wevelets me pareceu ser o caminho, ele me ajudaria de forma discreta e com um algoritmo rápido achar pulsos fora do comum, mas parece que falta algo mais, e não só dominar o tema seria suficiente.
+
+Bem o projeto já não está mais sobre minha responsabilidade, mas minhas pesquisas continuam, e eu tenho buscado agora retomar os estudos especificamente sobre wavelets de forma geral, e entender sua aplicação e como construir novos algoritmos com base no contexto aplicado. 
+
 ## Preparando o Ambiente
 
-Para desenvolver tal estudo, eu precisei preparar minha estação de trabalho, inicialmente dois software estão sendo usados, o **Octave** e o **VScode**, o primeiro é uma ferramenta similar ao Mathlab que permite desenvolver scripts matemáticos, produzida pela projeto GNU é _Open Source_ e gratuita, muito útil para o estudo e avanço no domínio da matemática, o segundo talvez mais conhecido é uma IDE aberta produzida pela Microsoft que permite integrar plugins e ferramentas como o Octave, entre muitas outras. Para usar o Octave junto com o VScode usei o plugin disponível neste link](https://marketplace.visualstudio.com/items?itemName=toasty-technologies.octave)
+Para desenvolver tal estudo, eu precisei preparar minha estação de trabalho, inicialmente dois software estão sendo usados, o **Octave** e o **VScode**, o primeiro é uma ferramenta similar ao *Mathlab* que permite desenvolver scripts matemáticos, produzida pela projeto GNU é _Open Source_ e gratuita, muito útil para o estudo e avanço no domínio da matemática, o segundo talvez mais conhecido é uma IDE aberta produzida pela Microsoft que permite integrar plugins e ferramentas como o Octave, entre muitas outras. Para usar o Octave junto com o VScode usei o plugin disponível neste link](https://marketplace.visualstudio.com/items?itemName=toasty-technologies.octave)
 
 * [Clique aqui para baixar o Octave](https://www.gnu.org/software/octave/download.html)
 * [E aqui para obter o VSCode](https://code.visualstudio.com/download)
@@ -55,12 +65,49 @@ Bem, instale ambos os programas, depois dentro do VSCode instale o plugin, não 
   </figcaption>
 </figure>
 
-Finalmente, precisamos instalar alguns _toolbox_ no Octave para trabalhar com Wavelets. Iremos inicialmente instalar o [**LTFAT - Larger Timer/Frequency Analise Tools**](https://octave.sourceforge.io/ltfat/index.html), um toolbox que pode ser usado tanto para pesquisas acadêmicas como profissionais.
+Para darmos continuidade será preciso instalar alguns _toolbox_ no Octave. Iremos inicialmente instalar o [**Signal Processing**](https://octave.sourceforge.io/signal/index.html), este toolbox possui divresas funções que auxiliam em **DPS** e o [**LTFAT - Larger Timer/Frequency Analise Tools**](https://octave.sourceforge.io/ltfat/index.html), um toolbox que pode ser usado tanto para pesquisas acadêmicas como profissionais.
 
-[Para mais detalhes sobre ferramentas clique aqui.]({{site.url}}/{% post_url 2020-01-15-wavelets_octaves_entre_outros %})
+Para instalar ambos é muito simples abra o *Octave Cli*, e execute o seguinte comando:
+
+```
+pkg install signal ltfat
+```
+
+conforme o desempenho de sua estação de trabalho e de sua internet irá demorar alguns minutos e assim que terminar, correndo tudo bem, execute os seguintes comandos para ver uma Wavelet do tipo morlet:
+
+```
+pkg load signal
+
+lb = -4;
+ub = 4;
+n = 1000;
+[psi,xval] = morlet(lb,ub,n);
+plot(xval,psi,"linewidth",4)
+grid on
+```
+
+Os comandos acima executam o seguinte, primeiro carrega o toolbox *Signal Processing*. Declara três variáveis chamadas, lb, ub, n respectivamente, então chama a função `morlet` que irá gerar uma estrutura com os dados para reconstrução visual do [Wavelet do tipo Morlet]({{site.url}}{% post_url 2020-01-14-morlet-wavelets %}),, finalmente é chamado a função que irá plotar gráficamente o nosso Wavelet com o grid ligado no gráfico. (veja em referências onde obtive o exemplo.)
+
+Como pode ver se você já tem alguma noção de programação, é bastante intuitivo. Teremos o seguinte resultado:
+
+![Morlet Wavelet]({{site.url}}/images/matematica/wavelets/morlet-wavelets.png)
+
+[Para mais funções veja este link](https://octave.sourceforge.io/signal/overview.html).
+
+Vamos fazer mais um teste com o Wavelet Mexican Hat]({{site.url}}{% post_url 2020-01-14-mexican_hat-wavelets %}), basta mudarmos a função:
+
+```
+[psi,xval] = mexihat(lb,ub,n);
+plot(xval,psi,"linewidth",4)
+grid on
+```
+
+Então teremos o seguinte resultado:
+
+![Mexican Hat Wavelet]({{site.url}}/images/matematica/wavelets/mexican-hat-wavelets.png)
+
+[Para mais detalhes sobre ferramentas clique aqui.]({{site.url}}/{% post_url 2020-01-15-wavelets_octave_entre_outros %})
 
 ## Referências
 
-* [O que são Wavelets - (Inglês)](https://www.mathworks.com/help/wavelet/gs/what-is-a-wavelet.html)
-* [Introdução a família de Wavelets = Mathworks - (Inglês)](https://www.mathworks.com/help/wavelet/gs/introduction-to-the-wavelet-families.html)
-* [Video Aulas - Introdução a Wavelets - Mathworks - (Inglês)](https://www.youtube.com/playlist?list=PLn8PRpmsu08ojy02wi4QLVzELM545Xw3p)
+Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
