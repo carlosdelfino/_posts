@@ -25,10 +25,9 @@ Engenheiro eletricista e matemático francês
 
 Stéphane Georges Mallat Contribuiu com trabalhos fundamentais sobre Wavelets Transformation. Mallat estudou na École polytechnique e na [École nationale supérieure de Telecommunications]({{site.url}}{% post_url 2020-01-16-ecole-nationale-superieure-de-telecomunications%}) em Paris.
 
-Vim a conheçe-lo no livro [Wavelet tour of signal processing - The Sparse Way]({{site.url}}{% post_url 2020-01-16-wavelet_tour_of_sinal_processing_-_the_sparse_way %})
+Vim a conheçe-lo no livro [Wavelet tour of signal processing - The Sparse Way]({{site.url}}{% post_url 2020-01-16-a_wavelet_tour_of_sinal_processing_-_the_sparse_way %})
 
 <figure class="image">
    <img src="{{site.url}}/images/perfil/daubechies_ingrid3.jpg" alt="{{page.excerpt | strip_newlines | strip_html}}" >
    <figcaption>{{page.excerpt | strip_newlines | strip_html}}</figcaption>
 </figure>
-
