@@ -30,6 +30,8 @@ Listo aqui os links e referências a livros, textos e tutoriais em geral usados 
 * [Introdução a família de Wavelets = Mathworks - (Inglês)](https://www.mathworks.com/help/wavelet/gs/introduction-to-the-wavelet-families.html)
 * [Video Aulas - Introdução a Wavelets - Mathworks - (Inglês)](https://www.youtube.com/playlist?list=PLn8PRpmsu08ojy02wi4QLVzELM545Xw3p)
 * [wavelets for kids](http://www.gtwavelet.bme.gatech.edu/wp/kidsA.pdf)
+* [What is Wavelet and How We Use It for Data Science](https://towardsdatascience.com/what-is-wavelet-and-how-we-use-it-for-data-science-d19427699cef)
+* [Insight to the Fourier Transform and The Simple Implementation of It](https://towardsdatascience.com/insight-to-the-fourier-transform-and-the-simple-implementation-of-it-eee293317efd)
 
 ## Outras Referências
 

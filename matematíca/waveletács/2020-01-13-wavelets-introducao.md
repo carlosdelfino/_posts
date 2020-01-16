@@ -108,6 +108,14 @@ Então teremos o seguinte resultado:
 
 [Para mais detalhes sobre ferramentas clique aqui.]({{site.url}}/{% post_url 2020-01-15-wavelets_octave_entre_outros %})
 
+## Arbitrário
+
+> que não segue regras ou normas; que não tem fundamento lógico; que apenas depende da vontade ou arbítrio daquele que age.
+
+Wavelets são funções arbitrárias, ou seja você pode adotar a função que quiser para definir seu formato de onda, apenas é preciso se atendar para que seja uma representação real de uma janela de amostragem.
+
+Wavelets tem assim uma número infinito de transformações (Transformatas);
+
 ## Referências
 
 Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
