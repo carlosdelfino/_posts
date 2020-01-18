@@ -29,24 +29,34 @@ Para ver como a fórmula é escrita onde se usa o MathJax basta clicar com o bot
 
 ## escrevendo fórmulas
 
-Para escrever formulas na linha de texto, coloque a formula usando o formato Latex do Mathjax entre `$...$`. Já para exibir formulas mais complexas faça uma seção a parte usando dois `$$` como delimitador: `$$...$$`.
+Para escrever formulas na linha de texto, coloque a formula usando o formato Latex do Mathjax entre `$...$`. Já para exibir formulas mais complexas faça uma seção a parte usando dois `$$` como delimitador:
+
+```
+$$
+...
+$$
+```
 
 Por exemplo veja a mesma formula _em linha_ a seguir `$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$`: $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$ ou então digite assim `$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$` para exibir como abaixo:
 
-$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+$$
+\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}
+$$
 
 ## Lidando com conflitos com o Jekyll
 
 A forma mais simples de evitar conflitos com o jekyll é colocar tudo que for escrito entre as tags `\{\% raw \%\}` ... `\{\% endraw \%\}`, para que o conteúdo não seja interpretado.
 
-Vejamos, aqui nesta linha se eu escrevo `$|x|$`, ele interpreta a barra vertical como delimitador de colunas para uso em tabelas, causando problemas na formatação e deixando confuso o Mathjax e o Jekyll, portanto escreva da seguinte forma `\{\% raw \%\}` `$|x|$` `\{\% endraw \%\}` assim o resultado será o esperado {% raw %}$|x|${% endraw %}
+Porém eu testei e não funcionou no meu Jekyll, então ainda estou em busca da solução.
 
 ## Inserindo letras gregas
 
 *  `\alpha`, `\beta`, ..., `\omega`: $\alpha$, $\beta$, ... $\omega$.  veja que basta usar o nome da letra grega prefixado com barra invertida.
 * Se quiser a letra grega em maiúscula use `\Gamma`, `\Delta`, …, `\Omega`: $\Gamma, \Delta, …, \Omega$.
 
-## Supeescrito ou subescrito
+No artigo [Letras Gregas escrito em Agosto de 2016]({{site.url}}{% post_url 2016-08-11-letras-gregas %}), listo além de letras gregas muitos outros símbolos matemáticos.
+
+## Superescrito ou subescrito
 
 Para inserir  **superescrito e subescrito**, use o sinal de circunflexo `^` e traço baixo `_`.  por exemplo, `x_i^2`: $x_i^2$, `\log_2 x`: $\log_2 x$.
 
@@ -78,19 +88,25 @@ Se você precisar fazer  um ajuste manual do tamanho use: `\Biggl(\biggl(\Bigl(\
 
 ## Espaços
 
-O MathJax decide automáticamente como adicionar espaço as formulas, usando um complexo conjunto de regras. `a_b` e `a____b` supondo que "_" sejam os espaços serão tratados da mesma forma e o resultado será $a          b$. Para colocar espaços extras nas formulas não basta inserir espaços comuns, para adiioncar mais espaços, é preciso usar `\,` (virgula) para um pequeno espaço $a\,b$ e `\;`  para espaçamentos mais largos $a\;b$. já as tags `\quad` e `\qquad` são espaços largos: $a\quadb\qquadc$
+O MathJax decide automáticamente como adicionar espaço as formulas, usando um complexo conjunto de regras. `a_b` e `a____b` supondo que "_" sejam os espaços serão tratados da mesma forma e o resultado será $a          b$. Para colocar espaços extras nas formulas não basta inserir espaços comuns, para adiioncar mais espaços, é preciso usar `\,` (virgula) para um pequeno espaço $a\,b$ e `\;`  para espaçamentos mais largos $a\;b$, você pdoe repetir a tag `\;` par aobter mais espaços $a\quad b$. já as tags `\quad` e `\qquad` são espaços largos: $a\quad b\qquad c$
 
 ## Inserindo textos explicativos
 
-Para inserir texto plano, que podem atuar como explicátivos usem `\text{…}`, por exemplo: $\{x\in s\mid x\text{ é um valor exremamente elevado}\}$. é possivel usar `$…$` encadeado dentro de `\text{…}`.
+Para inserir texto plano, que podem atuar como explicátivos usem `\text{…}`, por exemplo: 
+
+$$
+\{x\in s\mid x\text{ é um valor exremamente elevado}\}
+$$
+
+É possivel usar `$…$` encadeado dentro de `\text{…}`.
 
 ## Módulo e Limites 
 
-O simbolo de módulo, `|` resultando {%raw%}$|x|${%endraw%}, que também pode ser `\vert` $\vert x \vert$, ou `\Vert` $\Vert x \Vert$, 
+O simbolo de módulo, `|` resultando $\vert x \vert$, usando o jekyll deve ser obtido com  `\vert` ou `\Vert` $\Vert x \Vert$, 
 
 Para arredondamentos temos  `\lceil` e `\rceil` $\lceil x \rceil$,  `\lfloor` e `\rfloor` $\lfloor x \rfloor$. 
 
-`\middle` pode ser usado para divisões adicionais $2\middle|2\middle(1$.
+`\mid` pode ser usado para divisões adicionais {% raw %} $\mathrm{E}(\,X\mid X>0\,)$ {% endraw %}.
 
 ## Frações
 
@@ -100,17 +116,81 @@ Frações podem ser escritas de duas formas. `\frac ab` é aplicado aos dois pr�
 
 Somas e integrais devem usar as tags `\sum` e `\int`; o sobreescrito o limite inferior e o superescrito é o limite superior, por exemplo `\sum_1^n` $\sum_1^n$. não se esqueça que `{`...`}` devem ser usados para limites mais complexos. Por exemplo: `\sum_{i=0}^\infty i^2` para que tenhamos $\sum_{i=0}^\infty i^2$. Similarmente `\prod` $\prod$, `\int` $\int$, `\bigcup` $\bigcup$, `\bigcap` $\bigcap$, `\iint` $\iint$, `\iiint` $\iiint$.
 
+## Sinais de Radiciação
 
-Estou editando o arquivo aos poucos aguarde!
-{: .notice }
+Use o `sqrt`, que auto ajusta para seus argumento: `sqrt{x^3}` $\sqrt{x^3}$; `\sqrt[3]{\frac xy}` $\sqrt[3]{\frac xy}$.
 
-10. **Radical signs** Use `sqrt`, which adjusts to the size of its argument: `\sqrt{x^3}` $\sqrt{x^3}$; `\sqrt[3]{\frac xy}` $\sqrt[3]{\frac xy}$. For complicated expressions, consider using `{...}^{1/2}` instead.
+## Funções especiais
 
-11. Some **special functions** such as "lim", "sin", "max", "ln", and so on are normally set in roman font instead of italic font. Use `\lim`, `\sin`, etc. to make these: `\sin x` $\sin x$, not `sin x` $sin x$. Use subscripts to attach a notation to `\lim`: `\lim_{x\to 0}` $$\lim_{x\to 0}$$
+Funções como "lim", "sin", "max", "ln", e outras são normalmente definidas para usar a fonte "roman" no lugar de fonte "italica". Use `\lim`, `\sin`, etc. Assim: `\sin x` $\sin x$, e não `sin x` $sin x$. 
 
-12. There are a very large number of **special symbols and notations**, too many to list here; see [this shorter listing](http://pic.plover.com/MISC/symbols.pdf), or [this exhaustive listing](https://www.ctan.org/tex-archive/info/symbols/comprehensive/symbols-a4.pdf). Some of the most common include: 
-  * `\lt \gt \le \ge \neq` $\lt\, \gt\, \le\, \ge\, \neq$.  You can use `\not` to put a slash through almost anything: `\not\lt` $\not\lt$ but it often looks bad.
-  * `\times \div \pm \mp` $\times\, \div\, \pm\, \mp$. `\cdot` is a centered dot: $x\cdot y$
+No caso de limite use subescrito para anexar a anotação para `\lim`: `\lim_{x\to 0}` 
+
+$$
+\lim_{x\to 0}
+$$
+
+## Acentos e marcas diacriticas
+
+Use `\hat` para um simbolo simples como o circunflexo, $\hat x$, `\widehat` para uma formula mais longa  $\widehat{xy}$. Se você fizer uma formula muito longa irá ser inútil. 
+
+De forma similar, temos  `\bar` $\bar x$ e `\overline` $\overline{xyz}$, e `\vec` $\vec x$ e `\overrightarrow` $\overrightarrow{xy}$ e `\overleftrightarrow` $\overleftrightarrow{xy}$. 
+
+Para pontos, como em $\frac d{dx}x\dot x =  \dot x^2 +  x\ddot x$,  use `\dot` e `\ddot`.
+
+## Caracteres Especiais
+
+Os caracteres especiais usados no MathJax podem ser ignorados usando a barra invertida `\`: `\$` $\$$, `\{` $\{$, etc. Se você deseja a própria barra `\`, você deve usar `\backslash` $\backslash$, porquê `\\` é para inserir uma nova linha. 
+
+## Fonts 
+
+Use `\mathbb` ou `\Bbb` para "blackboard bold": 
+
+  $\mathbb{CHNQRZ}$.
+
+Use `\mathbf` para boldface: 
+
+  $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+  $\mathbf{abcdefghijklmnopqrstuvwxyz}$.
+
+Use `\mathtt` para "typewriter" font: 
+
+  $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ 
+
+  $\mathtt{abcdefghijklmnopqrstuvwxyz}$.
+
+Use `\mathrm` para roman font: 
+
+  $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  
+
+  $\mathrm{abcdefghijklmnopqrstuvwxyz}$.
+
+Use `\mathsf` para sans-serif font: 
+
+  $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  
+
+  $\mathsf{abcdefghijklmnopqrstuvwxyz}$.
+
+Use `\mathcal` para "calligraphic" letters: 
+
+  $\mathcal{ ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ 
+
+Use `\mathscr` para script letters: 
+
+  $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+Use `\mathfrak` para "Fraktur" (old German style) letters: 
+
+  $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+
+  $\mathfrak{abcdefghijklmnopqrstuvwxyz}$.
+
+## Simbolos Especiais e Notações
+
+Há um grande número de simbolos especiais e notações que podem ser usados aqui, é impossível lista-los aqui, por tanto veja esta [lista no arquivo clicando aqui](http://pic.plover.com/MISC/symbols.pdf), ou nesta [outra lista](https://www.ctan.org/tex-archive/info/symbols/comprehensive/symbols-a4.pdf). Alguns dos mais comuns estão abaixo: 
+  * `\lt \gt \le \ge \neq` $\lt\, \gt\, \le\, \ge\, \neq$.  você pode usar `\not` para colocar uma barra sobre alguns: `\not\lt` $\not\lt$, mas pode não ficar legal.
+  * `\times \div \pm \mp` $\times\, \div\, \pm\, \mp$. `\cdot` é o ponto centralizado: $x\cdot y$
   * `\cup \cap \setminus \subset \subseteq \subsetneq \supset \in \notin \emptyset \varnothing` $\cup\, \cap\, \setminus\, \subset\, \subseteq \,\subsetneq \,\supset\, \in\, \notin\, \emptyset\, \varnothing$ 
   * `{n+1 \choose 2k}` or `\binom{n+1}{2k}` ${n+1 \choose 2k}$ 
   * `\to \rightarrow \leftarrow \Rightarrow \Leftarrow \mapsto` $\to\, \rightarrow\, \leftarrow\, \Rightarrow\, \Leftarrow\, \mapsto$
@@ -118,30 +198,19 @@ Estou editando o arquivo aos poucos aguarde!
   * `\star \ast \oplus \circ \bullet` $\star\, \ast\, \oplus\, \circ\, \bullet$ 
   * `\approx \sim \simeq \cong \equiv \prec \lhd` $\approx\, \sim \, \simeq\, \cong\, \equiv\, \prec, \lhd$. 
   * `\infty \aleph_0` $\infty\, \aleph_0$ `\nabla \partial` $\nabla\, \partial$ `\Im \Re` $\Im\, \Re$
-  * For modular equivalence, use `\pmod` like this: `a\equiv b\pmod n` $a\equiv b\pmod n$.
-  * `\ldots` is the dots in $a_1, a_2, \ldots ,a_n$ `\cdots` is the dots in  $a_1+a_2+\cdots+a_n$
-  * Some Greek letters have variant forms:
-`\epsilon \varepsilon` $\epsilon\, \varepsilon$, `\phi \varphi` $\phi\, \varphi$, and others. Script lowercase l is `\ell` $\ell$.
+  * para equivalência modular, use `\pmod` como esta: `a\equiv b\pmod n` $a\equiv b\pmod n$.
+  * `\ldots` são o pontos em $a_1, a_2, \ldots ,a_n$ `\cdots` são os pontos em  $a_1+a_2+\cdots+a_n$
+  * Algumas letras Greek tem variações de forma:
+`\epsilon \varepsilon` $\epsilon\, \varepsilon$, `\phi \varphi` $\phi\, \varphi$, e outras. o "l"  minúsculo e cursivo é `\ell` $\ell$.
 
-  [Detexify](http://detexify.kirelabs.org/classify.html) lets you draw a symbol on a web page and then lists the $\TeX$ symbols that seem to resemble it.  These are not guaranteed to work in MathJax but are a good place to start.  To check that a command is supported, note that MathJax.org maintains a [list of currently supported $\LaTeX$ commands](http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands), and one can also check Dr. Carol JVF Burns's page of [$\TeX$ Commands Available in MathJax](http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm).
-
-14. **Accents and diacritical marks** Use `\hat` for a single symbol $\hat x$, `\widehat` for a larger formula $\widehat{xy}$. If you make it too wide, it will look silly. Similarly, there are `\bar` $\bar x$ and `\overline` $\overline{xyz}$, and `\vec` $\vec x$ and `\overrightarrow` $\overrightarrow{xy}$ and `\overleftrightarrow` $\overleftrightarrow{xy}$. For dots, as in $\frac d{dx}x\dot x =  \dot x^2 +  x\ddot x$,  use `\dot` and `\ddot`.
-
-15. Special characters used for MathJax interpreting can be escaped using the `\` character: `\$` $\$$, `\{` $\{$, `\_` $\_$, etc. If you want `\` itself, you should use `\backslash` $\backslash$, because `\\` is for a new line. 
-
-9. **Fonts** 
-
-  * Use `\mathbb` or `\Bbb` for "blackboard bold": $\mathbb{CHNQRZ}$.
-  * Use `\mathbf` for boldface: $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathbf{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathtt` for "typewriter" font: $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ $\mathtt{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathrm` for roman font: $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathrm{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathsf` for sans-serif font: $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathsf{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathcal` for "calligraphic" letters: $\mathcal{ ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ 
-  * Use `\mathscr` for script letters: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-  * Use `\mathfrak` for "Fraktur" (old German style) letters: $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \mathfrak{abcdefghijklmnopqrstuvwxyz}$.
+O site [Detexify](http://detexify.kirelabs.org/classify.html) permite você desenhar um simbolo na página web e então ele lhe lista os simbolos $\TeX$ que ele julga parecer.  Não há garantias que as sugestões vão funcionar, mas é muito útil para encontrar os nomes dos simbolos até mesmo em outros casos. Para verificar se o comando é suportado, observe que o Matjax.org mantem uma [lista de lista comandos do $\LaTeX$ suportados](http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands), e também há o site do Dr. Carol JVF Burns's [Comandos $\TeX$ disponível no MathJax](http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm).
 
 
-## Fontes:
+Estou ampliando o arquivo aos poucos, deixe suas dúvidas abaixo!
+{: .notice }
+
+
+## Referências
 
 
 * https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
