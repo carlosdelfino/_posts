@@ -14,8 +14,8 @@ tagcloud: true
 ads: 
  show: true
 image:
-   teaser: redesneurais/rnn/lstm720x450.jpg
-   feature: redesneurais/rnn/lstm720x450-2.jpg
+  teaser: matematica/mathjax_logo.jpg
+  feature: matematica/mathjax_logo.jpg
 math: true
 ---
 
@@ -34,6 +34,12 @@ Para escrever formulas na linha de texto, coloque a formula usando o formato Lat
 Por exemplo veja a mesma formula _em linha_ a seguir `$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$`: $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$ ou então digite assim `$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$` para exibir como abaixo:
 
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
+
+## Lidando com conflitos com o Jekyll
+
+A forma mais simples de evitar conflitos com o jekyll é colocar tudo que for escrito entre as tags `\{\% raw \%\}` ... `\{\% endraw \%\}`, para que o conteúdo não seja interpretado.
+
+Vejamos, aqui nesta linha se eu escrevo `$|x|$`, ele interpreta a barra vertical como delimitador de colunas para uso em tabelas, causando problemas na formatação e deixando confuso o Mathjax e o Jekyll, portanto escreva da seguinte forma `\{\% raw \%\}` `$|x|$` `\{\% endraw \%\}` assim o resultado será o esperado {% raw %}$|x|${% endraw %}
 
 ## Inserindo letras gregas
 
@@ -56,30 +62,47 @@ Vamos ver mais sobre parenteses a seguir.
 
 ## Parenteses
 
-6. **Parentheses** Ordinary symbols `()[]` make parentheses and brackets $(2+3)[4+4]$. Use `\{` and `\}` for curly braces $\{\}$.
+Parenteses e Colchetes `()[]` são usados como são na escrita comum, assim a formula `$(2+3)[4+4]$` resulta em $(2+3)[4+4]$, caso precise de usar chaves sem ser para agrupamentos de simbolos como acima você deve usar precedido com a barra de escape (barra invertida) `\{` e `\}` obtendo assim: $\{\}$.
 
-    These do *not* scale with the formula in between, so if you write `(\frac{\sqrt x}{y^3})` the parentheses will be too small: $(\frac{\sqrt x}{y^3})$.    Using `\left(`…`\right)` will make the sizes adjust automatically to the formula they enclose: `\left(\frac{\sqrt x}{y^3}\right)` is $\left(\frac{\sqrt x}{y^3}\right)$.
+Há também parenteses invisíveis denotados por `.`: `\left.\frac12\right\rbrace` resulta (obseve `\frac12`, vamos falar abaixo sobre este uso.) $\left.\frac12\right\rbrace$.
 
-   `\left` and`\right` apply to all the following sorts of parentheses: `(` and `)` $(x)$, `[` and `]` $[x]$, `\{` and `\}` $\{ x \}$, `|` $|x|$, `\vert` $\vert x \vert$, `\Vert` $\Vert x \Vert$, `\langle` and `\rangle` $\langle x \rangle$,  `\lceil` and `\rceil` $\lceil x \rceil$, and `\lfloor` and `\rfloor` $\lfloor x \rfloor$. `\middle` can be used to add additional dividers. There are also invisible parentheses, denoted by `.`: `\left.\frac12\right\rbrace` is $\left.\frac12\right\rbrace$.
+temos também `\langle` e `\rangle` $\langle x \rangle$
 
-    If manual size adjustments are required:
-`\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)` gives
-$\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$.
+## Escalonamento 
 
-7. **Sums and integrals** `\sum` and `\int`; the subscript is the lower limit and the superscript is the upper limit, so for example `\sum_1^n` $\sum_1^n$. Don't forget `{`…`}` if the limits are more than a single symbol.  For example, `\sum_{i=0}^\infty i^2` is $\sum_{i=0}^\infty i^2$. Similarly, `\prod` $\prod$, `\int` $\int$, `\bigcup` $\bigcup$, `\bigcap` $\bigcap$, `\iint` $\iint$, `\iiint` $\iiint$.
+a representação visual pode ter a escrita escalonada, para auxiliar neste processo há alguns macetes. Por exemplo escrevendo uma fórmula como esta `(\frac{\sqrt x}{y^3})` os parenteses podem ficar muito pequenos: $(\frac{\sqrt x}{y^3})$. Para resolver tal problema use `\left(`...`\right)` assim você vai obte parenteses que se ajustam automáticamente a fórmula envolvida: `\left(\frac{\sqrt x}{y^3}\right)` se torna $\left(\frac{\sqrt x}{y^3}\right)$.
 
-8. **Fractions** There are two ways to make these. `\frac ab` applies to the next two groups, and produces $\frac ab$; for more complicated numerators and denominators use `{`…`}`: `\frac{a+1}{b+1}` is $\frac{a+1}{b+1}$. If the numerator and denominator are complicated, you may prefer `\over`, which splits up the group that it is in: `{a+1\over b+1}` is ${a+1\over b+1}$.
+O prefixo  `\left` e`\right` pode ser aplicado a todos os tipos  de parenteses e contornos: `(` e `)` $(x)$, `[` e `]` $[x]$, `\{` e `\}` $\{x\}$.
 
-9. **Fonts** 
+Se você precisar fazer  um ajuste manual do tamanho use: `\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)` o que resulta: $\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$.
 
-  * Use `\mathbb` or `\Bbb` for "blackboard bold": $\mathbb{CHNQRZ}$.
-  * Use `\mathbf` for boldface: $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathbf{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathtt` for "typewriter" font: $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ $\mathtt{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathrm` for roman font: $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathrm{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathsf` for sans-serif font: $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathsf{abcdefghijklmnopqrstuvwxyz}$.
-  * Use `\mathcal` for "calligraphic" letters: $\mathcal{ ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ 
-  * Use `\mathscr` for script letters: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
-  * Use `\mathfrak` for "Fraktur" (old German style) letters: $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \mathfrak{abcdefghijklmnopqrstuvwxyz}$.
+## Espaços
+
+O MathJax decide automáticamente como adicionar espaço as formulas, usando um complexo conjunto de regras. `a_b` e `a____b` supondo que "_" sejam os espaços serão tratados da mesma forma e o resultado será $a          b$. Para colocar espaços extras nas formulas não basta inserir espaços comuns, para adiioncar mais espaços, é preciso usar `\,` (virgula) para um pequeno espaço $a\,b$ e `\;`  para espaçamentos mais largos $a\;b$. já as tags `\quad` e `\qquad` são espaços largos: $a\quadb\qquadc$
+
+## Inserindo textos explicativos
+
+Para inserir texto plano, que podem atuar como explicátivos usem `\text{…}`, por exemplo: $\{x\in s\mid x\text{ é um valor exremamente elevado}\}$. é possivel usar `$…$` encadeado dentro de `\text{…}`.
+
+## Módulo e Limites 
+
+O simbolo de módulo, `|` resultando {%raw%}$|x|${%endraw%}, que também pode ser `\vert` $\vert x \vert$, ou `\Vert` $\Vert x \Vert$, 
+
+Para arredondamentos temos  `\lceil` e `\rceil` $\lceil x \rceil$,  `\lfloor` e `\rfloor` $\lfloor x \rfloor$. 
+
+`\middle` pode ser usado para divisões adicionais $2\middle|2\middle(1$.
+
+## Frações
+
+Frações podem ser escritas de duas formas. `\frac ab` é aplicado aos dois próximos grupos de simbolos, e produz algo assim $\frac ab$; veja que se você fizer `\frac 478` ela irá apenas mostrar a divisão de 4 por 7 e o 8 seguindo a fração assim $\frac 478$, para fazer uma fração com números longos ou mais complexa no numerador ou no denominador use o agrupamento `{`...`}`: `\frac{a+1}{b+1}` assim terá $\frac{a+1}{b+1}$. se o numerador ou denominador são complicados você pode preferir usar `\over`, que divide o grupo no qual ele pertence `{a+1\over b+1}` resultado em ${a+1\over b+1}$.
+
+## Somas e Integrais
+
+Somas e integrais devem usar as tags `\sum` e `\int`; o sobreescrito o limite inferior e o superescrito é o limite superior, por exemplo `\sum_1^n` $\sum_1^n$. não se esqueça que `{`...`}` devem ser usados para limites mais complexos. Por exemplo: `\sum_{i=0}^\infty i^2` para que tenhamos $\sum_{i=0}^\infty i^2$. Similarmente `\prod` $\prod$, `\int` $\int$, `\bigcup` $\bigcup$, `\bigcap` $\bigcap$, `\iint` $\iint$, `\iiint` $\iiint$.
+
+
+Estou editando o arquivo aos poucos aguarde!
+{: .notice }
 
 10. **Radical signs** Use `sqrt`, which adjusts to the size of its argument: `\sqrt{x^3}` $\sqrt{x^3}$; `\sqrt[3]{\frac xy}` $\sqrt[3]{\frac xy}$. For complicated expressions, consider using `{...}^{1/2}` instead.
 
@@ -102,19 +125,20 @@ $\Biggl(\biggl(\Bigl(\bigl((x)\bigr)\Bigr)\biggr)\Biggr)$.
 
   [Detexify](http://detexify.kirelabs.org/classify.html) lets you draw a symbol on a web page and then lists the $\TeX$ symbols that seem to resemble it.  These are not guaranteed to work in MathJax but are a good place to start.  To check that a command is supported, note that MathJax.org maintains a [list of currently supported $\LaTeX$ commands](http://docs.mathjax.org/en/latest/tex.html#supported-latex-commands), and one can also check Dr. Carol JVF Burns's page of [$\TeX$ Commands Available in MathJax](http://www.onemathematicalcat.org/MathJaxDocumentation/TeXSyntax.htm).
 
-13. **Spaces** MathJax usually decides for itself how to space formulas, using a complex set of rules. Putting extra literal spaces into formulas  will not change the amount of space MathJax puts in: `a␣b` and `a␣␣␣␣b` are  both $a    b$. To add more space, use `\,` for a thin space $a\,b$; `\;` for a wider space $a\;b$.  `\quad` and `\qquad` are large spaces: $a\quad b$, $a\qquad b$.
-
-  To set plain text, use `\text{…}`: $\{x\in s\mid x\text{ is extra large}\}$. You can nest `$…$` inside of `\text{…}`.
-
 14. **Accents and diacritical marks** Use `\hat` for a single symbol $\hat x$, `\widehat` for a larger formula $\widehat{xy}$. If you make it too wide, it will look silly. Similarly, there are `\bar` $\bar x$ and `\overline` $\overline{xyz}$, and `\vec` $\vec x$ and `\overrightarrow` $\overrightarrow{xy}$ and `\overleftrightarrow` $\overleftrightarrow{xy}$. For dots, as in $\frac d{dx}x\dot x =  \dot x^2 +  x\ddot x$,  use `\dot` and `\ddot`.
 
 15. Special characters used for MathJax interpreting can be escaped using the `\` character: `\$` $\$$, `\{` $\{$, `\_` $\_$, etc. If you want `\` itself, you should use `\backslash` $\backslash$, because `\\` is for a new line. 
 
-(Tutorial ends here.)
+9. **Fonts** 
 
--------------
-
-It is important that this note be reasonably short and not suffer from too much bloat. To include more topics, please create short addenda and post them as answers instead of inserting them into this post.
+  * Use `\mathbb` or `\Bbb` for "blackboard bold": $\mathbb{CHNQRZ}$.
+  * Use `\mathbf` for boldface: $\mathbf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathbf{abcdefghijklmnopqrstuvwxyz}$.
+  * Use `\mathtt` for "typewriter" font: $\mathtt{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ $\mathtt{abcdefghijklmnopqrstuvwxyz}$.
+  * Use `\mathrm` for roman font: $\mathrm{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathrm{abcdefghijklmnopqrstuvwxyz}$.
+  * Use `\mathsf` for sans-serif font: $\mathsf{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$  $\mathsf{abcdefghijklmnopqrstuvwxyz}$.
+  * Use `\mathcal` for "calligraphic" letters: $\mathcal{ ABCDEFGHIJKLMNOPQRSTUVWXYZ}$ 
+  * Use `\mathscr` for script letters: $\mathscr{ABCDEFGHIJKLMNOPQRSTUVWXYZ}$
+  * Use `\mathfrak` for "Fraktur" (old German style) letters: $\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ} \mathfrak{abcdefghijklmnopqrstuvwxyz}$.
 
 
 ## Fontes:
@@ -122,3 +146,4 @@ It is important that this note be reasonably short and not suffer from too much 
 
 * https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference
 * (Deutsch: [MathJax: LaTeX Basic Tutorial und Referenz](https://www.mathelounge.de/509545/mathjax-latex-basic-tutorial-und-referenz-deutsch))
+* https://www.mathjax.org/
