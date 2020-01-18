@@ -2,7 +2,7 @@
 redirect_from: /latex/mathjax/introducao/mathjax_latex_representacao_matematica/
 title: Usando o MathJax para representar formulas matemáticas em Latex 
 tags: [Latex, MathJax, Jekyll, Matemática, Formulas, como usar, tutorial, resumo]
-categories: [Matemática, MathJax]
+categories: [Matematica, MathJax]
 layout: article
 share: true
 toc: true
@@ -19,27 +19,42 @@ image:
 math: true
 ---
 
-Um breve tutorial copiado do site Stack Exchange (meta) que demosntra as práticas mais relevantes e mais usadas para escrita de formulas matemáticas usando o MathJax.
+Um breve tutorial copiado do site Stack Exchange (meta) que demonstra as práticas mais relevantes e mais usadas para escrita de fórmulas matemáticas usando o MathJax.
 
 <!--more-->
 
-Para ver como a formula é escrita onde se usa o MathJax basta clicar com o botão direito sobre a fórmula e selecionar "Show Match As > Tex Commands".
+## Entendendo como foi escrita
 
+Para ver como a fórmula é escrita onde se usa o MathJax basta clicar com o botão direito sobre a fórmula e selecionar "Show Match As > Tex Commands".
 
-2. **For inline formulas, enclose the formula in `$...$`.  For displayed formulas, use `$$...$$`.**  
-These render differently. For example, type
-`$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$`  
-to show $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}#$ (which is inline mode) or  type  
-`$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$`   
-to show
+## escrevendo fórmulas
+
+Para escrever formulas na linha de texto, coloque a formula usando o formato Latex do Mathjax entre `$...$`. Já para exibir formulas mais complexas faça uma seção a parte usando dois `$$` como delimitador: `$$...$$`.
+
+Por exemplo veja a mesma formula _em linha_ a seguir `$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$`: $\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$ ou então digite assim `$$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$` para exibir como abaixo:
+
 $$\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}$$
-(which is display mode).
 
-3. For **Greek letters**, use `\alpha`, `\beta`, …, `\omega`: $\alpha, \beta, … \omega$.  For uppercase, use `\Gamma`, `\Delta`, …, `\Omega`: $\Gamma, \Delta, …, \Omega$.
+## Inserindo letras gregas
 
-4. For **superscripts and subscripts**, use `^` and `_`.  For example, `x_i^2`: $x_i^2$, `\log_2 x`: $\log_2 x$.
+*  `\alpha`, `\beta`, ..., `\omega`: $\alpha$, $\beta$, ... $\omega$.  veja que basta usar o nome da letra grega prefixado com barra invertida.
+* Se quiser a letra grega em maiúscula use `\Gamma`, `\Delta`, …, `\Omega`: $\Gamma, \Delta, …, \Omega$.
 
-5. **Groups**. Superscripts, subscripts, and other operations apply only to the next “group”. A “group” is either a single symbol, or any formula surrounded by curly braces `{`…`}`.  If you do `10^10`, you will get a surprise: $10^10$. But `10^{10}` gives what you probably wanted: $10^{10}$. Use curly braces to delimit a formula to which a superscript or subscript applies: `x^5^6` is an error;  `{x^y}^z` is ${x^y}^z$, and `x^{y^z}` is $x^{y^z}$. Observe the difference between `x_i^2` $x_i^2$ and `x_{i^2}` $x_{i^2}$.
+## Supeescrito ou subescrito
+
+Para inserir  **superescrito e subescrito**, use o sinal de circunflexo `^` e traço baixo `_`.  por exemplo, `x_i^2`: $x_i^2$, `\log_2 x`: $\log_2 x$.
+
+## Agrupamentos
+
+Um agrupamento pode ser apenas um símbolo ou uma fórmula envolvida por _chaves_ `{`...`}`. Se você escrever `10^10`, você irá obter $10^10$. Mas se você escrever `10^{10}` ai sim você irá obter o que deseja $10^{10}$, isso ocorre porque ele considera apenas o primeiro digito do número como símbolo. 
+
+Use então as _chaves_ `{`...`}` para delimitar tudo que deseja subescrever ou sobescrever. Assim você pode evitar surpresas. Veja outro exemplo: `X^5^6`, assim poderá ter um erro; talvez você queria algo assim: `{x^y}^z` ou seja ${x^y}^z$, e para esta `x^{y^z}`  seria $x^{y^z}$, talvez envolver com parenteses possa ajudar a leitura `{(x^y)}^z` ou seja ${(x^y)}^z$, e para esta `x^{(y^z)}`  seria $x^{(y^z)}$
+
+Veja também este outro exemplo e veja as diferenças: `x_i^2` $x_i^2$ e `x_{i^2}` $x_{i^2}$, com parenteses  `x_{(i^2)}` $x_{(i^2)}$, 
+
+Vamos ver mais sobre parenteses a seguir.
+
+## Parenteses
 
 6. **Parentheses** Ordinary symbols `()[]` make parentheses and brackets $(2+3)[4+4]$. Use `\{` and `\}` for curly braces $\{\}$.
 
