@@ -19,6 +19,7 @@ math: true
 images:
   dir: /images/matematica/wavelets/
 ---
+
 Abaixo uma lista de algumas bibliotecas em C ou C++ para Wavelets, obtido no site [StackOverflow](https://stackoverflow.com/a/9610222/2766598). As marcadas com Asterisco podem ser  usadas em seu microcontrolador;
 
 

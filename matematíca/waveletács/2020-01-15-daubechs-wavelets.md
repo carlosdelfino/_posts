@@ -1,6 +1,6 @@
 ---
 title: Daubechs Wavelet
-tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer]
+tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer, DSP, Signal, Signal Processing]
 categories: [Matematica, Wavelets]
 layout: article
 share: true

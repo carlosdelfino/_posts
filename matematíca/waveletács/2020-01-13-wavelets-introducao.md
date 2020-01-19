@@ -1,6 +1,6 @@
 ---
 title: Introdução aos Wavelets
-tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer]
+tags: [Wavelet, Haar, Daubechies, Biorthogonal, Coiflats, Symlets, Morlet, Mexican Hat, Meyer, octave, DSP, Signal, Signal Processing]
 categories: [Matematica, Wavelets]
 layout: article
 share: true
