@@ -1,7 +1,7 @@
 ---
 redirect_to: https://www.arduino.cc/pro/
 permalink: arduino/pro
-title: Arduino pro
+title: Arduino Pro
 tags: [arduino, uno, avr, protoboard, prototipo, C, C++, STM, STM32H747 , ARM, Cortex-M7, IoT]
 categories: [arduino]
 layout: article
@@ -15,7 +15,7 @@ tagcloud: true
 ads: 
  show: true
 image:
-   teaser: arduino/arduino-´rp.jpg
+   teaser: arduino/arduino-pro.jpg
    feature: arduino/arduino-pro.jpg
 math: false
 images:

@@ -1,7 +1,7 @@
 ---
 redirect_to: https://store.arduino.cc/usa/arduino-uno-rev3
 permalink: arduino/uno
-title: Arduino uno
+title: Arduino Uno
 tags: [arduino, uno, avr, protoboard, prototipo, C, C++, Atmel, ATmega, ATmega328]
 categories: [arduino]
 layout: article
