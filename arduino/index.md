@@ -1,4 +1,6 @@
 ---
+redirect_from: 
+ - /Arduino/
 permalink: /arduino/
 title: Arduino
 tags: arduino
