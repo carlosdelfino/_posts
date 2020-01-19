@@ -19,7 +19,7 @@ image:
 math: true
 ---
 
-Um breve tutorial copiado do site Stack Exchange (meta) que demonstra as práticas mais relevantes e mais usadas para escrita de fórmulas matemáticas usando o MathJax.
+Um breve tutorial baseado no que foi publicado no site Stack Exchange (meta) que demonstra as práticas mais relevantes e mais usadas para escrita de fórmulas matemáticas usando o MathJax, porém adaptad para meu site com Jekyll.
 
 <!--more-->
 
