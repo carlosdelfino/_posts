@@ -1,10 +1,13 @@
 ---
 permalink: /wavelets/
-redirect_from: /matematica/wavelets/
+redirect_from: 
+  - /matematica/wavelets/
+  - /matematica/wavelet/
+  - /wavelet/
 title: Wavelets
-tags: wavelets
+tags: [wavelets, Transformatas, Fourrier, Mallat, Daubrichies, Haar, Matemática]
 layout: categorylist
-categories: [matematica, wavelets]
+categories: wavelets
 share: true
 comments: true
 ads:
