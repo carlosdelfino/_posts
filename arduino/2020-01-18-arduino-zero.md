@@ -2,7 +2,7 @@
 redirect_to: 
 permalink: arduino/zero
 title: Arduino Zero
-tags: [arduino, uno, avr, protoboard, prototipo, C, C++, Atmel, ATmega, ATmega328]
+tags: [Arduino, Zero, Cortex-M, ARM, protoboard, prototipo, C, C++, Atmel,  SAMD21]
 categories: [arduino]
 layout: article
 share: true

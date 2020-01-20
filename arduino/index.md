@@ -7,7 +7,7 @@ tags: arduino
 layout: categorylist
 categories: [Arduino]
 share: true
-comments: true
+comments: false
 ads:
   show: false
 image:
