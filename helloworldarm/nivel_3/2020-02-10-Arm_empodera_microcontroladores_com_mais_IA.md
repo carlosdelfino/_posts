@@ -60,7 +60,7 @@ A nível de software a adoção do Ethos-U55 não complicação nenhuma a nível
 ## e este tal de Corstone
 
 {% include image.html 
-  url="/images/arm/corstome/Corstone-300-1040x1040.jpg" 
+  url="/images/arm/corstone/Corstone-300-1040x1040.jpg" 
   description="Proposta de Arquitetura para um microcontrolador baseado na especificação Corstone-300" 
 %}
 
