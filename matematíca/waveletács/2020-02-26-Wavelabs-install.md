@@ -64,6 +64,13 @@ Tal script, apresenta todas as imagens propostas no livro, e é uma fonte gigant
 
 A numeração das imagens não confere exatamente nem com a 2° Edição ou 3° do livro, acredito que possa ser referente a primeira edição. Mas é suficiente para ampliar os horizontes.
 
+## Mais exemplos e meus estudos
+
+Conforme eu venha desenvolvendo no assunto e aprendendo a criar experimentos com Wavelets estarei colocando os exemplos no Fork Wavelabs disponível em meu repositório.
+
+[https://carlosdelfino.github.io/Wavelab850](https://carlosdelfino.github.io/Wavelab850)
+
+
 ## Referências:
 
 * http://statweb.stanford.edu/~wavelab/
