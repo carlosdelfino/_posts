@@ -1,6 +1,6 @@
 ---
 title: Introdução as Redes Neurais, Principais Funções 
-tags: [Redes Neurais, Inteligência Artificial, Inteligência, Artificial, RNN, NN, LTSM, Formulas, Rampa Simetrica, Simetrica, Ativação Lógistica, Hiperbólica, Tangente, Tangente Hiperbólica, Função Logistica]
+tags: [Redes Neurais, Inteligência Artificial, Inteligência, Artificial, RNN, NN, LTSM, Formulas, Rampa Simétrica, Simétrica, Ativação Logística, Hiperbólica, Tangente, Tangente Hiperbólica, Função Logística, GRU, AE, VAE, DAE, SAE RBM, MC, HN, BM, DBM, DCNN, DN, DCIGN, GANS, LSM, ELM, ESN DRN KN, NTM]
 categories: [Series, Redes Neurais, Introducao]
 portal: [carlosdelfino, arduinominas]
 layout: article
@@ -18,21 +18,22 @@ image:
    feature: pensamentos/pensamento2-400x200.jpg
 math: true
 ---
+
 Abaixo uma coleção de funções que podem ser usadas para construção de redes neurais, aqui apresento as principais funções, e discutirei posteriormente o melhor uso de cada uma.
 
 <!--more-->
 
-Abaixo apresentaremos alguns funções muito importante para a compreenção de como funciona as redes neurais, as funções do tipo degrau podem ser usadas para ativar ou desativar um grupo de neurônios, por exemplo.
+Abaixo apresentaremos alguns funções muito importante para a compreensão de como funciona as redes neurais, as funções do tipo degrau podem ser usadas para ativar ou desativar um grupo de neurônios, por exemplo.
 
 Já as funções logística e tangente hiperbólicas podem ser usada também no processo de ativação e desativação de redes mais complexas como LTSM, que veremos mais no final desta série de postagens.
 
-Temos também as funções Gausianas são usadas em sistemas neurais que determinam um ponto central de classificação com base em umam édia e a Função linear, é a mais simples de todas e são usadas em redes neurais para nivelar sinais para se equiprar nívies de entradas, como um sistema de acoplamento, elas podem ter entradas e saidas com valores iguais ou proporcionais direta ou inversamente.
+Temos também as funções Gaussianas são usadas em sistemas neurais que determinam um ponto central de classificação com base em uma média e a Função linear, é a mais simples de todas e são usadas em redes neurais para nivelar sinais para se equiparar níveis de entradas, como um sistema de acoplamento, elas podem ter entradas e saídas com valores iguais ou proporcionais direta ou inversamente.
 
-Na próxima postagem veremos os tipos de redes neurais existentes e como estas funções podem ser aplicadas nelas.
+Na próxima postagem veremos os tipos de redes neurais existentes, tanto a nível de funções como arquitetural e como estas funções podem ser aplicadas nelas.
 
 ## As funções do tipo degrau.
 
-Há funções simples do tipo degrau conhecidas do inglês como *Heavyside/band limiter*, são funções com algortimos de tomada de decisão bem simples baseada em um *IF* por neuronio, sendo o valor potencial da sinapse maior que zero provoca assim a ativação do neuronio, ou mesmo duas faixas limites quando for uma função degrau bipolar ou função sinal tambem conhecida do inglês de *Symmetric board limiter*, a ativação tendo dois estágios, um positivo outro negativo.
+Há funções simples do tipo degrau conhecidas do inglês como *Heavyside/band limiter*, são funções com algorítimos de tomada de decisão bem simples baseada em um *IF* por neurônio, sendo o valor potencial da sinapse maior que zero provoca assim a ativação do neurônio, ou mesmo duas faixas limites quando for uma função degrau bipolar ou função sinal também conhecida do inglês de *Symmetric board limiter*, a ativação tendo dois estágios, um positivo outro negativo.
 
 Para degrau simples temos:
 
@@ -43,7 +44,6 @@ $$
 0, \text{se} \; x \lt 0 
 \end{cases}
 $$
-
 
 Já para degrau bipolar temos:
 
@@ -56,9 +56,9 @@ $$
 \end{cases}
 $$
 
-No uso da função degrau bipolar é possível aproveitar o ultimo valor obtido informado no algortimo que a função mantem este valor inalterado caso o valor atual na sinapse é igual a zero.
+No uso da função degrau bipolar é possível aproveitar o ultimo valor obtido informado no algorítimo que a função mantem este valor inalterado caso o valor atual na sinapse é igual a zero.
 
-Há também a possiblidade de resumir a função degrau bipolar de forma a ficar conforme abaixo:
+Há também a possibilidade de resumir a função degrau bipolar de forma a ficar conforme abaixo:
 
 $$
   f(x) =
@@ -69,6 +69,7 @@ $$
 $$
 
 ## Função Rampa
+
 Uma outra amadurecimento da função degrau bipolar é a função rampa, que é presentada pela função:
 
 $$
@@ -92,8 +93,7 @@ $$
 f(x) = \frac{1}{1+e^(-\beta*x)}
 $$
 
-Na formula acima `e` é o número de euler portanto $$ e= 2.718281828459045235360287$$, e $$\beta$$ é uma constante que ajusta a inclinação da curva, veja o gráfico baixo, onde o segundo parametro o que vai após o ponto e virgula é o valor de $$\beta$$.
-
+Na formula acima `e` é o número de euler portanto $e= 2.718281828459045235360287$, e $$\beta$$ é uma constante que ajusta a inclinação da curva, veja o gráfico baixo, onde o segundo parâmetro o que vai após o ponto e virgula é o valor de $$\beta$$.
 
 | x | f(x;.01) | f(x;0.02) | f(x;0.03) | f(x;0.04) | f(x;0.05) |
 | --- | --- | --- | --- | --- | --- |
@@ -119,18 +119,15 @@ Na formula acima `e` é o número de euler portanto $$ e= 2.71828182845904523536
 | 900 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 |
 | 1.000 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 |
 
-<figure>
-<figcaption>Influência do Parametro $$\beta$$ na função de Ativação Tangente Hiperbólic</figcaption>
-<img src="/images/redesneurais/introducao/logistica-1.png" />
-</figure>
+{% include image.html 
+  file="/images/redesneurais/introducao/logistica-1.png" 
+  caption="Influência do Parâmetro $$\beta$$ na função de Ativação Tangente Hiperbólica" %}
 
+No gráfico abaixo apresento a mesma função em um formato tridimensional, onde o eixo z é a variação das alternativas para $$\beta$$.
 
-No gráfico abaixo apresento a mesma função em um formato tridimencional, onde o eixo z é a variação das alternativas para $$\beta$$.
-
-<figure>
-<figcaption>Influência do Parametro $$\beta$$ na função de Ativação Tangente Hiperbólica Visão Tridimensional ocnforme variação de Beta</figcaption>
-<img src="/images/redesneurais/introducao/logistica-1-3d.gif" />
-</figure>
+{% include image.html 
+  file="/images/redesneurais/introducao/logistica-1-3d.gif" 
+  caption="Influência do Parâmetro $$\beta$$ na função de Ativação Tangente Hiperbólica Visão Tridimensional conforme variação de Beta" %}
 
 ### Função Tangente Hiperbólica 
 
@@ -164,19 +161,17 @@ Na fórmula acima `e` é o número de Euler, $$ e= 2.718281828459045235360287$$,
 | 900 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 |
 | 1.000 | 1,000 | 1,000 | 1,000 | 1,000 | 1,000 |
 
-<figure>
-<figcaption>Influência do Parâmetro $$\beta$$ na função de Ativação Tangente Hiperbólica</figcaption>
-<img src="/images/redesneurais/introducao/tangente-hiperbolica-1.png" />
-</figure>
+{% include image.html 
+  file="/images/redesneurais/introducao/tangente-hiperbolica-1.png" 
+  caption="Influência do Parâmetro $$\beta$$ na função de Ativação Tangente Hiperbólica" %}
 
 No gráfico abaixo apresento a mesma função em um formato tridimencional, onde o eixo z é a variação das alternativas para $$\beta$$.
 
-<figure>
-<figcaption>Influência do Parãmetro $$\beta$$ na função de Ativação Tangente Hiperbólica Visão Tridimensional ocnforme variação de $$\beta$$</figcaption>
-<img src="/images/redesneurais/introducao/tangente-hiperbolica-1-3d.gif" />
-</figure> 
+{% include image.html 
+  file="/images/redesneurais/introducao/tangente-hiperbolica-1-3d.gif" 
+  caption="Influência do Parâmetro $$\beta$$ na função de Ativação Tangente Hiperbólica Visão Tridimensional conforme variação de $$\beta$$" %}
 
-### Função Gausiana
+### Função Gaussiana
 
 $$
 f(x) = e ^ { - { \frac{(x - c)^2}{2 \; * \; \sigma^2 } } }
@@ -206,21 +201,11 @@ $$
 | 900 | 0,000 | 0,000 | 0,000 |
 | 1.000 | 0,000 | 0,000 | 0,000 |
 
+{% include image.html url="/images/redesneurais/introducao/gausiana-1.png" description="Função de Ativação Gaussiana" %}
 
-<figure>
-<figcaption>função de Ativação Gausiana</figcaption>
-<img src="/images/redesneurais/introducao/gausiana-1.png" />
-</figure>
+No gráfico abaixo temos a mesma função em um formato tridimensional, onde o eixo z é a variação da posição do eixo central z, $$\sigma$$ foi mantido fixo no valor 1.
 
-No gráfico abaixo temos a mesma função em um formato tridimencional, onde o eixo z é a variação da posição do eixo central z, $$\sigma$$ foi mantido fixo no valor 1.
-
-<figure>
-<figcaption>
-função de Ativação Gausiana, demonstrando a variação da dispersão $$\sigma$$ conforme o eixo central $$c$$, sendo a formula de referência:  $$f(x) = e ^{-/frac{(x-c)^2}{2\sigma^2}$$
-
-</figcaption>
-<img src="/images/redesneurais/introducao/gausiana-1-3d.gif" />
-</figure>
+{% include image.html url="/images/redesneurais/introducao/gausiana-1-3d.gif" description="função de Ativação Gaussiana, demonstrando a variação da dispersão $\sigma$ conforme o eixo central $c$, sendo a formula de referência:  $f(x) = e ^{-/frac{(x-c)^2}{2\sigma^2}$. " %}
 
 ### Função Linear
 
@@ -228,7 +213,7 @@ $$
 f(x) = x
 $$
 
-A função linear pode ser do tipo identidade como na formula acima, ou pode ser proporcional, sendo seu objetivo acoplar a saida de uma rede neural a outra rede, compatiblizando nível de valores:
+A função linear pode ser do tipo identidade como na fórmula acima, ou pode ser proporcional, sendo seu objetivo acoplar a saída de uma rede neural a outra rede, compatibilizando nível de valores:
 
 $$
 f(x) = x * \sigma
@@ -239,6 +224,71 @@ Neste caso $$\sigma$$ será o fator de multiplicação para nivelar os sinais da
 No próximo post comento um pouco sobre as [Redes do tipo Perceptron]({% post_url programando/serie-ia/introducao/2016-08-02-Introducao_Redes_Neurais_Perceptron %}).
 
 Caso esteja buscando aprender mais e compartilhar conhecimento, participe de nosso grupo no facebook: [Artificial Intelligence and Neural Network](https://www.facebook.com/groups/ArtificialNeuralNetwork/)
+
+
+### Wavelets
+
+## Arquiteturas
+
+### RNN
+
+Recorrente Neural Network
+
+{% include image.html 
+  file="/images/redesneurais/arquiteturas/The-standard-RNN-and-unfolded-RNN.png" 
+  caption="Rede Neural Recorrente e a mesma rede estendida." %}
+
+### LTSM
+
+Long Short-term Memory ou Memória de longo Prazo é uma arquitetura de rede neural artificial recorrente (RNN) usada em Deep Learning. Ao contrário das redes neurais de avanço padrão, o LSTM possui conexões de feedback. Ele não pode apenas processar pontos de dados únicos, mas também sequências inteiras de dados.
+
+{% include image.html 
+  file="/images/redesneurais/arquiteturas/ltsm.jpg" 
+  caption="Rede Neural com base em memória de longo prazo." %}
+
+### GRU
+
+{% include image.html 
+  file="/images/redesneurais/arquiteturas/gru.jpg" 
+  caption="Gated Recurrent Unit." %}
+
+### AE
+
+### VAE
+
+### DAE
+
+### SAE
+
+### RBM
+
+### MC
+
+### HN
+
+### BM
+
+### DBM
+
+### DCNN
+
+### DN
+
+### DCIGN
+
+### GANS
+
+### LSM
+
+### ELM
+
+### ESN
+
+### DRN
+
+### KN
+
+### NTM
 
 ## Ferramentas usadas para construir os gráficos
 
