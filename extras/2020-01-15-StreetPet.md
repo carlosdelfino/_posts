@@ -57,51 +57,51 @@ Disso tudo acabei resolvendo criar um projeto e documenta-lo nas horas vagas de 
 ![]({{site.url}}{{page.images.dir}}/IMG-20200112-WA0078.jpeg)
 ![]({{site.url}}{{page.images.dir}}/IMG-20200112-WA0095.jpeg)
 ![]({{site.url}}{{page.images.dir}}/IMG-20200112-WA0115.jpeg)
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200112-WA0116.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200112-WA0158.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200113-WA0041.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
 ![]({{site.url}}{{page.images.dir}}/IMG-20200114-WA0054.jpeg)
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200114-WA0028.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200114-WA0039.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
 ![]({{site.url}}{{page.images.dir}}/IMG-20200115-WA0088.jpg)
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200115-WA0058.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200115-WA0085.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200115-WA0087.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200115-WA0085.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
@@ -114,12 +114,12 @@ Disso tudo acabei resolvendo criar um projeto e documenta-lo nas horas vagas de 
 
 ![]({{site.url}}{{page.images.dir}}/IMG-20200117-WA0057.jpeg)
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200117-WA0058.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-<video controls>
+<video width="500" height="400" controls preload>
   <source type="video/mp4" src="{{site.url}}/{{page.images.dir}}/VID-20200117-WA0059.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
