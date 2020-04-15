@@ -1,5 +1,7 @@
 ---
-redirect_from: "/helloarm/Reativando-Ambiente-Desenvolvimento-ARM/"
+redirect_from: 
+ - "/helloarm/Reativando-Ambiente-Desenvolvimento-ARM/"
+ - "/helloworldarm/Reativando-Ambiente-Desenvolvimento-ARM/"
 title: Reativando meu Ambiente de desenvolvimento ARM
 tags: [ARM, AVR, Plataforma de Desenvolvimento, Eclipse, IDE, CMSIS, AAME]
 categories: [HelloWorld,arm]
