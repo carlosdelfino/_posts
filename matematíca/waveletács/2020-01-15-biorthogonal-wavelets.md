@@ -31,6 +31,6 @@ Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.
 {: .notice-warning}
 
 <figure class="image">
-  <img src="{{site.url}}/{page.images.url}}/ch01_intro62-Biorthogonal.gif" alt="Biorthogonal Wavelets" >
+  <img src="{{site.url}}/{{page.images.url}}/ch01_intro62-Biorthogonal.gif" alt="Biorthogonal Wavelets" >
   <figcaption>Biorthogonal Wavelets</figcaption>
 </figure>
