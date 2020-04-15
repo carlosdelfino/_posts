@@ -19,7 +19,8 @@ image:
    feature: canvas/business-model-canvas.jpg
 ---
 
-Jogando GO
+Jogando GO.
 
 <!--more-->
 
+Veja detalhes em [http://carlosdelfino.eti.br/jogo-go](http://carlosdelfino.eti.br/jogo-go)
