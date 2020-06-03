@@ -30,11 +30,13 @@ Em breve abaixo será apresentado postagens com dicas de manutenção e configur
 
 ## Posts relativos a FullService:
 
+<div class="masonrygrid row listrecent">
 {% assign category = "fullservice" %}
 {% assign posts = site.posts | where: "categories", category %}
 {% for post in posts %}
 {% include grids/post-grid.html %}
 {% endfor %}
+</div>
 
 ## Contatos
 
