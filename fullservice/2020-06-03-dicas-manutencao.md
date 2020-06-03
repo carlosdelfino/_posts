@@ -35,3 +35,11 @@ Em breve abaixo será apresentado postagens com dicas de manutenção e configur
 {% for post in posts %}
 {% include grids/post-grid.html %}
 {% endfor %}
+
+## Contatos
+
+Para contatos use o número (85) 985205490 tanto ligações comuns como Whatsapp.
+
+Por e-mail use consultoria@carlosdelfino.eti.br
+
+ 
