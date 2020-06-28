@@ -12,9 +12,6 @@ feature:
 tagcloud: true
 ads: 
  show: true
-image:
-   teaser: whatsapp/whatsapp.jpg
-   feature: whatsapp/whatsapp.jpg
 math: false
 images:
   dir: /images/whatsapp
