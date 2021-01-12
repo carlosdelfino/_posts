@@ -22,9 +22,14 @@ coinbase:
 math: true
 ---
 
-O Skin Effect é um fenômeno onde a corrente elétrica alternada não uniformimente com respeito a seção cruzada (cross-section) do elemento condutor, com um fio. A densidade de corrente é alta próxima a superfície do condutor e diminui exponencialmente com o aumento da  distância da superfície.
+O Skin Effect é um fenômeno onde a corrente elétrica alternada não flui uniformimente com respeito a seção cruzada (cross-section) do elemento condutor, como um fio.
 
 <!--more-->
+
+Revisado em: Janeiro de 2021.
+{: .notice }
+
+A densidade de corrente é alta próxima a superfície do condutor e diminui exponencialmente com o aumento da  distância da superfície.
 
 "Skin Depth" faz referência ao ponto em que a densidade de corrente atinge aproximadamente 37% do seu valor na superfície do condutor. Calculando a "skin depth" requer a frequência do sinal AC e a resistividade e permeabilidade relativa do material condutor. Para usar a calculadora, selecione o material e entre a frequência. A resistividade e permeabilidade do material selecionado será preenchido automáticamente.
 
