@@ -21,45 +21,68 @@ math:
    align: "left"
 ---
 
-O primeiro conceito que é preciso conhecer e entender bem para se converter 
-pares de coordenadas de um GPS é a Milha Náutica*.
+Transformar um par de coordenadas de GPS em um referência de distância não é complicado, neste artigo falo um pouco como fazer os calculos para obter a distância entre dois pontos.
 
 <!--more-->
 
-Revisado em: Dezembro de 2017.
+Revisado em: Janeiro de 2021.
 {: .notice }
+
+O primeiro conceito que é preciso conhecer e entender bem para se converter pares de coordenadas de um GPS é a Milha Náutica*.
 
 ## A milha naútica
 
-A milha náutica, que tem como simbolo comum `NM` do inglês **Nautical Miles*,
-é o equivalente a 1' (um minuto) no grande circulo terrestre, ou seja
-considerando que se está no equador e que se movimente a fração de angulo de 
-1' (um minuto) sobre o mar em direção sul ou norte, terá andando uma milha 
+A milha náutica, que tem como simbolo comum `NM` do inglês __*Nautical Miles*__, é o equivalente a 1' (um minuto) no grande circulo terrestre, ou seja considerando que se está no equador e que se movimente a fração de angulo de 1' (um minuto) sobre o mar em direção sul ou norte, terá andando uma milha 
 náutica, portanto: 1' = 1NM`. 
 
-Na Inglaterra e Estado Unidos, apesar de não ser 
-um sistema aceito oficialmente pelos órgãos normativos internacionais, ainda é 
-usado uma medida chamada Milhas Terrestres, este sistema foi baseado na medida 
-Romana de distância, onde 1000 passos dados por um centurião (Comandante de uma 
-Milicia Romana), ou seja Mile Passus, passos que eram duplos com relação aos 
-nossos passos normais e mediam o equivalente a 63360 polegadas, o que em metros 
-mede 1851,85 metros, arredondando temos então 1852Mt.
+Na Inglaterra e Estado Unidos, apesar de não ser um sistema aceito oficialmente pelos órgãos normativos internacionais, ainda é 
+usado uma medida chamada __*Milhas Terrestres*__, este sistema foi baseado na medida Romana de distância, onde 1000 passos dados por um centurião (Comandante de uma Milicia Romana), ou seja Mile Passus, passos que eram duplos com relação aos nossos passos normais e mediam o equivalente a 63360 polegadas, o que em metros mede 1851,85 metros, arredondando temos então 1852Mt.
 
-A Milha Náutica foi baseada em princípios científicos, baseada na curvatura da terra qualquer linha a contorná-la terá 360 graus. A linha do Equador mede aproximadamente 40000Km a medida feita por [Eratostenes]({% post_url perfil/2016-08-11-eratostenes %}) em 240 A.E.C., hoje a ciência comprovou que a medida não é muito distante, sendo 40072Km. Dividindo então esta linha por 360 graus, depois por 60 minutos e finalmente por 60 segundos (360° equivale a 60' - minutos), teremos então a distância aproximada de de 1851,85 mt para cada arco minuto (1').
+No sistema inglês de medidas, uma __*Milha Náutica*__,  1.1508 *milhas* ou 6,076 *pés*.
 
-Assim fica claro que a cada 1' (um minuto de arco) temos uma milha que são 1852Mt.
+Podemos calcular a __*Milha Geográfica*__ que foi baseada em princípios científicos, considerando a terra redonda, qualquer linha a contorná-la terá 360 graus, porém sua superficie apresenta irregularidades. A linha do Equador mede aproximadamente 40.000Km, a medida feita por [Eratostenes]({% post_url perfil/2016-08-11-eratostenes %}) em 240 A.E.C., hoje a ciência comprovou que a medida não é muito diferente, sendo 40,075Km, ou seja, considerando que hoje sabemos que o raio da terra mede 6,378.14km, basta multiplicar este valor por $ 2 \times \pi $, assim teremos:
+
+$$
+40,075km = 6,378.14km \times 2 \times \pi
+$$
+
+Vamos dividir então o comprimento da linha do equador (40,075km) por 360 graus e depois por 60 minutos (360° equivale a 60 minutos), teremos então a distância aproximada de de 1.851,85 mt para cada arco minuto (1').
+
+$$
+1855,33mt = \frac{40,075km}{\frac{360°}{60'}}
+$$
+
+Assim fica claro que a cada 1' (um minuto de arco) temos uma __*milha geografica*__ que são 1855,33mt. 
+
+Porém a __*Milha Náutica*__ oficial tem um valor bem próximo que é de 1851,85mt
 
 ## O que é longitude e latitude
 
 Agora precisamos entender bem o que são **Longitude** e **Latitude**, veja que nosso intuito é didático portanto não entraremos profundamente na questão. Estaremos lidando com o conceito de coordenadas Geográficas com relação a curvatura da Terra, e devido a sua imperfeição teremos valores arredondados e aproximados do real.
 
-**Latitude** é o angulo entre o equador e uma determinada posição na terra quando nos movemos diretamente para um dos polos seja polo sul ou polo norte, sendo o limite de cada polo o angulo de 90°, ou seja a distância entre os dois polos é de 180°. A letra grega &phi;. A terra é riscada para indicar latitudes especificas e de grande importância que são chamados de ***paralelos*** dentre os mais importantes tempos:
+**Latitude** é o ángulo entre o equador e uma determinada posição na terra quando nos movemos diretamente para um dos polos seja polo sul q ou polo norte, sendo o limite de cada polo o angulo de 90°, ou seja a distância entre os dois polos é de 180°. Representado pela letra grega &phi;. A terra é riscada para indicar latitudes especificas e de grande importância que são chamados de ***paralelos*** dentre os mais importantes temos:
 
 * O Equador, divide a terra ao meio, tendo um lado o hemisfério sul, e do outro, o hemisfério norte.
 * O trópico de Câncer é o trópico ao norte do equador terrestre, correspondendo ao paralelo 23.4378° (23º26’16") de latitude norte. Junto com o equador, delimita a zona tropical norte.
 * O trópico de Capricórnio é o paralelo situado 23.4378° ao sul do equador terrestre (23º26’16" de latitude sul). Delimita junto com o equador a zona tropical sul.
 * O Círculo Polar Ártico terrestre corresponde ao paralelo da latitude 66º 33’ 44" (ou 66.5622°) Norte.
 * Círculo Polar Antártico terrestres corresponde ao paralelo cuja latitude é 66º6/10 Sul e que corresponde ao complemento de 23º4/10 abatido nos trópicos.
+
+**Longitude** é a distância em graus de qualquer ponto da Terra em relação ao Meridiano de Greenwich e também são conhecidas como  meridianos.
+
+As longitudes variam entre 0º e 180º para Leste(E) ou para Oeste(W), sendo contadas a partir do Meridiano de Greenwich.
+
+![Mapa Mundi](/images/gps/mapa-mundi.jpg)
+{: .align-center}
+Mapa mundi, tipicamente seccionado em 15°, porém qualquer ponto da terra tem sua cordenada precisamente definida.
+{: .wrap .text-center .text-caption}
+
+Apesar de as longitudes e latitudes serem traçadas cartograficamente a cada 15º, qualquer ponto da superfície terrestre possui latitude e longitude específicas, por isso usamos as medidas de 0 a 360°, que são divididas em arcos minutos, ou seja cada grau tem 60' (60 arcos minutos), que também são divididos em 60 arco segundos (60").
+
+![Latitudes e Longitudes](/images/gps/latitude_longitude.jpg)
+{: .align-center}
+Latitude e Longitude apresendado no globo.
+{: .wrap .text-center .text-caption}
 
 ## Calculando a Distâncias
 
@@ -73,17 +96,26 @@ A escolha deste angulo se dá pelo fato de percebermos facilmente a curvatura da
 
 Vamos começar fazendo o cálculo de distância entre dois pontos de forma simples, sem considerar a curvatura da terra. Vamos considerar dois Pontos A e B que variem apenas em sua Latitude:
 
-* Ponto A
+![Coordenadas do Castelão, Fortaleza, CE](/images/cursoarduino/geoprocessamento/coordenadas-castelao.jpg)
+{: .align-center}
+Coordenadas do Estádio Castelão em Fortaleza, CE, a imagem permite visualizar as marcações usadas para cálculo do comprimento do estádio sua maior extenção.
+{: .wrap .text-center .text-caption}
+
+* [Ponto A](https://www.google.com/maps/place/3%C2%B048'30.80%22S+38%C2%B031'21.72%22W)
   * Longitude:  38°31'21.72"O
   * Latitude:    3°48'30.80"S
-* Ponto B
+* [Ponto B](https://www.google.com/maps/place/3%C2%B048'21.28%22S+38%C2%B031'21.72%22W)
   * Longitude:  38°31'21.72"O
   * Latitude:    3°48'21.28"S
 
-Neste caso não precisamos nos preocupar o par da coordenada, então iremos trabalhar apenas com o valor que varia, no caso da Latitude, chamamos esta variação de DLA (distância Latitudinal).
+Clicando nos links você poderá visualizar a posição do ponto marcado.
 
-Então aplicamos a fórmula para descobrir o **DLA**, onde **LA_F** é a 
-*Latitude Final*, e **LA_I** é a *Latitude Inicial*:
+[Devido a incompatibilidade de scripts, coloquei o Mapa de referência em outra página, para acessa-la clique aqui.](/mapas/Aprendendo a Calcular Coordenadas menos de 7 graus)
+
+Neste caso, não precisamos nos preocupar com o par da coordenada,  iremos trabalhar apenas com a parte do par de coordenadas que varia, no caso a Latitude, chamamos esta variação de __DLA__ (__*distância Latitudinal*__).
+
+Então aplicamos a fórmula para descobrir o **DLA**, onde $LA_F$ é a 
+*Latitude Final*, e $LA_I$ é a *Latitude Inicial*:
 
 Para medidas em graus decimais:
 
@@ -91,101 +123,121 @@ $$
 DLA = | LA_F - LA_I |
 $$
 
-Pra medidas em graus padrão:
+Para medidas em graus:
 
 $$
-DLA = | (LAG_F * 60) + LAM_F + (LAS_F / 60) - (LAG_I * 60) + LAM_I + (LAS_I / 60) |
+DLA = \left| \begin{align} 
+((LAG_F * 60) + LAM_F + (\frac{LAS_F}{60})) - \\ 
+((LAG_I * 60) + LAM_I + (\frac{LAS_I}{60}))
+\end{align} \right|
 $$
 
-Como podemos ver o DLA é a distância em graus (seja na notação padrão ou decimal), LAG, LAM e LAS são respetivamente, Graus da Latitude, Minutos da Latitude, Segundos da Latitude, e devemos trabalhar com o módulo da distância, apenas usamos o sinal se desejarmos saber qual a direção que seguimos, o que não é o caso aqui, então considerando as duas latitudes informadas,  3°48'30.80"S e 3°48'21.28"S basta subtrai-las, individualmente para cada unidade, veja que quando a latitude é ao sul (S) usamos valores negativos, e quando a Longitude é a Oeste (O) usamos também valores negativos. Ficando assim nosso cálculo:
+Como podemos ver o **DLA** é a distância em arco minutos, **LAG**, **LAM** e **LAS** são respetivamente, *Graus da Latitude*, *Minutos da Latitude*, *Segundos da Latitude*, todos em proporção ao **Arco Minuto** e devemos trabalhar com o **módulo da distância**, apenas usamos o sinal se desejarmos saber qual a direção que seguimos, o que não é o caso aqui, então considerando as duas latitudes informadas,  3°48'30.80"S e 3°48'21.28"S basta subtrai-las, individualmente para cada unidade, veja que **quando a latitude é ao _sul (S)_ usamos valores _negativos_**, e **quando a Longitude é a _Oeste (O)_ usamos também valores _negativos_**. Ficando assim nosso cálculo:
 
 $$
-DLA_G = ( -3) - ( -3)       * 60 = 0   \\
-DLA_M = (-48) - (-48)       *  1 = 0   \\
-DLA_S = (-21.28) - (-30.80) / 60 = 0.1586666\ldots   \\
+\begin{align}
+DLA_G & = ( -3) - ( -3)       * 60 = 0   \\
+DLA_M & = (-48) - (-48)       *  1 = 0   \\
+DLA_S & = \frac{(-21.28) - (-30.80)}{60} = 0.1586666\ldots   \\
 \, \\
-DLA = DLA_G + DLA_M + DLA_S \\
-DLA =   0   +   0   + 0.1587 \\
-DLA = 0.1587
+DLA & = DLA_G + DLA_M + DLA_S \\
+    & =   0   +   0   + 0.1587 \\
+    & = 0.1587
+\end{align}
 $$
 
-Agora temos nossa distância longitudinal que é `0.1587` e assim podemos calcular quantos quilômetros temos de distância entre os dois pontos apenas multiplicando pelo relação existente de 1' (Um minuto) para a Milha Marítima é 1NM e que 1 NM são 1852Mt, então basta fazer a multiplicação final:
+Agora temos nossa distância longitudinal em **arco minuto**, `0.1587`, e assim podemos calcular quantos quilômetros temos de distância entre os dois pontos apenas multiplicando pelo relação existente de 1' (Um arco minuto) para a **Milha Marítima** (1NM) que são 1852mt, então basta fazer a multiplicação final:
 
 $$
-DT = DLA * 1852
-DT = 0.1587 * 1852
-DT = 293.91
+\begin{align}
+DT & = DLA * 1852 \\
+   & = 0.1587 * 1852 \\
+   & = 293.91
+\end{align}
 $$
 
 Como desejamos o cálculo em metros (mt) multiplicamos por 1852(mt), se quissemos em kilometros (Km) devemos usar 1.852(km).
 
-Assim a distância entre o Ponto A e Ponto B no castelão é de 293.91Mt, vamos arredondar para 294mt, Ainda não podemos conferir se a distância está correta porque optamos em usar apenas uma das coordenada considerando que a outra está fixa, mas se formos ver na realidade o Castelão não está alinhado com meridiano, então a Longitude também altera.
+Assim a distância entre o **Ponto A** e **Ponto B** no Estádio Castelão é de 293.91mt, vamos arredondar para 294mt. Ainda não podemos conferir se a distância está correta porque optamos em usar apenas uma das coordenada considerando que a outra está fixa, mas se formos ver na realidade o Castelão não está alinhado com meridiano, então a Longitude também altera.
 
 Agore tente obter duas Longitudes e faça o mesmo cálculo, o principio é o mesmo.
 
 ### Calculando Pequenas distâncias variando Longitude e Latitude
 
-Ainda considerando que qualquer distância que varie menos de 7 graus não é necessário levar em consideração a curvatura da Terra, usaremos então apenas o cálculo da Hipotenusa para descobrirmos a distância entre os dois pontos quando se varia tanto a Longitude quando a Latitude, o cálculo é bem simples também Vejamos.
+Ainda considerando que qualquer distância que varie **menos de 7 graus** não é necessário levar em consideração a curvatura da Terra, usaremos então apenas o cálculo da Hipotenusa para descobrirmos a distância entre os dois pontos quando se varia tanto a Longitude quando a Latitude, o cálculo é bem simples também Vejamos.
 
-Basta fazermos o cálculo de cada distância separadamente pra começar, sendo assim calculamos o DLA (Distância Latitudinal) e DLO (Distância Longitudinal) seja em metros ou KM, em seguida calculamos a hipotenusa destas distâncias:
+Basta fazermos o cálculo de cada distância separadamente pra começar, sendo assim calculamos o **DLA** (_Distância Latitudinal_) e **DLO** (_Distância Longitudinal_) seja em **Metros ou Kilometros**, em seguida calculamos a hipotenusa destas distâncias:
+
+Lembre-se sempre que nestes calculos consideramos o **Arco Minuto**, não estamos lidando com **graus**.
 
 $$
-DT = \sqrt{(DLA * 1.852)^2 + (DLO * 1.852)^2}
+DT = \sqrt{(DLA * 1852)^2 + (DLO * 1852)^2}
 $$
 
 Com isso obtemos a distância na medida escolhida. Vamos fazer um teste com dados reais. Como podemos ver a Longitude varia pouco no nosso exemplo, mas é o suficiente para termos um cálculo prático.
 
-* Ponto A
+* [Ponto A](https://www.google.com/maps/place/3%C2%B048'30.80%22S+38%C2%B031'21.72%22W)
   * Longitude:  38°31'21.72"O
   * Latitude:    3°48'30.80"S
-* Ponto B
+* [Ponto B](https://www.google.com/maps/place/3%C2%B048'21.28%22S+38%C2%B031'20.89%22W)
   * Longitude:  38°31'20.89"O
   * Latitude:    3°48'21.28"S
 
+Clicando nos links você poderá visualizar a posição do ponto marcado.
+
+[Devido a incompatibilidade de scripts, coloquei o Mapa de referência em outra página, para acessa-la clique aqui.](/mapas/Aprendendo a Calcular Coordenadas menos de 7 graus)
+
 $$
-DLA_G = ( -3) - ( -3)       * 60 = 0   \\
-DLA_M = (-48) - (-48)       *  1 = 0   \\
-DLA_S = (-21.28) - (-30.80) / 60 = 0.1586667\ldots   \\
-\, \\
-DLA = DLA_G + DLA_M + DLA_S \\
-DLA =   0   +   0   + 0.1587 \\
-\, \\
-DLA = 0.1587 * 1.852 \\
-DLA = 293.9124Mt \\
-DLO_G = (-38) - (-38)       * 60 = 0   \\
-DLO_M = (-31) - (-31)       *  1 = 0   \\
-DLO_S = |(-20.89) - (-21.71)| / 60 = 0.82\ldots   \\
-\, \\
-DLO = DLO_G + DLO_M + DLO_S \\
-DLO =   0   +   0   + 0.0136667 \\
-DLO = 0.0137 * 1.852 \\
-DLO = 25.3724Mt \\
+\begin{align}
+DLA_G & = (( -3) - ( -3))          * 60  & = 0   \\
+DLA_M & = ((-48) - (-48))          * 1   & = 0   \\
+DLA_S & = \frac{(-21.28) - (-30.80)}{60} & = 0.1586667\ldots   
+\end{align}
+$$
+
+$$
+\begin{align}
+DLA   & = (DLA_G + DLA_M + DLA_S) * 1852 \\
+      & = ( 0    +   0   + 0.1587) * 1852  \\
+      & = 0.1587 * 1852 \\                 
+      & = 293.9124mt  \\
+\end{align} 
+$$
+
+$$
+\begin{align}
+DLO_G & = ((-38) - (-38))       * 60          & = 0   \\
+DLO_M & = ((-31) - (-31))       *  1          & = 0   \\
+DLO_S & = \frac{|(-20.89) - (-21.71)|}{60}    & = 0.82\ldots   
+\end{align} 
+$$
+
+$$
+\begin{align}
+DLO   & = (DLO_G + DLO_M + DLO_S)     * 1852 \\
+      & = (  0   +   0   + 0.0136667) * 1852 \\
+      & = 0.0137 * 1852 \\                     
+      & =  25.3724mt & \\
+\end{align}
 $$
 
 Agora que temos o DLO e o DLA calculamos a hipotenusa.
 
 $$
-DT = \sqrt{DLA^2 + DLO^2} \\
-DT = \sqrt{293.9124^2 * 25.372^2}\\
-DT = 295.0054Mt
+\begin{align}
+DT & = \sqrt{DLA^2 + DLO^2} \\
+   & = \sqrt{293.9124^2 + 25.372^2} \\
+   & = 295.0054mt
+\end{align}
 $$
 
-A diferença em relação ao outro cálculo é pequena devido a pequena inclinação Longitudinal.
+A diferença no valor em relação ao outro cálculo é pequena devido a pequena inclinação Longitudinal.
 
-Vejam se está certo medindo a distância entre os dois pontos no Google Maps. Poderá haver pequenas diferenças de 50 metros uma vez que os pontos não estão 100% sincronizados.
-
-Abaixo está a imagem do Google Earth que usamos.
-
-<figure>
-<img alt="Coordenadas do Castelão, Fortaleza, CE" src="/images/cursoarduino/geoprocessamento/coordenadas-castelao.jpg" />
-<figcaption>
-Coordenadas do Estádio Castelão em Fortaleza, CE, a imagem ao lado permite visualizar as marcações usadas para cálculo do comprimento do estádio sua maior extenção.
-</figcaption>
-</figure>
+Vejam no Google Maps se está certo medindo a distância entre os dois pontos. Poderá haver pequenas diferenças de até 50 metros, uma vez que os pontos não estão 100% sincronizados.
 
 ### Cálculo para Grandes Distâncias
 
-Iremos ver agora como proceder o cálculo para grandes distâncias, consideraremos então distâncias maiores que 7°, seja na Longitude ou Latitude ou ambos.
+Iremos ver agora, usando já algortimos em PHP e C, como proceder o cálculo para grandes distâncias, consideraremos então distâncias maiores que 7°, seja na Longitude ou Latitude ou ambos.
 
 ## Códigos de exemplo
 
@@ -236,12 +288,98 @@ double calcDistancia(double lat_inicial, double long_inicial, double lat_final, 
 }
 {% endhighlight %}
 
+## Verificando o resultado de seus calculos
+
+Abaixo uso um formulário que permite calcular a distância entre dois pontos, este formulário foi obtido no site [https://www.nhc.noaa.gov/gccalc.shtml](https://www.nhc.noaa.gov/gccalc.shtml).
+
+<form name="InputFormCD" method="post">
+   <table border="0" cellspace="0" cellpadding="0">
+      <caption class="hdr">Dados de Localização</caption>
+      <tbody>
+         <tr>
+            <th colspan="2" id="a1">Latitude Ponto A</th>
+            <td width="10">&nbsp;</td>
+            <th colspan="2" id="a2">Longitude Ponto A</th>
+         </tr>
+         <tr>
+            <td><input name="lat1" size="10" value="0.0" type="text" style="text-align: center"></td>
+            <td><select name="NS1">
+                  <option>N</option>
+                  <option selected="selected">S</option>
+               </select></td>
+            <td width="10">&nbsp;</td>
+            <td><input name="lon1" size="10" value="0.0" type="text" style="text-align: center"></td>
+            <td><select name="EW1">
+                  <option selected="selected">W</option>
+                  <option>E</option>
+               </select></td>
+         </tr>
+         <tr>
+            <th colspan="2" id="b1">Latitude Ponto B</th>
+            <td width="10">&nbsp;</td>
+            <th colspan="2" id="b2">Longitude Ponto B</th>
+         </tr>
+         <tr>
+            <td><input name="lat2" size="10" value="0.0" type="text" style="text-align: center"></td>
+            <td><select name="NS2">
+                  <option>N</option>
+                  <option selected="selected">S</option>
+               </select></td>
+            <td width="10">&nbsp;</td>
+            <td><input name="lon2" size="10" value="0.0" type="text" style="text-align: center"></td>
+            <td><select name="EW2">
+                  <option selected="selected">W</option>
+                  <option>E</option>
+               </select></td>
+         </tr>
+      </tbody>
+   </table>
+</form>
+<form name="OutputFormCD" method="post">
+   <center>
+      <table border="0" cellspacing="10" cellpadding="0">
+         <tbody>
+            <tr>
+               <th id="c1" colspan="2">Distância</th>
+            </tr>
+            <tr>
+               <td align="center" colspan="2">(Arredondado para a unidade inteira mais próxima)</td>
+            </tr>
+            <tr>
+               <td align="center"><input name="d12" size="12" type="text" style="text-align: center"></td>
+               <td>
+                  <select name="Dunit">
+                     <option>n mi</option>
+                     <option selected="selected">km</option>
+                     <option>sm</option>
+                  </select>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <p class="reg">
+         <input style="font-weight: bold" value="Calcular" onclick="ComputeFormCD()" type="button">
+         <input style="font-weight: bold" value="Limpar" onclick="ClearFormCD()" type="button">
+      </p>
+      <p class="reg">
+         Adaptado de <a href="http://edwilliams.org/gccalc.htm"> Great Circle Calculator</a><br>
+         escrito por Ed Williams<br>
+         (com permissão)</p>
+      <p class="reg">
+         <a href="http://edwilliams.org/avform.htm">Mais infromações sobre navegação no Grande Circulo pode ser encontrada clicando aqui.</a>
+      </p>
+   </center>
+</form>
+<script language="JavaScript" type="text/javascript" src="/js/gccalc/gccalc.js"></script>
 
 ## Fontes:
 
-* http://www.pilotopolicial.com.br/calculando-distancias-e-direcoes-utilizando-coordenadas-geograficas/
+* https://mundoeducacao.uol.com.br/geografia/latitudes-longitudes.htm
 * http://mundoestranho.abril.com.br/materia/por-que-a-milha-nautica-ediferente-da-milha-terrestre
 * https://pt.wikipedia.org/wiki/Milha_n%C3%A1utica
 * https://pt.wikipedia.org/wiki/Tr%C3%B3pico
 * https://pt.wikipedia.org/wiki/C%C3%ADrculo_Polar_%C3%81rtico
 * https://pt.wikipedia.org/wiki/C%C3%ADrculo_Polar_Ant%C3%A1rtico
+* https://en.wikipedia.org/wiki/Mendenhall_Order
+* http://www.pilotopolicial.com.br/calculando-distancias-e-direcoes-utilizando-coordenadas-geograficas/
+* http://www.gpsy.com/gpsinfo/
