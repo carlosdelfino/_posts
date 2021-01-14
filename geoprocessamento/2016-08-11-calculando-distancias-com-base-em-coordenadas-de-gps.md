@@ -1,8 +1,13 @@
 ---
+redirect_from:
+   - /cursoarduino/geoprocessamento/calculando-distancias-com-base-em-coordenadas-de-gps/
+   - /mapas/georeferenciamento/Aprendendo a Calcular Coordenadas/menos de 7 graus
+   - /mapas/Aprendendo a Calcular Coordenadas menos de 7graus/
+   - /mapas/Aprendendo a Calcular Coordenadas/menos de 7 graus
 layout: article
-title: "Calculando Distâncias com base em coordenadas de GPS"
+title: "Aprendendo a Calcular Distâncias com base em coordenadas de GPS - Angulos menores que 7 graus"
 date: "2016-08-11 09:19:03 -0300"
-tags: [GPS, Milhas Náuticas, Milhas Terrestres, Longitude, Latitude, Coordenadas, Distância, Cálculo]
+tags: [Como Fazer, Como Calcular, GPS, Milhas Náuticas, Milhas Terrestres, Longitude, Latitude, Coordenadas, Distância, Cálculo]
 categories: [cursoarduino, geoprocessamento]
 share: true
 toc: true
@@ -21,18 +26,18 @@ math:
    align: "left"
 ---
 
-Transformar um par de coordenadas de GPS em um referência de distância não é complicado, neste artigo falo um pouco como fazer os calculos para obter a distância entre dois pontos.
+Transformar um par de coordenadas de GPS em um referência de distância não é complicado, neste artigo falo um pouco como fazer os cálculos para obter a distância entre dois pontos.
 
 <!--more-->
 
 Revisado em: Janeiro de 2021.
 {: .notice }
 
-O primeiro conceito que é preciso conhecer e entender bem para se converter pares de coordenadas de um GPS é a Milha Náutica*.
+O primeiro conceito que precisamos conhecer e entender bem para se converter pares de coordenadas de um GPS é a **Milha Náutica**.
 
-## A milha naútica
+## A Milha Naútica
 
-A milha náutica, que tem como simbolo comum `NM` do inglês __*Nautical Miles*__, é o equivalente a 1' (um minuto) no grande circulo terrestre, ou seja considerando que se está no equador e que se movimente a fração de angulo de 1' (um minuto) sobre o mar em direção sul ou norte, terá andando uma milha 
+A **Milha Náutica**, que tem como simbolo comum `NM` do inglês __*Nautical Miles*__, é o equivalente a 1' (um arco minuto) no grande circulo terrestre, ou seja considerando que se está no equador e que se movimente a fração de angulo de 1' (um arco minuto) sobre o mar em direção sul ou norte, terá andando uma milha 
 náutica, portanto: 1' = 1NM`. 
 
 Na Inglaterra e Estado Unidos, apesar de não ser um sistema aceito oficialmente pelos órgãos normativos internacionais, ainda é 
@@ -54,7 +59,10 @@ $$
 
 Assim fica claro que a cada 1' (um minuto de arco) temos uma __*milha geografica*__ que são 1855,33mt. 
 
-Porém a __*Milha Náutica*__ oficial tem um valor bem próximo que é de 1851,85mt
+Porém a __*Milha Náutica*__ oficial tem um valor bem próximo que é de 1852mt e foi definido em 1929 pela I Conferência Hidrográfica Internacional Extraordinária (First International Extraordinary Hydrographic Conference), realizada em Mónaco. O valor corresponde sensivelmente ao valor médio do comprimento de um minuto de arco do meridiano terrestre.
+
+Na Marinha do Brasil se usa a equivalência 1 milha náutica = 2000 jardas = 6000 pés. O motivo desta equivalência é a utilização de radares com escalas em milhas e jardas, dependendo do alcance selecionado.
+
 
 ## O que é longitude e latitude
 
@@ -110,7 +118,7 @@ Coordenadas do Estádio Castelão em Fortaleza, CE, a imagem permite visualizar 
 
 Clicando nos links você poderá visualizar a posição do ponto marcado.
 
-[Devido a incompatibilidade de scripts, coloquei o Mapa de referência em outra página, para acessa-la clique aqui.](/mapas/Aprendendo a Calcular Coordenadas menos de 7 graus)
+[Devido a incompatibilidade de scripts, coloquei o Mapa de referência em outra página, para acessa-la clique aqui.](/mapas/georeferenciamento/Aprendendo a Calcular Coordenadas menos de 7 graus/mapa_1)
 
 Neste caso, não precisamos nos preocupar com o par da coordenada,  iremos trabalhar apenas com a parte do par de coordenadas que varia, no caso a Latitude, chamamos esta variação de __DLA__ (__*distância Latitudinal*__).
 
@@ -185,7 +193,7 @@ Com isso obtemos a distância na medida escolhida. Vamos fazer um teste com dado
 
 Clicando nos links você poderá visualizar a posição do ponto marcado.
 
-[Devido a incompatibilidade de scripts, coloquei o Mapa de referência em outra página, para acessa-la clique aqui.](/mapas/Aprendendo a Calcular Coordenadas menos de 7 graus)
+[Devido a incompatibilidade de scripts, coloquei o Mapa de referência em outra página, para acessa-la clique aqui.](/mapas/georeferenciamento/Aprendendo a Calcular Coordenadas menos de 7 graus/mapa_1)
 
 $$
 \begin{align}
@@ -235,147 +243,25 @@ A diferença no valor em relação ao outro cálculo é pequena devido a pequena
 
 Vejam no Google Maps se está certo medindo a distância entre os dois pontos. Poderá haver pequenas diferenças de até 50 metros, uma vez que os pontos não estão 100% sincronizados.
 
-### Cálculo para Grandes Distâncias
-
-Iremos ver agora, usando já algortimos em PHP e C, como proceder o cálculo para grandes distâncias, consideraremos então distâncias maiores que 7°, seja na Longitude ou Latitude ou ambos.
-
-## Códigos de exemplo
-
-### Código em PHP
-
-Abaixo é apresentado um código em PHP que foi obtido no site Stackoverflow e que é muito simples, este código pode ser usado para se calcular a distância entre dois pontos com base em sua latitude e longitude.
-
-{% highlight php %}
-function calcDistancia($lat_inicial, $long_inicial, $lat_final, $long_final)
-{
-    $d2r = 0.017453292519943295769236;
-
-    $dlong = ($long_final - $long_inicial) * $d2r;
-    $dlat = ($lat_final - $lat_inicial) * $d2r;
-
-    $temp_sin = sin($dlat/2.0);
-    $temp_cos = cos($lat_inicial * $d2r);
-    $temp_sin2 = sin($dlong/2.0);
-
-    $a = ($temp_sin * $temp_sin) + ($temp_cos * $temp_cos) * ($temp_sin2 * $temp_sin2);
-    $c = 2.0 * atan2(sqrt($a), sqrt(1.0 - $a));
-
-    return 6368.1 * $c;
-}
-{% endhighlight %}
-
-
-### Código em C e C++
-
-O Código abaixo é o código simplificado considerando a curvatura da terra, veja que ele não difere muito do código usado na linguagem PHP, e este código pode ser usado diretamente no Arduino UNO, Mega, DUE ou qualquer outro, lembrando que o Arduino UNO e Mega não tem funções nativas para trigonometria, portanto pode ser um pouco lento sua execução, mas veremos logo a frente um código que é alternativa para este problema quando usamos distâncias menores que 7°.
-
-{% highlight C %}
-double calcDistancia(double lat_inicial, double long_inicial, double lat_final, double long_final) {
-
-    double d2r = 0.017453292519943295769236;
-
-    double dlong = (long_final - long_inicial) * d2r;
-    double dlat = (lat_final - lat_inicial) * d2r;
-
-    double temp_sin = sin(dlat/2.0);
-    double temp_cos = cos(lat_inicial * d2r);
-    double temp_sin2 = sin(dlong/2.0);
-
-    double a = (temp_sin * temp_sin) + (temp_cos * temp_cos) * (temp_sin2 * temp_sin2);
-    double c = 2.0 * atan2(sqrt(a), sqrt(1.0 - a));
-
-    return 6368.1 * c;
-}
-{% endhighlight %}
+## Cálculo para Grandes Distâncias
+ 
 
 ## Verificando o resultado de seus calculos
+ 
 
-Abaixo uso um formulário que permite calcular a distância entre dois pontos, este formulário foi obtido no site [https://www.nhc.noaa.gov/gccalc.shtml](https://www.nhc.noaa.gov/gccalc.shtml).
+Para reduzir o número de scripts e o tamanho da página dividi este artigo em outros, assim o script de teste e calculo foi transferido para o artigo: []({% post_url geoprocessamento/2021-01-14-script-calculo-distancias-com-base-em-coordenadas-de-gps %})
 
-<form name="InputFormCD" method="post">
-   <table border="0" cellspace="0" cellpadding="0">
-      <caption class="hdr">Dados de Localização</caption>
-      <tbody>
-         <tr>
-            <th colspan="2" id="a1">Latitude Ponto A</th>
-            <td width="10">&nbsp;</td>
-            <th colspan="2" id="a2">Longitude Ponto A</th>
-         </tr>
-         <tr>
-            <td><input name="lat1" size="10" value="0.0" type="text" style="text-align: center"></td>
-            <td><select name="NS1">
-                  <option>N</option>
-                  <option selected="selected">S</option>
-               </select></td>
-            <td width="10">&nbsp;</td>
-            <td><input name="lon1" size="10" value="0.0" type="text" style="text-align: center"></td>
-            <td><select name="EW1">
-                  <option selected="selected">W</option>
-                  <option>E</option>
-               </select></td>
-         </tr>
-         <tr>
-            <th colspan="2" id="b1">Latitude Ponto B</th>
-            <td width="10">&nbsp;</td>
-            <th colspan="2" id="b2">Longitude Ponto B</th>
-         </tr>
-         <tr>
-            <td><input name="lat2" size="10" value="0.0" type="text" style="text-align: center"></td>
-            <td><select name="NS2">
-                  <option>N</option>
-                  <option selected="selected">S</option>
-               </select></td>
-            <td width="10">&nbsp;</td>
-            <td><input name="lon2" size="10" value="0.0" type="text" style="text-align: center"></td>
-            <td><select name="EW2">
-                  <option selected="selected">W</option>
-                  <option>E</option>
-               </select></td>
-         </tr>
-      </tbody>
-   </table>
-</form>
-<form name="OutputFormCD" method="post">
-   <center>
-      <table border="0" cellspacing="10" cellpadding="0">
-         <tbody>
-            <tr>
-               <th id="c1" colspan="2">Distância</th>
-            </tr>
-            <tr>
-               <td align="center" colspan="2">(Arredondado para a unidade inteira mais próxima)</td>
-            </tr>
-            <tr>
-               <td align="center"><input name="d12" size="12" type="text" style="text-align: center"></td>
-               <td>
-                  <select name="Dunit">
-                     <option>n mi</option>
-                     <option selected="selected">km</option>
-                     <option>sm</option>
-                  </select>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-      <p class="reg">
-         <input style="font-weight: bold" value="Calcular" onclick="ComputeFormCD()" type="button">
-         <input style="font-weight: bold" value="Limpar" onclick="ClearFormCD()" type="button">
-      </p>
-      <p class="reg">
-         Adaptado de <a href="http://edwilliams.org/gccalc.htm"> Great Circle Calculator</a><br>
-         escrito por Ed Williams<br>
-         (com permissão)</p>
-      <p class="reg">
-         <a href="http://edwilliams.org/avform.htm">Mais infromações sobre navegação no Grande Circulo pode ser encontrada clicando aqui.</a>
-      </p>
-   </center>
-</form>
-<script language="JavaScript" type="text/javascript" src="/js/gccalc/gccalc.js"></script>
 
 ## Fontes:
 
+* http://www.inaccess.com.br/?p=1163
+* https://www.lapintagalapagoscruise.com/blog/nautical-miles-vs-miles/#:~:text=A%20nautical%20mile%20is%20based,Earth%20is%201%20nautical%20mile.
+
+* https://www.wolframalpha.com/
+
 * https://mundoeducacao.uol.com.br/geografia/latitudes-longitudes.htm
 * http://mundoestranho.abril.com.br/materia/por-que-a-milha-nautica-ediferente-da-milha-terrestre
+* https://super.abril.com.br/mundo-estranho/por-que-a-milha-nautica-e-diferente-da-milha-terrestre/
 * https://pt.wikipedia.org/wiki/Milha_n%C3%A1utica
 * https://pt.wikipedia.org/wiki/Tr%C3%B3pico
 * https://pt.wikipedia.org/wiki/C%C3%ADrculo_Polar_%C3%81rtico
