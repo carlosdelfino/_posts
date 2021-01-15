@@ -85,6 +85,11 @@ Para reduzir o número de scripts e o tamanho da página dividi este artigo em o
 
 ## Fontes:
 
+* https://www.tandfonline.com/doi/abs/10.1179/sre.1975.23.176.88?src=recsys&
+* http://edwilliams.org/ellipsoid/ellipsoid.pdf
+* https://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf
+* https://pubs.usgs.gov/pp/1395/report.pdf
+
 * http://www.inaccess.com.br/?p=1163
 * https://www.lapintagalapagoscruise.com/blog/nautical-miles-vs-miles/#:~:text=A%20nautical%20mile%20is%20based,Earth%20is%201%20nautical%20mile.
 

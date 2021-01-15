@@ -244,16 +244,17 @@ A diferença no valor em relação ao outro cálculo é pequena devido a pequena
 Vejam no Google Maps se está certo medindo a distância entre os dois pontos. Poderá haver pequenas diferenças de até 50 metros, uma vez que os pontos não estão 100% sincronizados.
 
 ## Cálculo para Grandes Distâncias
- 
+
+O Calculo de grandes distâncias, principalmente longe dos grandes círculos, ou seja proximos ao equador e aos trópicos demandam cálculos bem mais complexos que estão sendo anotados no artigo [Calculando grandes distâncias com base em coordenadas de gps - distancias maiores que 7 graus]({% post_url geoprocessamento/2021-01-14-Calculando-distancias-com-base-em-coordenadas-de-gps-distancias-maiores-que-7-graus %})
 
 ## Verificando o resultado de seus calculos
  
-
 Para reduzir o número de scripts e o tamanho da página dividi este artigo em outros, assim o script de teste e calculo foi transferido para o artigo: []({% post_url geoprocessamento/2021-01-14-script-calculo-distancias-com-base-em-coordenadas-de-gps %})
 
 
 ## Fontes:
 
+* http://edwilliams.org/ellipsoid/ellipsoid.pdf
 * http://www.inaccess.com.br/?p=1163
 * https://www.lapintagalapagoscruise.com/blog/nautical-miles-vs-miles/#:~:text=A%20nautical%20mile%20is%20based,Earth%20is%201%20nautical%20mile.
 
