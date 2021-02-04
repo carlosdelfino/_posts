@@ -31,3 +31,7 @@ Abaixo alguns links sobre o tema:
 * [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4230274/](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4230274/)
 * [https://www.nature.com/articles/nmeth.4505.epdf](https://www.nature.com/articles/nmeth.4505.epdf)
 * [http://news.mit.edu/2013/cells-as-living-calculators-0515](http://news.mit.edu/2013/cells-as-living-calculators-0515)
+
+## Propostas de Leitura para novos estudos
+
+* [https://ethz.ch/en/news-and-events/eth-news/news/2019/04/biosynthetic-dual-core-cell-computer.html](https://ethz.ch/en/news-and-events/eth-news/news/2019/04/biosynthetic-dual-core-cell-computer.html)
