@@ -85,6 +85,7 @@ Para reduzir o número de scripts e o tamanho da página dividi este artigo em o
 
 ## Fontes:
 
+* https://geographiclib.sourceforge.io/geod.html
 * https://www.tandfonline.com/doi/abs/10.1179/sre.1975.23.176.88?src=recsys&
 * http://edwilliams.org/ellipsoid/ellipsoid.pdf
 * https://www.ngs.noaa.gov/PUBS_LIB/inverse.pdf
