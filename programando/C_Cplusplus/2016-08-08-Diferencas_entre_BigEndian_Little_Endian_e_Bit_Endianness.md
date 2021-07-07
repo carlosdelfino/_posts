@@ -18,9 +18,13 @@ image:
 math: true
 ---
 
-Para o iniciante este conceito pode parecer bastante confuso, e até inútil, mas para quem deseja trabalhar com microcontroladores é fundamental seu entendimento. Big Endian ou Little Endian, qual o impacto na transmissão de dados de um sistema para outro, entre o módulo e o microcontrolador?
+Para o iniciante este conceito pode parecer bastante confuso, e até inútil, mas para quem deseja trabalhar com microcontroladores, processadores e principalmente redes a nível de protocolos é fundamental seu entendimento. Big Endian ou Little Endian, qual o impacto na transmissão de dados de um sistema para outro, entre o módulo e o microcontrolador?
+
 
 <!--more-->
+
+Revisado em Julho de 2021.
+{: .notice }
 
 Revisado em Maio de 2018.
 {: .notice }
@@ -29,17 +33,17 @@ O conceito de Big Endian e Little Endian, nomeado simplesmente de Endianess vem 
 
 O problema se deu inicio, como já foi dito quando os microcomputadores surgiram, já que estes optaram em trabalhar com o conceito de Little Endian, mas o que é este Endian? porque Big ou Little? bem Endian é um termo cunhado em uma história que faz alusão as disputas politicas e religiosas na Europa, e descrita em uma história de ficção escrita por [Jonathan Swift]({% post_url perfil/2016-08-08-Jonathan_Swift %}) em uma sátira escrita em 1726, Conhecida em português como as Viagens de Gulliver, conta a história, que dois grupos de cidadãos entram em guerra por não concordarem qual o lado certo se deve quebrar o ovo, do lado maior (Big End) ou do lado menor (Little End), com isso uma guerra civil se instala separando os grupos.
 
-Na informática isso não foi muito diferente, não chegamos uma guerra civil por isso, mas tivemos os sistemas separados em "Big End in" e "Little End in" que define como os bits são transmitidos em algum sistemas, e em outros apenas quando lidamos com palavras (World/2 bytes, DWorld/4 bytes), seja o microprocessador 8 bits ou maior.
+Na informática isso não foi muito diferente, não chegamos a uma guerra civil por isso, mas tivemos os sistemas separados em "Big End in" e "Little End in" que define como os bits são transmitidos em algum sistemas, e em outros, apenas quando lidamos com palavras (World/2 bytes, DWorld/4 bytes), seja o microprocessador 8 bits ou maiores.
 
 Nos tempos atuais, não temos muitos problemas relativos a tal modo de endereçamento, porque quase todos os microprocessadores usam o Little Endian para endereçar seus dados, com exceção de alguns como o antigo PowerMAC que usava um PowerPC especial travado para BIG Endian. Os outros computadores que não usam este travamento permitem o chaveamento entre os dois modos no que tange a manipulação dos bytes.
 
 Outras arquiteturas que trabalham com Big Endian são, Motorola 68000 series (incluindo Freescale ColdFire), Xilinx Microblaze, SuperH, IBM z/Architecture, Atmel AVR32 e o Intel 8051 com atenção para instrução `LCALL` que endereça usando Little Endian.
 
-#### Mas então, oque é realmente Big Endian e Little Endian?
+#### Mas então, o que é realmente Big Endian e Little Endian?
 
 Como já dito, nada mais é do que a forma que os bytes e bits são endereçados na memória, quando se trata de bytes o Big Endian endereça em uma palavra por exemplo do tipo 2 bytes, o primeiro byte como sendo o endereço menor, e a segunda palavra o endereço seguinte (+1 byte). Ja no Little Endian, o segundo Byte é endereçado primeiro, isso para quem está começando pode causar um certo desconforto, apesar que as linguagens abstraem para nós tal problema, mesmo no C, isso não é percebido, mas podemos vir a ter problemas quando lidamos com ponteiros e até mesmo estruturas de dados (struct), já que o primeiro endereço em um sistema Big Endian, não será a menor parte do número, ou seja a parte menos significante (LSB), mas sim a parte mais significante (MSB).
 
-Vejamos abaixo para entendermos primeiro o conceito de LSB  e MSB, que trata a importância do bit ou byte na composição numérica.
+Vejamos abaixo para entendermos primeiro o conceito de *LSB*  e *MSB*, que trata a importância do bit ou byte na composição numérica.
 
 **LSB** representa a parte menos significativa do número ou seja a parte mais a direita. *Least Significant bit/Byte*.
 
@@ -73,9 +77,9 @@ $$
 
 ## O Conceito Endianess
 
-Em se tratando de bits o conceito **Endianess** afeta mais o hardware no que tange o endereçamento de memória, transferência de dados em barramentos, principalmente nos seriais, e operações de manipulação de bits, já que principalmente se formos usarmos máscaras do tipo bitwise é preciso saber exatamente a ordem dos bits para não haver enganos fatais.
+Em se tratando de bits, o conceito **Endianess** afeta mais o hardware no que tange o endereçamento de memória, transferência de dados em barramentos, principalmente nos seriais, e operações de manipulação de bits. Já que, principalmente se formos usarmos máscaras do tipo bitwise é preciso saber exatamente a ordem dos bits para não haver enganos fatais.
 
-Vejamos agora como é tratado o conceito **endianess** quando se trata de bytes, o que afeta mais a manipulação do dado na memória quando é representado com mais de dois bytes, por exemplo números *inteiros* e *short int* em maquinas 32 bits.
+Vejamos agora como é tratado o conceito **endianess** quando se trata de bytes, o que afeta mais a manipulação do dado na memória, quando é representado com mais de dois bytes, por exemplo números *inteiros* e *short int* em maquinas 32 bits.
 
 As imagem abaixo representam dois números inteiros armazenado na memória de um microcontrolador qualquer que seja do tipo **Little Endian**, a primeira representa um número de 16bits ou seja um Word, o segundo um número de 32 bits, Double Word (DWord).
 
@@ -103,7 +107,7 @@ Vejamos agora como o mesmo número fica representado em um sistema Little Endian
 <img src="/images/programacao/ccplusplus/Little_Endian_Byte-DWord.png" />
 </figure>
 
-Ouve épocas que tal conflito quando se transferindo dados entre computadores que usavam sistemas diferentes (chamdos bytesex), ou seja transmitindo de um sistema Little Endian para um sistema Big Endian a string **UNIX**, foi identificado como ***NUXI Problem***, ou seja o "problema **NUXI**", devido a inversão da String "UNIX".
+Houve épocas que tal conflito quando transferindo dados entre computadores que usavam sistemas diferentes (chamdos bytesex), ou seja transmitindo de um sistema Little Endian para um sistema Big Endian a string **UNIX**, foi identificado como ***NUXI Problem***, ou seja o "problema **NUXI**", devido a inversão da String "UNIX".
 
 Como pode ver a cada par de bytes, haveria uma inversão, de dos dois bytes, causando um certo transtorno.
 
@@ -117,7 +121,7 @@ Neste exemplo mostramos como um inteiro de 2 bytes (16bits) é armazenado na mem
 #include <stdint.h>
 #include <stdio.h>
 #include <string.h>
-
+:w
 struct DWORD
    {
       uint8_t a0;
