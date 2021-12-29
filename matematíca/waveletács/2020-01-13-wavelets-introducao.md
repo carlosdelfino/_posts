@@ -127,6 +127,10 @@ Wavelets são funções arbitrárias, ou seja você pode adotar a função que q
 
 Wavelets tem assim uma número infinito de transformações (Transformatas);
 
+## Conclusão
+
+Este post é apenas um de muitos que precisam ser concluidos e serão postados aqui, o próximo post a ser visto é o {{site.url}}/{% post_url 2020-01-15-wavelets_octave_entre_outros %})
+
 ## Referências
 
 Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
