@@ -67,12 +67,13 @@ Para usar o Octave no Linux o processo de instalação pode ser diferente, não 
 ----
 A imagem acima é obtida usando o script a seguir:
 
-<code>
+``` 
+    pkg load ltfat
     [f,fs] = greasy;
     J = 10;
     [c,info] = fwt(f,'db8',J);
     plotwavelets(c,info,fs,'dynrange',90);
-</code>
+```
 ----
 
 Para darmos continuidade, será preciso instalar alguns _toolbox_ no Octave. Iremos inicialmente instalar o [**Signal Processing**](https://octave.sourceforge.io/signal/index.html), este toolbox possui divresas funções que auxiliam em **DPS** e o [**LTFAT - Larger Timer/Frequency Analise Tools**](https://octave.sourceforge.io/ltfat/index.html), um toolbox que pode ser usado tanto para pesquisas acadêmicas como profissionais.
