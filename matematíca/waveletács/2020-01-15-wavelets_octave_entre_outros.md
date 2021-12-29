@@ -24,6 +24,9 @@ O Octave é uma excelente ferramenta para estudos da Matemática, e não fica at
 
 <!--more-->
 
+Revisado em 27/12/2021
+{: .notice }
+
 Veremos a abaixo como usar o Octave para estudar Wavelets, e também veremos outras ferramentas que foram sugeridas nos livros e papers que eu li.
 
 ## Preparando o Ambiente
@@ -43,12 +46,15 @@ Para listar as Wavelets disponíveis use a função _dir_ com os seguintes argum
 |wfilt_db.m|wfilt_hden.m|wfilt_oddevenb.m|wfilt_remez.m|wfilt_symorth.m|
 |wfilt_dden.m|wfilt_lemarie.m|wfilt_optsyma.m|wfilt_spline.m|wfilt_symtight.m|
 
-Como pode ver ele listou os arquivos que contem as implementações relativas as wavelets, ou seja os Filtros Wavelets. Para saber onde stão estes aquivos veja a pasta que é informada pela variável `ltfatbasepath`
+Como pode ver, ele listou os arquivos que contem as implementações relativas as wavelets, ou seja os Filtros Wavelets. Para saber onde stão estes aquivos veja a pasta que é informada pela variável `ltfatbasepath`
 
 Já o Toolbox **Signal** possui poucas definições de wavelets:
 
 |morlet|mexihat|cmorwavf|shanwavf|meyeraux|
 
+Assim que eu tiver material suficiente irei documentar cada um deles e trazer exemplos de usos, estarei lincando estes exemplos conforme apresenta-los.
+
 ## Referências
 
 Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
+
