@@ -28,8 +28,13 @@ Diante da necessidade de instalar o Octave no Linux Ubuntu 18.4 32bits, fiz este
 
 Use o "Apt-Get" para instalar o Octave e também a biblioteca de desenvolvimento "liboctave-dev", e a biblioteca de desenvolvimento Portaudio para uso com o pacote LTFat:
 
+
 ```bash
+sudo apt-add-repository ppa:octave/stable
+sudo apt-get update
+
 sudo apt install octave liboctave-dev portaudio19-dev
+sudo apt install octave-control octave-image octave-io octave-optim octave-signal octave-statistics octave-ltfat
 ```
 
 Depois crie um diretório `~/octave` faça o download dos seguintes pacotes para ele:
