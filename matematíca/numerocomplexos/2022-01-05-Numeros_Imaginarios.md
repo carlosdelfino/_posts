@@ -60,4 +60,4 @@ Portanto, os números reais são pontos nos eixos horizontais. Números imaginá
 
 Vimos que _j_ não passa de um apelido para _i_ no contexto da engenharia eletrica, para não ser confundido com o símbolo da corrente elétrica, também, não precisamos de uma nova dimensão para representar os números complexos.
 
-Isso é só o inicio, agora você pode ver um pouco mais sobre [Raiz Quadara de _i_, no próximo artigo]({{site.url}}{% post_url 2022-01-05-Raiz_Quadrada_i %}).
+Isso é só o inicio, agora você pode ver um pouco mais sobre [Raiz Quadara de _i_, no próximo artigo]({{site.url}}{% post_url 2022-01-06-Raiz_Quadrada_i %}).
