@@ -23,7 +23,7 @@ O que São Números Imaginários
 
 <!--more-->
 
-Como todos sabem eu me forme no supletivo em 1998, o que me trouxe uma grande lacuna na minha formação matemática, eu até avanço bem em muitos conceitos matemáticos, porém muitas vezes escorrego e preciso rever alguns estudos, e agora estou revendo os cálculos com números complexos para me aprofundar nos estudos em Analise de "Sistemas e Sinais" no livro do Alan V. Oppenheim, "Signals and Systems".
+Como todos sabem eu me formei no supletivo em 1998, o que me trouxe uma grande lacuna na minha formação matemática, eu até avanço bem em muitos conceitos matemáticos, porém muitas vezes escorrego e preciso rever alguns estudos, e agora estou revendo os cálculos com números complexos para me aprofundar nos estudos em Analise de "Sistemas e Sinais" no livro do Alan V. Oppenheim, "Signals and Systems".
 
 O Material abaixo é uma tradução livre, acrecido com meus textos e observações,  do conteúdo do site [Milefoodt Matematics - Imaginary Numbers](http://www.milefoot.com/math/complex/imagnumbers.htm).
 
