@@ -49,7 +49,7 @@ $$
 \end{align} \right.
 $$
 
-Nos não podemos resolver este sistema tão rapidamente como, quando nos encontramos a raiz quadrada da de _i_, mas pode ser feito. Resolvendo a segunda equação para a variável `b`, nos pegamos $b=\dfrac2a$. Substituimos esta quantidade na primeira equação, nos pegamos $a^2-\dfrac{4}{a^2}=3$. Anulamos a fração dada com $a^4-3a^2-4=0$. O que pode ser resolvido fatorando, com $a^2=4$ ou $a^2=-1$. Mas, nos  desejamos valores reais para a váriavel `a`, portanto descarmos $-1$. Portanto, $a^2=4$, e o valor de `a` são `2` e `-2`, usando $b=\dfrac2a$, nos encontramos $b=\pm1$. Portanto, as duas raizes quadradas de $3+4i$ são $2+i$ e $-2-i$.
+Nos não podemos resolver este sistema tão rapidamente como quando nos encontramos a raiz quadrada da de _i_, mas pode ser feito. Resolvendo a segunda equação para a variável `b`, nos pegamos $b=\dfrac2a$. Substituimos esta quantidade na primeira equação, nos pegamos $a^2-\dfrac{4}{a^2}=3$. Anulamos a fração dada com $a^4-3a^2-4=0$. O que pode ser resolvido fatorando, com $a^2=4$ ou $a^2=-1$. Mas, nos  desejamos valores reais para a váriavel `a`, assim, descarmos $-1$. com isso, $a^2=4$, e o valor de `a` são `2` e `-2`, usando $b=\dfrac2a$, nos encontramos $b=\pm1$. obtendo as duas raizes quadradas de $3+4i$ são $2+i$ e $-2-i$.
 
 
 
