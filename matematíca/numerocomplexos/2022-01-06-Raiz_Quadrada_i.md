@@ -1,5 +1,5 @@
 ---
-date: 2022-01-05 20:00 +0300
+date: 2022-01-06 20:00 +0300
 title: Raiz Quadrada de 'i'
 categories: [matematica,complexos]
 layout: article
