@@ -32,5 +32,24 @@ Espero que você já tenha lido a publicação [anterior, Números Imaginários]
 
 Para encontrarmos a $\sqrt{i}$, a raiz quadrada de i. De fato, de fato o número _i_ tem duas raiz quadradas, $\dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2} i$ e $-\dfrac{\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2} i$. Porém, você pode encontrar a raiz quadrada de outros números imaginários? com certeza.
 
-Aguarde
-{: .warning }
+## Primeiro Exemplo
+
+Vamos tentar encontrar a raiz quadrada de $3 + 4i$:
+
+$$
+(a+bi)^2 = a^2+2abi+b^2 i^2 = (a^2-b^2)+(2ab)i
+$$
+
+Nos precisamos resolver o sistema de equações
+
+$$
+\left\{ \begin{align}
+  a^2-b^2 &=3 \\
+  2ab &=4
+\end{align} \right.
+$$
+
+Nos não podemos resolver este sistema tão rapidamente como, quando nos encontramos a raiz quadrada da de _i_, mas pode ser feito. Resolvendo a segunda equação para a variável `b`, nos pegamos $b=\dfrac2a$. Substituimos esta quantidade na primeira equação, nos pegamos $a^2-\dfrac{4}{a^2}=3$. Anulamos a fração dada com $a^4-3a^2-4=0$. O que pode ser resolvido fatorando, com $a^2=4$ ou $a^2=-1$. Mas, nos  desejamos valores reais para a váriavel `a`, portanto descarmos $-1$. Portanto, $a^2=4$, e o valor de `a` são `2` e `-2`, usando $b=\dfrac2a$, nos encontramos $b=\pm1$. Portanto, as duas raizes quadradas de $3+4i$ são $2+i$ e $-2-i$.
+
+
+
