@@ -14,7 +14,7 @@ ads:
 tagcloud: true
 image:
   feature: financas/b3-header.png
-  teaser: financas/b3-logo-png
+  teaser: financas/b3-logo.png
   credit: Diversas Origens
 ---
 
@@ -27,13 +27,13 @@ A falta do valor de mercado no arquivo nos dados fornecidos diretamente no site 
 
 Obter dados diretamnte no site StatusInvest é simples, basta seguir a URL abaixo com a função `request` do módulo `requests` e os dados para uma analise fundamentalistas de todas as ações serão retornados em formato Json similar a um Dicionário do Python, sendo muito simples de ser convertido para um DataFrame.
 
-$code
+```
 url_ba = 'https://statusinvest.com.br/category/advancedsearchresult?search=%7B%22Sector%22%3A%22%22%2C%22SubSector%22%3A%22%22%2C%22Segment%22%3A%22%22%2C%22my_range%22%3A%220%3B25%22%2C%22dy%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_L%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_VP%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_Ativo%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22margemBruta%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22margemEbit%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22margemLiquida%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_Ebit%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22eV_Ebit%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22dividaLiquidaEbit%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22dividaliquidaPatrimonioLiquido%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_SR%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_CapitalGiro%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22p_AtivoCirculante%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22roe%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22roic%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22roa%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22liquidezCorrente%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22pl_Ativo%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22passivo_Ativo%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22giroAtivos%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22receitas_Cagr5%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22lucros_Cagr5%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%2C%22liquidezMediaDiaria%22%3A%7B%22Item1%22%3Anull%2C%22Item2%22%3Anull%7D%7D&CategoryType=1'
 import requests as req 
 
 response = req.get(url_si)
 resp_json = response.json()
-$/code
+```
 
 O código acima é autoexplicativo, temos como resultado final na variável `resp_json` 
 Como o conteúdo retornando que está no formato JSON práticamente como um dicionário, portanto basta passa-lo diretamente para o pandas que ele cuidará de como criar o DataFrame.
@@ -105,7 +105,7 @@ O nosso próximo artigo ensinará como obter informações fundamentalistas de a
 
 ## Referências
 
-$ul
-https://statusinvest.com.br/acoes/busca-avancada
-https://github.com/lfreneda/statusinvest
-$/ul
+* [CIEDA](http://www.cieda.com.br)
+* https://statusinvest.com.br/acoes/busca-avancada
+* https://github.com/lfreneda/statusinvest
+

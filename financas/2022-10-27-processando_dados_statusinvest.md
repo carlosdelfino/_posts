@@ -14,7 +14,7 @@ ads:
 tagcloud: true
 image:
   feature: financas/b3-header.png
-  teaser: financas/b3-logo-png
+  teaser: financas/b3-logo.png
   credit: Diversas Origens
 ---
 
@@ -48,7 +48,7 @@ Para sucesso na instalação do MathPlotLib 3.2.2, defina a variável de ambient
 
 Outra forma de instala-las é uma a uma com os comandos:
 
-$code
+```
 pip install gspread
 pip install pandas
 pip install Nunpy
@@ -57,7 +57,7 @@ pip install jinja2
 pip install openpyxl
 pip install requests
 pip install pyfolio
-$code
+```
 
 ## Um pouco sobre as principais módulos 
 
@@ -196,7 +196,7 @@ Além deste tutorial, temos outro que visa [obter os mesmos dados diretamente do
 
 ## Referências
 
-* http://cieda.com.br
+* [CIEDA](http://cieda.com.br)
 * https://pandas.pydata.org/docs/index.html
 * https://medium.com/@vince.shields913/reading-google-sheets-into-a-pandas-dataframe-with-gspread-and-oauth2-375b932be7bf
 * https://practicaldatascience.co.uk/data-science/how-to-read-google-sheets-data-in-pandas-with-gspread
