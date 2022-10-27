@@ -40,9 +40,10 @@ $/code
 O código acima é autoexplicativo, temos como resultado final na variável `resp_json` 
 Como o conteúdo retornando que está no formato JSON práticamente como um dicionário, portanto basta passa-lo diretamente para o pandas que ele cuidará de como criar o DataFrame.
 
-$code
-df = dt.DataFrame(resp_json)
-$/code
+```
+import pandas as pd
+df = pd.DataFrame(resp_json)
+```
 
 Pronto temos o DataFrame para usarmos e fazermos nossa analise fundamentalista, porém vamos fazer ainda alguns ajustes para que fique compátivel com outros dataframes que usaremos no futuro e de outras fontes.
 
@@ -89,14 +90,14 @@ col_dic = { \
 "receitas_Cagr5": "CAGR RECEITAS 5 ANOS",
 "lucros_Cagr5": "CAGR LUCRO 5 ANOS" 
 }
-$/code
+```
 
 Então aplicaremos no DataFrame através da função `rename` e em seguida usarei a coluna *ticker* como indice do dataframe.
 
-$code
+```
 df.rename(columns=col_dic)
 df.set_index(keys="ticker", drop=True, inplace=True)
-$/code
+```
 
 ## Conclusão
 
