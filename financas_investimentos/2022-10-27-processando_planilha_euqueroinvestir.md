@@ -13,8 +13,8 @@ ads:
  show: true
 tagcloud: true
 image:
-  feature: financas/b3-header.png
-  teaser: financas/b3-logo.png
+  feature: financas_investimentos/b3-header.png
+  teaser: financas_investimentos/b3-logo.png
   credit: Diversas Origens
 ---
 
