@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Uma História do Meu Começo - Data Control - Meu Primeiro Auto CAD"
+title: "Uma pequena parte de minha História - Meu Começo - Data Control - Meu Primeiro Auto CAD"
 tags: [artigos, revisão, antigos, históricos, data control, histórias, meu começo, auto cad, primeiro auto cad, revistas de programação, tk90x]
 categories: [minha historia]
 share: true
