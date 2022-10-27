@@ -6,11 +6,10 @@ layout: article
 share: true
 toc: true
 comments: true
-coinbase:
-  show: false
-google:
-  plusone: true
-ads:
+feature:
+ category: true
+ index: true
+ads: 
  show: true
 tagcloud: true
 image:
@@ -19,10 +18,9 @@ image:
   credit: Diversas Origens
 ---
 
-## Introdução
-
 Já fizemos um tutorial onde obtemos os dados de uma planilha fornecida pela empresa EQI (http://eqi.com.br), a planilha em questão foi criada com base nos dados obtidos no StatusInvest e melhorado de forma, por exemplo, a conter detalhes como Setor e SubSetor no qual pertence o ativo. Porém, faremos aqui, com o intuito de apenas acelerar a obtenção e ampliar as possibilidades, já que nosso intuito é educacional e quanto mais formas de obtenção de dados forem apresentadas melhor, pois o aprendiz pode somar tais informações construindo um leque maior de conhecimento. 
 
+<!--more-->
 É importante destacar que a planilha da EQI vem com os dados ampliados e atualizados, pois possui fórmulas que obtêm, por exemplo, o valor de mercado do ativo em tempo real, com pequeno atraso. Já outros dados precisam ser atualizados copiando e colando do site StatusInvest. 
 
 A falta do valor de mercado no arquivo nos dados fornecidos diretamente no site StatusInvest pode ser corrigido integrando com outras bibliotecas como Yahoo Finances, que já vem integrada no Pandas através da biblioteca DataReader.

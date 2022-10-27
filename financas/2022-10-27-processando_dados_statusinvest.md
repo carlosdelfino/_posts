@@ -6,11 +6,10 @@ layout: article
 share: true
 toc: true
 comments: true
-coinbase:
-  show: false
-google:
-  plusone: true
-ads:
+feature:
+ category: true
+ index: true
+ads: 
  show: true
 tagcloud: true
 image:
@@ -19,9 +18,9 @@ image:
   credit: Diversas Origens
 ---
 
-## Introdução
-
 Com o objetivo de demonstrar como usar o Python para obter dados que possam ser usados em suas _Analises fundamentalista_, auxiliando na escolha do melhor investimento, apresento este pequena coleção de tutoriais, que se inicia obtendo dados de uma planilha distribuida gratuitamente pela EQI Investimentos. Apresento aqui passo a passo de como obter a planilha de forma programática e analisa-la usando recursos do Python com módulos como Panda e Nunpy.
+
+<!--more-->
 
 Como o intitúito educacional, tal tutorial não exaure as possibilidades de análise e fontes de dados, o aluno deverá se basear nestes primeiros exemplos para obter seus primeiros dados para _Análise Fundamentalista_, buscando ampliar suas fontes, que serão sugerida no final do tutorial.
 
