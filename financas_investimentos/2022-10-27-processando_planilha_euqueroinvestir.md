@@ -22,6 +22,9 @@ Com o objetivo de demonstrar como usar o Python para obter dados que possam ser 
 
 <!--more-->
 
+Este artigo foi originalmente públicado no site [NiZiN-Investimentos](https://nizin-invest.github.io), para ter acesso a material sempre atualizado quanto a Ciência de Dados e Analise Fundamentalista acompanhe o site e [nos pague um café](https://buymeacoffee.com/carlosdelfino#support)
+{: .notice-warning }
+
 Como o intitúito educacional, tal tutorial não exaure as possibilidades de análise e fontes de dados, o aluno deverá se basear nestes primeiros exemplos para obter seus primeiros dados para _Análise Fundamentalista_, buscando ampliar suas fontes, que serão sugerida no final do tutorial.
 
 Outros tutoriais virão na sequência deste, alguns serão baseados nas dúvidas apresentadas, portanto procure comentar como foi seu aprendizado e apresentar suas dúvidas, assim posso ampliar o conteúdo e fazer novos tutoriais. Caso prefira falar comigo diretamente use o Whatsapp (85) 985205490 ou o e-mail nizin.invest@gmail.com

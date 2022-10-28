@@ -22,6 +22,9 @@ Inauguramos nosso site com uma sequência de tutoriais sobre obtenção e proces
 
 <!--more-->
 
+Este artigo foi originalmente públicado no site [NiZiN-Investimentos](https://nizin-invest.github.io), para ter acesso a material sempre atualizado quanto a Ciência de Dados e Analise Fundamentalista acompanhe o site e [nos pague um café](https://buymeacoffee.com/carlosdelfino#support)
+{: .notice-warning }
+
 A análise fundamentalista é importante para a escolha de ações, principalmente se o intuito é o investimento a médio e longo prazo, mas também é muito útil para a escolha de ações para swing trade e até day trade, pois através desta analise podemos identificar o cenário de crescimento ou queda da mesma. 
 
 ## Nossos tutoriais

@@ -21,6 +21,9 @@ Como criar uma credêncial de acesso ao Google Cloud para uso em serviços típo
 
 <!--more-->
 
+Este artigo foi originalmente públicado no site [NiZiN-Investimentos](https://nizin-invest.github.io), para ter acesso a material sempre atualizado quanto a Ciência de Dados e Analise Fundamentalista acompanhe o site e [nos pague um café](https://buymeacoffee.com/carlosdelfino#support)
+{: .notice-warning }
+
 ## Crie sua credêncial de acesso ao Google API para um robô
 
 Usaremos nossos códigos como se fosse um robô de processamento, assim ficando bem mais simples o acesso, para isso é preciso ativar serviços do Google API e criar uma credêncial que deverá ser gravada na pasta de trabalho.

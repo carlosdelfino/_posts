@@ -22,6 +22,9 @@ Já fizemos um tutorial onde obtemos os dados de uma planilha fornecida pela emp
 
 <!--more-->
 
+Este artigo foi originalmente públicado no site [NiZiN-Investimentos](https://nizin-invest.github.io), para ter acesso a material sempre atualizado quanto a Ciência de Dados e Analise Fundamentalista acompanhe o site e [nos pague um café](https://buymeacoffee.com/carlosdelfino#support)
+{: .notice-warning }
+
 Caso ainda não tenha feito as práticas do tutorial ["Processando Planilha Eu Quero Investir (EQI)]({% post_url /financas_investimentos/2022-10-27-processando_planilha_euqueroinvestir %}) faça-o primeiro, pois cada tutorial complementa o conhecimento de forma a ser usado no seguinte.
 
 É importante destacar que a planilha da EQI vem com os dados ampliados e atualizados, pois possui fórmulas que obtêm, por exemplo, o valor de mercado do ativo em tempo real, com pequeno atraso. Já outros dados precisam ser atualizados copiando e colando do site StatusInvest. 
