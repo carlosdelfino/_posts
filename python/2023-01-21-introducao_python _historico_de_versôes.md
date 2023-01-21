@@ -65,11 +65,11 @@ Lançado para coincidir com o Python 3.0 e incluiu alguns recursos dessa versão
 
 Coincidiu e incluiu recursos do Python 3.1, que foi lançado em 26 de junho de 2009. Os lançamentos paralelos 2.xe 3.x cessaram e o Python 2.7 foi o último lançamento na série 2.x. Em novembro de 2014, foi anunciado que o Python 2.7 seria suportado até 2020, e os usuários foram incentivados a migrar para o Python 3 o mais rápido possível.
 
-# Python 2.7.18
+## Python 2.7.18
 
 Uma versão final, ocorreu em 20 de abril de 2020 e incluiu correções para bugs críticos e bloqueadores de lançamento, e isso marcou o fim da vida útil do Python 2.
 
-## 3.0 
+## Python 3.0 
 
 Lançado em 3 de dezembro de 2008. foi projetado para corrigir falhas de design fundamentais na linguagem. As alterações necessárias não puderam ser implementadas mantendo total compatibilidade com versões anteriores com a série 2.x, exigindo um novo número de versão principal.
 
