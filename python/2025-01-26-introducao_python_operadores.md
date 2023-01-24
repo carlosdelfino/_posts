@@ -27,6 +27,7 @@ Os operadores no Python são divididos em seis grupos, listados abaixo:
 * Operadores lógicos
 * Operadores de identidade
 * Operadores de associação
+* Operadores binários
 
 ## Operadores aritméticos
 
@@ -112,6 +113,22 @@ Os operadores de associação são usados para verificar se uma sequência conte
 No caso de strings, que veremos em detalhes no próximo artigo, é verificado se uma sequência de caracteres(string) é contida em outra sequência.
 
 ![]({{site.url}}/images/programacao/python/operadores/operadores_associacao.gif)
+
+## Operadores Bitwise
+
+Os operadores bitwise são aplicados em inteiros, não faz sentindo o uso em outros formatos númericos.
+
+* `|`, bitwise *or* entre
+* `^`, bitwise *or exclusivo*
+* `&`, bitwise *and* 
+* `<<`, deslocamento a esquerda
+* `>>`, deslocamento a direita
+* `~`, inversão de bits
+
+Para que tenhamos as saídas mais didáticas, ou seja em binário, e possamos ver como os operadores funcionam, precisei usar um recurso de formatação de Strings (texto) ainda não apresentado e veremos em artigos futuros.
+
+![]({{site.url}}/images/programacao/python/operadores/operadores_binarios.gif)
+
 
 ## Conclusão
 
