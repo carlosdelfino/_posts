@@ -36,7 +36,7 @@ No python o acesso a porta serial é bem similar ao acesso a arquivos comuns, se
 
 Outra informação importante é o nome da porta, o que é diferente no windows e linux, no windows as portas seriais são composta pela abreviação `com` seguida do número da porta, típicamente um número maior ou igual a 5, no linux, varia conforme a distribuição e o kernel usado, mas independente do sistema operacional basta consultar a IDE do Arduino. No meu ambiente a porta tem o nome `/dev/ttyACM0`, veja a imagem abaixo.
 
-![]({{site.url}}/images/programacao/python/leitura_arquivos/acessando_porta_serial.gif)
+![]({{site.url}}/images/programacao/python/leitura_arquivos/descobrindo_porta_serial_arduino.gif)
 
 Vejamos um exemplo do código em Python.
 
@@ -52,6 +52,8 @@ Vejamos um exemplo do código em Python.
 ...                print(f'Código: {cod}')
 ... 
 {% endhighlight %}
+
+![]({{site.url}}/images/programacao/python/leitura_arquivos/acessando_porta_serial.gif)
 
 No código acima, como é feito na leitura de arquivos temos o primeiro parâmetro que é o nome da porta a ser aberta, em seguida temos a valocidade em _bps_, e finalmente o parâmetro `timeout` que informa quanto tempo esperar pela disponibilidade de dados na porta. Se `timeout` não for informado será esperado até que haja algum dado na porta.
 
