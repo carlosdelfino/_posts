@@ -1,5 +1,5 @@
 ---
-title: Introdução ao Python - Apresentação
+title: Introdução ao Python - Lidando com Arquivos
 tags: [programacao, linguagens, python, apresentacao, introducao, basico]
 categories: [programacao,python]
 layout: article
