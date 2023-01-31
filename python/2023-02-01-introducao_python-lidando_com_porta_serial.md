@@ -77,7 +77,6 @@ Outra forma de escrever este código é eliminando o `while` e o `timeout` torna
 
 Apredendos aqui como acessar a porta serial, fizemos apena leituras, veremos em outros artigos como escrever na porta, caso se interesse em aprender mais, entre em [contato e solicite uma aula.](https://www.superprof.com.br/profissional-com-anos-experiencia-programacao-aulas-introducao-linguagem-python.html)
 
-Nos próximos artigos veremos um pouco sobre o TKinker.
 
 ## Fontes:
 
