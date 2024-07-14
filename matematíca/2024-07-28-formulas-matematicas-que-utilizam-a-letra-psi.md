@@ -27,12 +27,14 @@ A letra grega psi minúscula (ψ) é amplamente utilizada em diversas áreas da 
 
 Na mecânica quântica, a letra ψ é usada para representar a função de onda de uma partícula. A função de onda contém todas as informações sobre o estado de um sistema quântico. A equação de Schrödinger, que descreve como a função de onda evolui no tempo, é uma das equações fundamentais da mecânica quântica:
 
-\[ i\hbar \frac{\partial \psi}{\partial t} = \hat{H} \psi \]
+$$
+ i\hbar \frac{\partial \psi}{\partial t} = \hat{H} \psi 
+$$
 
 onde:
-- \( i \) é a unidade imaginária,
-- \( \hbar \) é a constante reduzida de Planck,
-- \( \hat{H} \) é o operador Hamiltoniano.
+- $ i $ é a unidade imaginária,
+- $ \hbar $ é a constante reduzida de Planck,
+- $ \hat{H} $ é o operador Hamiltoniano.
 
 #### 2. Distribuições de Probabilidade
 
@@ -40,12 +42,14 @@ A letra ψ também é utilizada em estatística e teoria das probabilidades. Em 
 
 #### 3. Transformada de Fourier
 
-Na análise de sinais, a transformada de Fourier é uma ferramenta fundamental, e a letra ψ pode ser usada para representar uma função de onda na sua forma transformada. Por exemplo, a transformada de Fourier de uma função \( f(t) \) é frequentemente representada por \( \psi(\omega) \):
+Na análise de sinais, a transformada de Fourier é uma ferramenta fundamental, e a letra ψ pode ser usada para representar uma função de onda na sua forma transformada. Por exemplo, a transformada de Fourier de uma função $ f(t) $ é frequentemente representada por $ \psi(\omega) $:
 
-\[ \psi(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt \]
+$$
+ \psi(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i\omega t} dt 
+$$
 
 onde:
-- \( \omega \) é a frequência angular.
+- $ \omega $ é a frequência angular.
 
 #### 4. Equações Diferenciais Parciais
 

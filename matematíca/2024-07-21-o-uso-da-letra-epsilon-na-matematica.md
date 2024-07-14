@@ -24,25 +24,31 @@ A letra grega epsilon minúscula, representada como &epsilon; ou &#949; (ε), é
 
 #### 1. Epsilon em Cálculo Diferencial e Integral
 
-No cálculo, &epsilon; é frequentemente usado na definição rigorosa de limites e continuidade. A famosa definição de limite de uma função \( f(x) \) conforme \( x \) se aproxima de um valor \( a \) é baseada em &epsilon; e delta (δ):
+No cálculo, &epsilon; é frequentemente usado na definição rigorosa de limites e continuidade. A famosa definição de limite de uma função $ f(x) $ conforme $ x $ se aproxima de um valor $ a $ é baseada em &epsilon; e delta (δ):
 
-\[ \lim_{{x \to a}} f(x) = L \]
+$$
+ \lim_{{x \to a}} f(x) = L 
+$$
 
-Significa que para cada &epsilon; > 0, existe um δ > 0 tal que se \( 0 < |x - a| < \delta \), então \( |f(x) - L| < \epsilon \). Esta definição é fundamental para a análise matemática, fornecendo uma base formal para muitos conceitos subsequentes.
+Significa que para cada &epsilon; > 0, existe um δ > 0 tal que se $ 0 < |x - a| < \delta $, então $ |f(x) - L| < \epsilon $. Esta definição é fundamental para a análise matemática, fornecendo uma base formal para muitos conceitos subsequentes.
 
 #### 2. Epsilon na Teoria dos Erros
 
 Na teoria dos erros e estatística, &epsilon; é muitas vezes utilizado para representar um pequeno erro ou desvio em medições. Por exemplo, ao medir uma quantidade física, o valor medido pode ser expresso como:
 
-\[ x_{\text{medido}} = x_{\text{verdadeiro}} + \epsilon \]
+$$ 
+x_{\text{medido}} = x_{\text{verdadeiro}} + \epsilon 
+$$
 
 Aqui, &epsilon; representa o erro de medição, que se assume ser pequeno e, frequentemente, distribuído de forma normal em torno de zero.
 
 #### 3. Epsilon na Teoria dos Conjuntos
 
-Na teoria dos conjuntos, &epsilon; é usado para denotar a inclusão de elementos em um conjunto. Por exemplo, se queremos indicar que um elemento \( x \) pertence a um conjunto \( A \), escrevemos:
+Na teoria dos conjuntos, &epsilon; é usado para denotar a inclusão de elementos em um conjunto. Por exemplo, se queremos indicar que um elemento $ x $ pertence a um conjunto $ A $, escrevemos:
 
-\[ x \in A \]
+$$ 
+x \in A 
+$$
 
 Embora o símbolo &epsilon; não seja utilizado diretamente aqui, ele é derivado da letra grega epsilon.
 
@@ -50,7 +56,7 @@ Embora o símbolo &epsilon; não seja utilizado diretamente aqui, ele é derivad
 
 Em análise numérica, &epsilon; representa a precisão de um método numérico. Por exemplo, ao calcular uma raiz de uma função usando métodos iterativos, a condição de parada pode ser definida como a diferença entre duas iterações sucessivas ser menor que &epsilon;:
 
-\[ |x_{n+1} - x_n| < \epsilon \]
+$$ |x_{n+1} - x_n| < \epsilon \]
 
 Este critério garante que a solução obtida esteja dentro de uma precisão aceitável.
 

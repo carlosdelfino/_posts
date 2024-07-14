@@ -26,64 +26,76 @@ A letra grega ômega minúscula (&omega;) é uma das notações matemáticas e f
 
 A aplicação mais comum da letra &omega; é na representação da frequência angular em física e engenharia elétrica. A frequência angular é uma medida da rapidez com que um objeto oscila ou gira e é definida pela seguinte fórmula:
 
-\[ \omega = 2\pi f \]
+$$
+ \omega = 2\pi f 
+$$
 
 onde:
-- \( \omega \) é a frequência angular em radianos por segundo (rad/s),
-- \( \pi \) é a constante matemática Pi (aproximadamente 3,14159),
-- \( f \) é a frequência em hertz (Hz).
+- $ \omega $ é a frequência angular em radianos por segundo (rad/s),
+- $ \pi $ é a constante matemática Pi (aproximadamente 3,14159),
+- $ f $ é a frequência em hertz (Hz).
 
 ## 2. Velocidade Angular
 
 Na cinemática rotacional, &omega; é usada para denotar a velocidade angular, que é a taxa de variação do ângulo de rotação de um objeto por unidade de tempo. A fórmula básica é:
 
-\[ \omega = \frac{\theta}{t} \]
+$$
+ \omega = \frac{\theta}{t} 
+$$
 
 onde:
-- \( \omega \) é a velocidade angular em radianos por segundo (rad/s),
-- \( \theta \) é o ângulo de rotação em radianos,
-- \( t \) é o tempo em segundos.
+- $ \omega $ é a velocidade angular em radianos por segundo (rad/s),
+- $ \theta $ é o ângulo de rotação em radianos,
+- $ t $ é o tempo em segundos.
 
 ## 3. Impedância em Circuitos de Corrente Alternada (CA)
 
 Em circuitos de corrente alternada (CA), &omega; é utilizada na fórmula da impedância (Z) de indutores e capacitores. Para um indutor, a impedância é dada por:
 
-\[ Z_L = j\omega L \]
+$$
+ Z_L = j\omega L 
+$$
 
 onde:
-- \( Z_L \) é a impedância do indutor,
-- \( j \) é a unidade imaginária (raiz quadrada de -1),
-- \( \omega \) é a frequência angular,
-- \( L \) é a indutância em henrys (H).
+- $ Z_L $ é a impedância do indutor,
+- $ j $ é a unidade imaginária (raiz quadrada de -1),
+- $ \omega $ é a frequência angular,
+- $ L $ é a indutância em henrys (H).
 
 Para um capacitor, a impedância é:
 
-\[ Z_C = \frac{1}{j\omega C} \]
+$$
+ Z_C = \frac{1}{j\omega C} 
+$$
 
 onde:
-- \( Z_C \) é a impedância do capacitor,
-- \( C \) é a capacitância em farads (F).
+- $ Z_C $ é a impedância do capacitor,
+- $ C $ é a capacitância em farads (F).
 
 ## 4. Energia Cinética Rotacional
 
 Na física, &omega; aparece na fórmula da energia cinética rotacional de um corpo rígido:
 
-\[ E_k = \frac{1}{2} I \omega^2 \]
+$$
+ E_k = \frac{1}{2} I \omega^2 
+$$
 
 onde:
-- \( E_k \) é a energia cinética rotacional,
-- \( I \) é o momento de inércia do corpo,
-- \( \omega \) é a velocidade angular.
+- $ E_k $ é a energia cinética rotacional,
+- $ I $ é o momento de inércia do corpo,
+- $ \omega $ é a velocidade angular.
 
 ## 5. Movimento Harmônico Simples
 
 Em sistemas de movimento harmônico simples, como molas e pêndulos, &omega; é a frequência angular do sistema e está relacionada à constante de força (k) e à massa (m) pela fórmula:
 
-\[ \omega = \sqrt{\frac{k}{m}} \]
-
+$$
+ \omega = \sqrt{\frac{k}{m}} 
+$$
+ 
 onde:
-- \( k \) é a constante de força,
-- \( m \) é a massa do objeto.
+- $ k $ é a constante de força,
+- $ m $ é a massa do objeto.
 
 ## Conclusão
 
