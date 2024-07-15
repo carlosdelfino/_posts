@@ -2,7 +2,7 @@
 title: Impacto da Pejotização na Previdência Social e nos Trabalhadores no Brasil
 tags: [pejotização, previdência social, benefícios previdenciários, mercado de trabalho, CLT, PJ, instabilidade financeira, informalidade, contribuições previdenciárias, direitos trabalhistas, legislação trabalhista, segurança social, desigualdade social, COVID-19, sustentabilidade financeira]
 categories: [emprego]
-layout: link
+layout: article
 share: true
 toc: true
 comments: true
