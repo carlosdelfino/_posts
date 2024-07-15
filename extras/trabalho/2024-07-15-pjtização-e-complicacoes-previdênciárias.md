@@ -18,6 +18,7 @@ d3cloud: true
 
 A pejotização, ou seja, a prática de contratar trabalhadores como Pessoa Jurídica (PJ) em vez de pelo regime da Consolidação das Leis do Trabalho (CLT), tem crescido significativamente no Brasil. Esse fenômeno está trazendo consequências profundas tanto para os trabalhadores quanto para o sistema de previdência social do país.
 
+<!--more-->
 ## Crescimento da Pejotização
 
 Nos últimos anos, especialmente durante a pandemia de COVID-19, houve um aumento substancial na contratação de trabalhadores como PJ. Em 2020, por exemplo, o número de profissionais atuando como PJ cresceu 40% em comparação a 2019[^7]. Essa tendência reflete a busca das empresas por modelos de contratação mais flexíveis e menos onerosos[^9].
