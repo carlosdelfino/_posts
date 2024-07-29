@@ -212,9 +212,7 @@ def process_sort_table(url, local_file, manufacturers, all_sort_data, all_packag
                 if img_tag:
                     datasheet_pdf_img_src = img_tag['src']
                     if datasheet_pdf_img_src.startswith("//"):
-                        datasheet_pdf_img
-
-_src = "https:" + datasheet_pdf_img_src
+                        datasheet_pdf_img_src = "https:" + datasheet_pdf_img_src
                     elif datasheet_pdf_img_src.startswith("/"):
                         datasheet_pdf_img_src = "https://www.s-manuals.com" + datasheet_pdf_img_src
                     elif datasheet_pdf_img_src.startswith("img"):
