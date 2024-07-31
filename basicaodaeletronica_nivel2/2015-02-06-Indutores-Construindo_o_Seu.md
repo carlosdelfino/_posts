@@ -171,8 +171,18 @@ Caso queira saber qual a indutância de uma bobina com base nas medidas físicas
 </figcaption>
 </figure>
 
+## Participe de nossa comunidade
+<a href="https://basicaodaeletronica.com.br/">
+<figure>
+<img src="https://basicaodaeletronica.com.br/wp-content/uploads/2024/07/Logo_Completo-e1721425728659.webp" />
+<figcaption>
+Participe na Comunidade Basicão da Eletronica e aprenda eletrônica de um jeito diferene e gratuito
+</figcaption>
+</figure>
+</a>
 ## Fontes
 
+* [https://basicaodaeletronica.com.br](https://basicaodaeletronica.com.br)
 * [http://www.circuitstoday.com/how-to-make-an-air-core-inductor](http://www.circuitstoday.com/how-to-make-an-air-core-inductor?utm_source=carlosdelfino&utm_medium=online&utm_content=text)
 * [http://pt.wikipedia.org/wiki/Balastro_(eletricidade)](http://pt.wikipedia.org/wiki/Balastro_(eletricidade)?utm_source=carlosdelfino&utm_medium=online&utm_content=text)
 * [http://en.wikipedia.org/wiki/Choke_(electronics)](http://en.wikipedia.org/wiki/Choke_(electronics)?utm_source=carlosdelfino&utm_medium=online&utm_content=text)
