@@ -1,5 +1,3 @@
-Vamos revisar o texto corrigindo erros de ortografia e ajustando a continuidade:
-
 ---
 
 redirect_from: "/basicaodaeletronica/nivel%202/O_que_e_indutor/"
