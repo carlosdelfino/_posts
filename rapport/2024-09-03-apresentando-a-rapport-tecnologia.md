@@ -1,8 +1,8 @@
 ---
+layout: article
 title: "Apresentando a Rapport Tecnologia - Modernidade, Desempenho e Personalidade para o Sucesso do Seu Negócio"
 tags: [Rapport Tecnologia, Carlos Delfino, inovação tecnológica, automação, inteligência artificial, bots, hospedagem de sites, APIs, integração de sistemas, TypeScript, Python, C/C++, RestFull, WebSocket, microcontroladores, sistemas embarcados, design web, ciência de dados, parceria estratégica, modernidade, desempenho, personalidade, soluções personalizadas, tecnologia da informação, TIC, comunicação digital, experiência do cliente, transformação digital, CieDa, Roberto Placido]
 category: rapport
-layout: article
 share: true
 toc: false 
 comments: true
@@ -13,9 +13,11 @@ ads:
  show: true
 tagcloud: true
 ---
+
 Bem-vindo à Rapport Tecnologia, uma empresa que combina décadas de experiência em Tecnologia da Informação com soluções modernas e personalizadas para atender às necessidades de empresas de todos os tamanhos. Fundada e liderada por Carlos Delfino, com mais de 35 anos de atuação em diversas áreas de TIC, a Rapport Tecnologia se destaca por seu compromisso em fornecer serviços que impulsionam o desempenho e o crescimento dos negócios dos nossos clientes, sempre com um toque de personalidade.
 
 <!--more-->
+
 #### Quem Somos
 
 A Rapport Tecnologia é liderada por Carlos Delfino, um visionário com mais de três décadas de experiência em Tecnologia da Informação e Comunicação. Delfino já atuou em praticamente todas as áreas do setor, acumulando um vasto conhecimento que aplica diretamente na criação e desenvolvimento das soluções oferecidas pela Rapport Tecnologia. Sob sua liderança, a empresa se tornou sinônimo de inovação, modernidade e alto desempenho.
@@ -41,7 +43,7 @@ Para garantir a excelência em nossos serviços, utilizamos tecnologias modernas
 
 #### Parcerias Estratégicas
 
-A Rapport Tecnologia valoriza a colaboração. Mantemos parcerias estratégicas com especialistas em áreas como design gráfico, desenvolvimento web e ciência de dados. Um exemplo disso é nossa parceria com a CieDa, liderada por Roberto Placido, que nos permite oferecer serviços avançados de obtenção e análise de dados, aprimorando ainda mais as soluções que entregamos aos nossos clientes.
+A Rapport Tecnologia valoriza a colaboração. Mantemos parcerias estratégicas com especialistas em áreas como design gráfico, desenvolvimento web e ciência de dados. Um exemplo disso é nossa parceria com a [CieDa](https://cieda.com.br), liderada por Roberto Placido mais conhecido como <b>Beto Byte</b>, que nos permite oferecer serviços avançados de obtenção e análise de dados, aprimorando ainda mais as soluções que entregamos aos nossos clientes.
 
 ### Junte-se a Nós e Seja um Beta Tester da Nova API
 
