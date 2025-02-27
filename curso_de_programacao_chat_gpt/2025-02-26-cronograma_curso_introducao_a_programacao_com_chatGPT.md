@@ -1,4 +1,3 @@
-
 ---
 layout: article
 title: "Curso de Introdução a programação com ChatGPT"
