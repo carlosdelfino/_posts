@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Curso de Introdução a programação com ChatGPT"
+title: "Curso Inteligência Generativa para Programação"
 date: "2025-02-26 19:45:10 -0300"
 tags: [ia, chatGPT, GPT, Inteligência Artificial, Inteligência Generativa, programação, programador, desenvolvimento de software, codeium, vscode, eclipse, cronograma, curso]
 categories: [cursos]
@@ -22,6 +22,10 @@ image:
 
 A Inteligência Artificial está revolucionando a forma como programamos, e você não pode ficar de fora dessa transformação! Neste curso, você aprenderá a utilizar **IA Generativa** para otimizar seu fluxo de trabalho, escrever código mais eficiente, refatorar projetos, gerar testes automatizados e até mesmo estruturar arquiteturas de software com assistência de IA.  
 
+<!--more-->
+
+## **Sobre o Curso:**
+📖 **Objetivo:** Aprender a programar com o ChatGPT, uma inteligência artificial poderosa que pode ajudar a otimizar seu fluxo de trabalho e aumentar sua produtividade.
 📅 **Duração:** 8 dias (2 dias por semana, 1h30 por dia)  
 💡 **Para quem é esse curso?** Desenvolvedores, estudantes de tecnologia e qualquer pessoa interessada em turbinar suas habilidades de programação com o poder da IA.  
 
