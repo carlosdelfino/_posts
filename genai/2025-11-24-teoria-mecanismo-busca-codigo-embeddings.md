@@ -2,7 +2,7 @@
 title: A teoria por trás de um mecanismo de busca de código
 subtitle: Entendendo tokenização, embeddings e similaridade de cosseno
 layout: article
-categories: [programando]
+categories: [GenAI]
 tags: [busca de código, information retrieval, embeddings, word2vec, similaridade de cosseno, machine learning]
 share: true
 toc: true
@@ -11,7 +11,6 @@ ads:
   show: true
 tagcloud: true
 ---
-
 Este artigo foi **inspirado** e fortemente baseado no texto de Gustavo Pinto, publicado na newsletter ML4SE:
 
 - "A teoria por trás de um mecanismo de busca de código – Entendendo sobre tokenização, embeddings e cálculos de similaridades" ([ML4SE](https://ml4se.substack.com/p/a-teoria-por-traz-de-uma-busca-de))
@@ -27,11 +26,12 @@ Pessoas desenvolvedoras passam uma parte enorme do tempo **lendo** e **procurand
 Para perceber o impacto disso, basta imaginar um cenário sem esses mecanismos:
 
 - **Sem busca de código**, você precisaria:
+
   - Navegar manualmente pela documentação (muitas vezes desatualizada ou incompleta).
   - Ler código de múltiplos módulos/pacotes até “tropeçar” em um exemplo útil.
   - Descobrir “na unha” qual API usar, antes mesmo de entender como usá-la.
-
 - **Com boa busca de código**, você pode:
+
   - Escrever uma dúvida em linguagem natural, como “como iterar por uma `HashMap` em Java?”.
   - Receber **diretamente um trecho de código** relevante (muitas vezes com explicação ou discussão da comunidade).
 
@@ -41,9 +41,8 @@ Esse contraste ajuda a entender por que plataformas como **Stack Overflow** se t
 
 O texto do Gustavo Pinto usa um exemplo bastante ilustrativo:
 
-- Query em linguagem natural:  
-  `“como iterar por uma HashMap?”`
-- Trecho de código potencialmente relevante (extraído de uma resposta no Stack Overflow, conforme o próprio Gustavo referencia o link [1066589](https://stackoverflow.com/questions/1066589/iterate-through-a-hashmap)):
+- Query em linguagem natural:`“como iterar por uma HashMap?”`
+- Trecho de código potencialmente relevante (extraído de uma resposta no Stack Overflow, conforme o próprio Gustavo referencia o link [Stackerflow - Iterate Through a Hashmap](https://stackoverflow.com/questions/1066589/iterate-through-a-hashmap)):
 
 ```java
 public static void printMap(Map mp) {
@@ -304,27 +303,28 @@ Trabalhos de **neural code search** publicados nos últimos anos, alguns dos qua
 Com todos os blocos teóricos apresentados, podemos resumir um pipeline típico de **busca semântica de código** que segue a linha descrita no artigo do Gustavo Pinto e em diversos trabalhos acadêmicos:
 
 1. **Coleta e pré-processamento do código**
+
    - Clonar repositórios ou coletar bases open source.
    - Extrair unidades de interesse (por exemplo, métodos, funções, blocos de código).
    - Realizar **tokenização** e outros pré-processamentos (remoção de comentários irrelevantes, normalização, etc.).
-
 2. **Geração de embeddings de código**
+
    - Utilizar um modelo treinado (por exemplo, baseado em Word2Vec, code2vec ou modelos Transformer especializados em código) para converter cada trecho em um **vetor de dimensão fixa**.
    - Armazenar esses vetores em uma estrutura de dados apropriada (como um índice vetorial).
-
 3. **Indexação vetorial**
-   - Usar estruturas otimizadas para busca por similaridade (muitas vezes algoritmos de **aproximação de vizinhos mais próximos** – ANN), que permitem responder consultas em alta dimensão de forma eficiente.
 
+   - Usar estruturas otimizadas para busca por similaridade (muitas vezes algoritmos de **aproximação de vizinhos mais próximos** – ANN), que permitem responder consultas em alta dimensão de forma eficiente.
 4. **Processamento da query em linguagem natural**
+
    - Receber a pergunta do usuário (por exemplo, “como iterar por uma HashMap?”).
    - Tokenizar e normalizar o texto da query.
    - Utilizar o mesmo modelo (ou um modelo complementar, no caso de embeddings bi-modais) para gerar o **vetor de embedding da query**.
-
 5. **Cálculo de similaridade e recuperação**
+
    - Calcular a **similaridade de cosseno** (ou outra métrica apropriada) entre o vetor da query e os vetores de código indexados.
    - Retornar os **top N** trechos de código mais similares.
-
 6. **Apresentação dos resultados**
+
    - Exibir os snippets de código encontrados, frequentemente acompanhados de metadados (arquivo, projeto, linguagem, etc.) e, quando possível, de explicações ou comentários da comunidade (como no Stack Overflow).
 
 O artigo do ML4SE ilustra esse pipeline de forma conceitual quando mostra a query sendo mapeada para um vetor `[0.2, 0.4, 0.5]` e usada para buscar trechos de código mais próximos nesse espaço vetorial.
