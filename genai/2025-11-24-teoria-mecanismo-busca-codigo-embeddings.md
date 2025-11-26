@@ -1,6 +1,6 @@
 ---
-title: A teoria por trás de um mecanismo de busca de código
-subtitle: Entendendo tokenização, embeddings e similaridade de cosseno
+title: "A teoria por trás de um mecanismo de busca de código"
+subtitle: "Entendendo tokenização, embeddings e similaridade de cosseno"
 layout: article
 categories: [GenAI]
 tags: [busca de código, information retrieval, embeddings, word2vec, similaridade de cosseno, machine learning]
