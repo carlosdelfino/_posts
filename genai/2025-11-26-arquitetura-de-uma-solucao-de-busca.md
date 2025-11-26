@@ -1,7 +1,7 @@
 ---
+layout: article
 title: "Arquitetura de uma solução de busca baseada em RAG"
 subtitle: "Como combinar LLMs, embeddings e bancos vetoriais para criar um sistema de busca inteligente"
-layout: article
 categories: [GenAI]
 tags: [RAG, busca semântica, mecanismos de busca, embeddings, LLMs, LangChain]
 share: true
