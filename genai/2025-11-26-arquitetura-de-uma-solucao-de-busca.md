@@ -2,7 +2,7 @@
 title: Arquitetura de uma solução de busca baseada em RAG
 subtitle: Como combinar LLMs, embeddings e bancos vetoriais para criar um sistema de busca inteligente
 layout: article
-categories: [programando]
+categories: [GenAI]
 tags: [RAG, busca semântica, mecanismos de busca, embeddings, LLMs, LangChain]
 share: true
 toc: true
@@ -11,12 +11,11 @@ ads:
   show: true
 tagcloud: true
 ---
-
 # **1 — O que é RAG e por que ele é necessário**
 
 A evolução dos modelos de linguagem (LLMs) trouxe novas possibilidades para criar sistemas de atendimento, mecanismos de busca e assistentes inteligentes capazes de interpretar perguntas e gerar respostas altamente naturais. Entretanto, mesmo os maiores modelos possuem limitações importantes: eles não sabem tudo, não são atualizados em tempo real e, às vezes, podem “inventar” informações — o fenômeno conhecido como  *alucinação* .
 
-Segundo o artigo de referência  [Arquitetura de uma solução baseada em RAG](https://ml4se.substack.com/p/arquitetura-de-uma-solucao-baseada), esse problema ocorre quando o modelo tenta preencher lacunas do conhecimento com respostas plausíveis, porém incorretas. É como se um aluno tentasse responder qualquer pergunta, mesmo sem saber a matéria, apenas para parecer convincente.
+Segundo o artigo de referência [Arquitetura de uma solução baseada em RAG](https://ml4se.substack.com/p/arquitetura-de-uma-solucao-baseada), esse problema ocorre quando o modelo tenta preencher lacunas do conhecimento com respostas plausíveis, porém incorretas. É como se um aluno tentasse responder qualquer pergunta, mesmo sem saber a matéria, apenas para parecer convincente.
 
 Para enfrentar esses desafios, duas estratégias tradicionais surgiram:
 
@@ -183,7 +182,6 @@ O artigo enfatiza que é possível especificar estilo, tom, tamanho e papel assu
 
 Isso produz um resultado controlado, seguro e alinhado ao domínio da aplicação.
 
-
 # **3 — Os Procedimentos Internos de um Sistema RAG**
 
 Depois de compreender a visão geral da arquitetura, este capítulo aprofunda os **procedimentos internos** que permitem a um sistema RAG transformar documentos brutos em respostas inteligentes. O arquivo original descreve seis etapas principais, que aqui são explicadas de maneira didática e ampliada.
@@ -325,7 +323,6 @@ Isso torna o RAG extremamente adaptável para:
 * atendimento ao cliente,
 * pesquisa interna de empresas.
 
-
 # **4 — Componentes Avançados que Tornam o RAG mais Eficiente**
 
 Até agora, estudamos a estrutura básica de um sistema RAG: coleta, segmentação, embeddings, banco vetorial, recuperação e geração.
@@ -442,7 +439,6 @@ Isso é crucial em contextos como:
 * sistemas de consulta acadêmica;
 * motores de busca interativos.
 
-
 # **5 — Integrando Tudo: Como um Sistema RAG Operacional Funciona na Prática**
 
 Nos capítulos anteriores, você conheceu cada peça individual da arquitetura RAG: coleta de dados, segmentação, embeddings, banco vetorial, recuperação semântica, prompting e geração de respostas.
@@ -469,7 +465,7 @@ Resultado:
 
 A base de conhecimento agora não é apenas um conjunto de arquivos; ela é um  **mapa matemático de significados** .
 
-Como o artigo explica, essa etapa “popula o banco vetorial com segmentos preparados para busca eficiente”  
+Como o artigo explica, essa etapa “popula o banco vetorial com segmentos preparados para busca eficiente”
 
 ---
 
@@ -557,7 +553,6 @@ A arquitetura completa garante:
 * capacidade de atender usuários leigos e técnicos.
 
 O arquivo original resume esse potencial ao afirmar que a combinação RAG + LangChain oferece “um método robusto e flexível para enfrentar os desafios da geração de respostas precisas e relevantes”.
-
 
 # **6 — Conclusão: Por que o RAG se tornou o novo padrão em sistemas de busca inteligentes**
 
