@@ -28,7 +28,7 @@ Ingrid Daubechies, professora do Departamento de Matemática da Universidade Duk
    <figcaption>{{page.excerpt | strip_newlines | strip_html}}</figcaption>
 </figure>
 
-Para mais detalhes sobre [Daubechies Wavelets, clique aqui]({{site.url}}/{% post_url 2020-01-13-wavelets-introducao %}).
+Para mais detalhes sobre [Daubechies Wavelets, clique aqui]({{site.url}}/{% post_url matematíca/waveletács/2020-01-13-wavelets-introducao %}).
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jrF1SGPyF4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

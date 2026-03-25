@@ -32,7 +32,7 @@ Na época não sabia o que era sequer eixos cartesianos, muitos menos sabia oque
 
 A informática foi o que me fez se interessar por algo, foi o que me fez querer estudar e aprender, mas a escola não entendia meu jeito de ser, e minha natureza, e todos a minha volta incluindo minha familia só sabia me apontar o dedo e fazer acusações. O que me desmotivava e semeou sentimentos que luto contra até hoje. Sim até hoje quando tenho meio século de vida.
 
-Hoje, neste dia estou estudando um pouco sobre [Números Imaginários]({{site.url}}{% post_url 2022-01-05-Numeros_Imaginarios %}) 
+Hoje, neste dia estou estudando um pouco sobre [Números Imaginários]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-05-Numeros_Imaginarios %}) 
 
 Sobre o software? não sei onde foi parar, um dia sai da escolinha acho que fui trabalhar como office boy em outra empresa, não me lembro, aquilo tudo era apenas uma brincadeira, e como todos a minha volta tratavam tudo como algo tão irrelevante, eu apenas tinha a satifação de concluir, depois jogava foram.
 

@@ -32,7 +32,7 @@ Tem relação com os [Coiflets Wavelets]()
    <figcaption>{{page.excerpt | strip_newlines | strip_html}}</figcaption>
 </figure>
 
-Para mais detalhes sobre [Daubechies Wavelets, clique aqui]({{site.url}}/{% post_url perfil/2020-01-13-wavelets-introducao %}).
+Para mais detalhes sobre [Daubechies Wavelets, clique aqui]({{site.url}}/{% post_url matematíca/waveletács/2020-01-13-wavelets-introducao %}).
 
 [Daubechies Named North American Laureate of 2019 L'Oréal-UNESCO International Award For Women in Science](https://ece.duke.edu/about/news/daubechies-named-north-american-laureate-2019-lor%C3%A9al-unesco-international-award-women)
 
