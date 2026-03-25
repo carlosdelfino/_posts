@@ -31,7 +31,7 @@ Veremos a abaixo como usar o Octave para estudar Wavelets, e também veremos out
 
 ## Preparando o Ambiente
 
-Para começar use o artigo que apresenta os [primeiros passos com Wavelet e como instalar o Octave]({{site.url}}{% post_url 2020-01-13-wavelets-introducao %})
+Para começar use o artigo que apresenta os [primeiros passos com Wavelet e como instalar o Octave]({{site.url}}{% post_url matematíca/waveletács/2020-01-13-wavelets-introducao %})
 
 
 ## Listando os Wavelets disponíveis
@@ -56,5 +56,5 @@ Assim que eu tiver material suficiente irei documentar cada um deles e trazer ex
 
 ## Referências
 
-Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
+Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url matematíca/waveletács/2020-01-15-Wavelets_referencias %})
 

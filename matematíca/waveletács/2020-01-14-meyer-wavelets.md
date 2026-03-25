@@ -26,7 +26,7 @@ Meyer Wavelets
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro15-Meyer.gif" alt="Meyer Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-meyer-wavelets %}">Meyer Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-meyer-wavelets %}">Meyer Wavelets</a></figcaption>
 </figure>
 
 Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.

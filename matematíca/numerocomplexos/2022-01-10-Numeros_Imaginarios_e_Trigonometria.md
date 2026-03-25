@@ -27,7 +27,7 @@ Como todos sabem eu me formei no supletivo em 1998, o que me trouxe uma grande l
 
 O Material abaixo é uma tradução livre, acrecido com meus textos e observações,  do conteúdo do site [Milefoodt Matematics - Imaginary Numbers and Trignometry](http://www.milefoot.com/math/complex/squarerootofi.htm).
 
-Espero que você já tenha lido a publicação [anterior, Números Imaginários]({{site.url}}{% post_url 2022-01-05-Numeros_Imaginarios %}), onde faço uma breve introdução sobre o assunto, leia também o artigo [Raiz Quadrada _i_]({{site.url}}{% post_url 2022-01-06-Raiz_Quadrada_i %}) e [Raiz Quadrada de Números Imaginários Usando Algebra]({{site.url}}{% post_url 2022-01-07-Raiz_Quadrada_De_Numeros_Imaginarios_Usando_Algebra %}).
+Espero que você já tenha lido a publicação [anterior, Números Imaginários]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-05-Numeros_Imaginarios %}), onde faço uma breve introdução sobre o assunto, leia também o artigo [Raiz Quadrada _i_]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-06-Raiz_Quadrada_i %}) e [Raiz Quadrada de Números Imaginários Usando Algebra]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-07-Raiz_Quadrada_De_Numeros_Imaginarios_Usando_Algebra %}).
 
 
 Aguarde

@@ -27,7 +27,7 @@ De calculadoras especializadas a bactérias que podem ser usadas para cirurgias 
 
 O circuito foi descrito em fevereiro de 2010, na revista _Nature Biotecnology_, tais circuitos podem ser usados para sensores de ambiente de longo-prazo, controles eficientes de biomanufatura, ou  programar células tronco para se diferenciarem de outros típos de células.
 
-[Timotht Lu]({{site.url}}{% post_url 2022-01-29-Timothy_Lu %}), um professor assistente de engenharia eletrica, ciência da computação e engenharia biológica, além de autor do paper da Nature Biotechnology, disse: 
+[Timotht Lu]({{site.url}}{% post_url perfil/2022-01-29-Timothy_Lu %}), um professor assistente de engenharia eletrica, ciência da computação e engenharia biológica, além de autor do paper da Nature Biotechnology, disse: 
 
 > "Quase todos os trabalhos anteriores em biologia sintética que conhecemos se concentraram em componentes lógicos ou em módulos de memória que apenas codificam memória. Achamos que a computação complexa envolverá a combinação de lógica e memória, e é por isso que construímos essa estrutura específica para fazer isso."
 

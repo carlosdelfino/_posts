@@ -27,7 +27,7 @@ Como todos sabem eu me formei no supletivo em 1998, o que me trouxe uma grande l
 
 O Material abaixo é uma tradução livre, acrecido com meus textos e observações,  do conteúdo do site [Milefoodt Matematics - Square Root i](http://www.milefoot.com/math/complex/squarerootofi.htm).
 
-Espero que você já tenha lido a publicação [anterior, Números Imaginários]({{site.url}}{% post_url 2022-01-05-Numeros_Imaginarios %}), onde faço uma breve introdução sobre o assunto.
+Espero que você já tenha lido a publicação [anterior, Números Imaginários]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-05-Numeros_Imaginarios %}), onde faço uma breve introdução sobre o assunto.
 
 E preciso lembrar que o número imaginário _i_, representa $\sqrt{-1}$. Nos não podemos descrever $\sqrt{-1}$ com um número real, já que o quadrado de um número positivo é positivo, e o quadrado de um número negativo é também positivo. Não há número real ao quadrado que seja negativo. A raiz quadrada de número real nem sempre é um número real. Acontece que $\sqrt{-1}$ é um número bastante curioso, que pode ser encontrado em **Números Imáginários**.
 

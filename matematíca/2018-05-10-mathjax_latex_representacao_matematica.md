@@ -54,7 +54,7 @@ Porém eu testei e não funcionou no meu Jekyll, então ainda estou em busca da 
 *  `\alpha`, `\beta`, ..., `\omega`: $\alpha$, $\beta$, ... $\omega$.  veja que basta usar o nome da letra grega prefixado com barra invertida.
 * Se quiser a letra grega em maiúscula use `\Gamma`, `\Delta`, …, `\Omega`: $\Gamma, \Delta, …, \Omega$.
 
-No artigo [Letras Gregas escrito em Agosto de 2016]({{site.url}}{% post_url 2016-08-11-letras-gregas %}), listo além de letras gregas muitos outros símbolos matemáticos.
+No artigo [Letras Gregas escrito em Agosto de 2016]({{site.url}}{% post_url matematíca/2016-08-11-letras-gregas %}), listo além de letras gregas muitos outros símbolos matemáticos.
 
 ## Superescrito ou subescrito
 

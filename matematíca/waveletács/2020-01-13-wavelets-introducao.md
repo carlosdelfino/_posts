@@ -57,7 +57,7 @@ Para instalar ambas as ferrametnas use os links abaixo, ou então as ferramentas
 
 Bem, instale ambos os programas, depois dentro do VSCode instale o plugin, não irei entrar em detalhes quanto a esta instalação.
 
-Para usar o Octave no Linux o processo de instalação pode ser diferente, não irei entrar em detalhes para este processo de instalação, mas farei algumas anotações no [Instalando Octave no Linux]({{site.url}}{% post_url 2021-12-27-instalando-octave-no-linux %}).
+Para usar o Octave no Linux o processo de instalação pode ser diferente, não irei entrar em detalhes para este processo de instalação, mas farei algumas anotações no [Instalando Octave no Linux]({{site.url}}{% post_url matematíca/waveletács/2021-12-27-instalando-octave-no-linux %}).
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ltflat-wavelet-plotwavelet-db8.png" alt="Um exemplo simples de uso da função FWT para wavelet 'db8'" >
@@ -97,7 +97,7 @@ plot(xval,psi,"linewidth",4)
 grid on
 ```
 
-Os comandos acima executam o seguinte, primeiro carrega o toolbox *Signal Processing*. Declara três variáveis chamadas, `lb`, `ub`, `n` respectivamente, então chama a função `morlet` que irá gerar uma estrutura com os dados para reconstrução visual do [Wavelet do tipo Morlet]({{site.url}}{% post_url 2020-01-14-morlet-wavelets %}),, finalmente é chamado a função que irá plotar gráficamente o nosso Wavelet com o grid ligado no gráfico. (veja em referências onde obtive o exemplo.)
+Os comandos acima executam o seguinte, primeiro carrega o toolbox *Signal Processing*. Declara três variáveis chamadas, `lb`, `ub`, `n` respectivamente, então chama a função `morlet` que irá gerar uma estrutura com os dados para reconstrução visual do [Wavelet do tipo Morlet]({{site.url}}{% post_url matematíca/waveletács/2020-01-14-morlet-wavelets %}),, finalmente é chamado a função que irá plotar gráficamente o nosso Wavelet com o grid ligado no gráfico. (veja em referências onde obtive o exemplo.)
 
 Como pode ver se você já tem alguma noção de programação, é bastante intuitivo. Teremos o seguinte resultado:
 
@@ -105,7 +105,7 @@ Como pode ver se você já tem alguma noção de programação, é bastante intu
 
 [Para mais funções veja este link](https://octave.sourceforge.io/signal/overview.html).
 
-Vamos fazer mais um teste com o Wavelet Mexican Hat]({{site.url}}{% post_url 2020-01-14-mexican_hat-wavelets %}), basta mudarmos a função:
+Vamos fazer mais um teste com o Wavelet Mexican Hat]({{site.url}}{% post_url matematíca/waveletács/2020-01-14-mexican_hat-wavelets %}), basta mudarmos a função:
 
 ```
 [psi,xval] = mexihat(lb,ub,n);
@@ -117,7 +117,7 @@ Então teremos o seguinte resultado:
 
 ![Mexican Hat Wavelet]({{site.url}}/images/matematica/wavelets/mexican-hat-wavelets.png)
 
-[Para mais detalhes sobre ferramentas clique aqui.]({{site.url}}/{% post_url 2020-01-15-wavelets_octave_entre_outros %})
+[Para mais detalhes sobre ferramentas clique aqui.]({{site.url}}/{% post_url matematíca/waveletács/2020-01-15-wavelets_octave_entre_outros %})
 
 ## Arbitrário
 
@@ -129,8 +129,8 @@ Wavelets tem assim uma número infinito de transformações (Transformatas);
 
 ## Conclusão
 
-Este post é apenas um de muitos que precisam ser concluidos e serão postados aqui, o próximo post a ser visto é o {{site.url}}/{% post_url 2020-01-15-wavelets_octave_entre_outros %})
+Este post é apenas um de muitos que precisam ser concluidos e serão postados aqui, o próximo post a ser visto é o {{site.url}}/{% post_url matematíca/waveletács/2020-01-15-wavelets_octave_entre_outros %})
 
 ## Referências
 
-Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url 2020-01-15-Wavelets_referencias %})
+Com o objetivo de unificar as referências desta série de artigos criei um post para todas elas, [clique aqui para ve-las.]({{site.url}}/{% post_url matematíca/waveletács/2020-01-15-Wavelets_referencias %})

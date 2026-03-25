@@ -26,7 +26,7 @@ Os Symlets são wavelets aproximadamente simétricos propostos por I. Daubechies
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro3-morlet.gif" alt="Morlet Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-morlet-wavelets %}">Morlet Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-morlet-wavelets %}">Morlet Wavelets</a></figcaption>
 </figure>
 
 Estou trabalhando nestas anotações, estudos retomados em 13/01/2020.

@@ -99,7 +99,7 @@ A nível de software a adoção do Ethos-U55 não complicação nenhuma a nível
 
 Corstone-300 é um projeto Arquitetural sugerido pela ARM aos fabricantes de microcontroladores que venham adotar a processador Cortex-M55, é uma forma rápida de incorporar os novos processadores com ou sem Ethos-U55 em um projeto de SoC. Trazendo segurança a nível do chip com a Arquitetura TrustZone para Armv8-M fácil e rápido e com a robustez necessária a todo o chip.
 
-O uso do Corstone-300 pelo fabricante do microcontrolador também facilita o desenvolvimento de software por terceiros para o microcontrolador com a adoção do [Trusted Firmware-M (TF-M)]({% post_url 2020-02-10-Trusted_Firmware-M%}), um algoritmo _open source_ para uso do TrustZone, e finalmente facilitando e acelerando a rota de obtenção do certificado PSA.
+O uso do Corstone-300 pelo fabricante do microcontrolador também facilita o desenvolvimento de software por terceiros para o microcontrolador com a adoção do [Trusted Firmware-M (TF-M)]({% post_url helloworldarm/nivel_3/2020-02-10-Trusted_Firmware-M%}), um algoritmo _open source_ para uso do TrustZone, e finalmente facilitando e acelerando a rota de obtenção do certificado PSA.
 
 
 {% include image.html 

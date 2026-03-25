@@ -29,12 +29,12 @@ feature:
   category: true
 ---
 
-excerpt: A algum tempo tenho desejado trabalhar com microcontroladores mais complexos e avançados, além do AVR, não que o AVR não seja avançado, mas o ARM tem um atraivo muito grande por sua grande gama de fabricantes e opções existentes no mercado.
+A algum tempo tenho desejado trabalhar com microcontroladores mais complexos e avançados, além do AVR, não que o AVR não seja avançado, mas o ARM tem um atraivo muito grande por sua grande gama de fabricantes e opções existentes no mercado.
 
 <!--more-->
 
 O meu primeiro encontro com a Arquitetura ARM, verdadeiramente, não como usuário mas como desenvolvedor
-foi em um RoadShow da ATMel, fui a campinas especialmenete para poder conhecer de perto a empresa
+foi em um RoadShow da ATMel, fui a Campinas especialmenete para poder conhecer de perto a empresa
 que empoderava o Arduino, e tive a grata supresa de ganhar um SAM4S Xplained, uma plataforma de 
 prototipagem que é tudo que eu precisava para dar meus primeiros passos com o ARM.
 

@@ -46,8 +46,8 @@ Ingrid Daubechies, criou o que é chamado de _*"Wavelets Ortogonais Compactadame
 Os Wavelets de Daubechies são nomeados usando duas letras e um número que define o nível do wavelets, assim usa-se as letras "db" seguido dos números, veja na imagem abaixo alguns Daubechs Wavelets, lembrando que o *"db1"* é o [Haar Wavelet](#haar-wavelets), a Mãe dos Wavelets.
 
 <figure class="image">
-   <a href="{{site.url}}/{%post_url 2020-01-15-daubechs-wavelets %}"> <img src="{{site.url}}/{{page.images.dir}}/ch01_intro36-daubechs.gif" alt="Daubechs Wavelets" ></a>
-   <figcaption><a href="{{site.url}}/{%post_url 2020-01-15-daubechs-wavelets %}" alt="Daubechies Wavelets">Daubechies Wavelets</a></figcaption>
+   <a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-15-daubechs-wavelets %}"> <img src="{{site.url}}/{{page.images.dir}}/ch01_intro36-daubechs.gif" alt="Daubechs Wavelets" ></a>
+   <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-15-daubechs-wavelets %}" alt="Daubechies Wavelets">Daubechies Wavelets</a></figcaption>
 </figure>
 
 ## Biorthogonal Wavelets
@@ -56,7 +56,7 @@ Este típo de wavelet é importante para reconstruções de sinais e imagens, el
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro62-Biorthogonal.gif" alt="Biorthogonal Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-15-biorthogonal-wavelets %}">Biorthogonal Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-15-biorthogonal-wavelets %}">Biorthogonal Wavelets</a></figcaption>
 </figure>
 
 ## Coiflets Wavelets
@@ -65,7 +65,7 @@ Construído por I. Daubechies por solicitação de R. Coifman. Esta função wav
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro2-Coiflets.gif" alt="Coiflets Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-coiflets-wavelets %}">Coiflets Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-coiflets-wavelets %}">Coiflets Wavelets</a></figcaption>
 </figure>
 
 ## Symlets
@@ -74,7 +74,7 @@ Os Symlets são wavelets aproximadamente simétricos propostos por I. Daubechies
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_introa-Symlets.gif" alt="Symlets Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-symlets-wavelets %}">Symlets Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-symlets-wavelets %}">Symlets Wavelets</a></figcaption>
 </figure>
 
 
@@ -82,7 +82,7 @@ Os Symlets são wavelets aproximadamente simétricos propostos por I. Daubechies
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro3-morlet.gif" alt="Morlet Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-morlet-wavelets %}">Morlet Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-morlet-wavelets %}">Morlet Wavelets</a></figcaption>
 </figure>
 
 ## Mexican Hat
@@ -91,7 +91,7 @@ This wavelet has no scaling function and is derived from a function that is prop
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro5-Mexican Hat.gif" alt="Mexican Hat Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-mexican_hat-wavelets %}">Mexican Hat Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-mexican_hat-wavelets %}">Mexican Hat Wavelets</a></figcaption>
 </figure>
 
 
@@ -105,7 +105,7 @@ You can obtain a survey of the main properties of this family by typing waveinfo
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro15-Meyer.gif" alt="Meyer Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-meyer-wavelets %}">Meyer Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-meyer-wavelets %}">Meyer Wavelets</a></figcaption>
 </figure>
 
 ## Outros Wavelets Reais

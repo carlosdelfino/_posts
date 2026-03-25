@@ -27,7 +27,7 @@ Como todos sabem eu me formei no supletivo em 1998, o que me trouxe uma grande l
 
 O Material abaixo é uma tradução livre, acrecido com meus textos e observações,  do conteúdo do site [Milefoodt Matematics - Square Root i](http://www.milefoot.com/math/complex/squarerootofi.htm).
 
-Espero que você já tenha lido a publicação [anterior, Números Imaginários]({{site.url}}{% post_url 2022-01-05-Numeros_Imaginarios %}), onde faço uma breve introdução sobre o assunto, leia também o artigo [Raiz Quadrada _i_]({{site.url}}{% post_url 2022-01-06-Raiz_Quadrada_i %})
+Espero que você já tenha lido a publicação [anterior, Números Imaginários]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-05-Numeros_Imaginarios %}), onde faço uma breve introdução sobre o assunto, leia também o artigo [Raiz Quadrada _i_]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-06-Raiz_Quadrada_i %})
 
 
 Para encontrarmos a $\sqrt{i}$, a raiz quadrada de i. De fato, de fato o número _i_ tem duas raiz quadradas, $\dfrac{\sqrt{2}}{2} + \dfrac{\sqrt{2}}{2} i$ e $-\dfrac{\sqrt{2}}{2} - \dfrac{\sqrt{2}}{2} i$. Porém, você pode encontrar a raiz quadrada de outros números imaginários? com certeza.
@@ -83,7 +83,7 @@ $$
 
 ## Conclusão
 
-Há outra forma de encontrar as raizes, usando trigonometria, você pode ler mais sobre esta relação no próximo post [Numeros Imaginarios e Trigonometria]({{site.url}}{% post_url 2022-01-10-Numeros_Imaginarios_e_Trigonometria%}).
+Há outra forma de encontrar as raizes, usando trigonometria, você pode ler mais sobre esta relação no próximo post [Numeros Imaginarios e Trigonometria]({{site.url}}{% post_url matematíca/numerocomplexos/2022-01-10-Numeros_Imaginarios_e_Trigonometria%}).
 
 
 

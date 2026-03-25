@@ -25,7 +25,7 @@ Construído por I. Daubechies por solicitação de R. Coifman. Esta função wav
 
 <figure class="image">
   <img src="{{site.url}}/{{page.images.dir}}/ch01_intro2-Coiflets.gif" alt="Coiflets Wavelets" >
-  <figcaption><a href="{{site.url}}/{%post_url 2020-01-14-coiflets-wavelets %}">Coiflets Wavelets</a></figcaption>
+  <figcaption><a href="{{site.url}}/{%post_url matematíca/waveletács/2020-01-14-coiflets-wavelets %}">Coiflets Wavelets</a></figcaption>
 </figure>
 
 
