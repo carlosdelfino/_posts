@@ -17,7 +17,10 @@ image:
  teaser: pensamentos/pensamento2-400x200.jpg
  feature: pensamentos/pensamento2-400x200.jpg
 ---
+
 Os domínios de topo de código de país, conhecidos como **ccTLDs** (*country code Top-Level Domains*), são extensões de duas letras usadas para identificar países e territórios na internet. Eles seguem, em grande parte, os códigos da norma ISO 3166-1 alfa-2, embora existam exceções históricas e domínios reservados.
+
+<!--more-->
 
 A tabela abaixo organiza esses domínios por continente, incluindo a bandeira, o domínio, o nome do país ou território e o continente associado.
 
